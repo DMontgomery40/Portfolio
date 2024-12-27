@@ -10,16 +10,16 @@ nav_order: 1
 
 ## Featured Projects
 
-### [SecurityLens](./projects/security-lens.md)
+### [SecurityLens](./projects/security-lens.html)
 An open-source security analysis platform for education and vulnerability discovery.
 
-### [intel-npu-top](./projects/intel-npu-top.md)
+### [intel-npu-top](./projects/intel-npu-top.html)
 A monitoring tool for Intel Meteor Lake NPU usage in real-time via sysfs on Linux.
 
-### [MCP Bird Stats](./projects/mcp-birdstats.md)
+### [MCP Bird Stats](./projects/mcp-birdstats.html)
 Cross-reference BirdNET-Pi data with eBird observations using natural language processing.
 
-### [Canvas MCP Server](./projects/canvas-mcp.md)
+### [Canvas MCP Server](./projects/canvas-mcp.html)
 A Model Context Protocol server for programmatic Canvas LMS management.
 
 ## About
