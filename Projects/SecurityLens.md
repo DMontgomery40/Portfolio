@@ -19,6 +19,5 @@ https://securitylens.netlify.app/
 - [ ] Integration with additional security tools
 - [ ] Advanced binary analysis
 ## Current Results Page Example
-![Current Results Page Example][currentResultsImage]
 
-[currentResultsImage]: assets/security-lens-screenshot.png
+![SecurityLens Screenshot](../assets/security-lens-screenshot.png)
