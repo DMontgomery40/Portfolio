@@ -13,6 +13,20 @@ nav_order: 1
 ### [SecurityLens](./projects/security-lens.html)
 An open-source security analysis platform for education and vulnerability discovery.
 
+### [SecurityLens](/projects/security-lens.html)
+An open-source security analysis platform for education and vulnerability discovery.
+
+### [Attack Vector Analysis](/projects/attack-vector.html)
+An interactive vulnerability assessment tool with risk level analysis for common attack patterns.
+<!-- Artifact demo - temporary reference -->
+<iframe 
+  src="https://claude.site/artifacts/abcf42a2-194c-4593-afbd-9ba562b56d79" 
+  width="100%" 
+  height="600px"
+  style="border: 1px solid #ccc; border-radius: 4px;"
+  frameborder="0">
+</iframe>
+
 ### [intel-npu-top](./projects/intel-npu-top.html)
 A monitoring tool for Intel Meteor Lake NPU usage in real-time via sysfs on Linux.
 
