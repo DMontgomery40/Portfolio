@@ -1,8 +1,8 @@
 ---
 title: Bird Stats MCP Server
 layout: page
-nav_order: 5
 parent: Projects
+nav_order: 5
 ---
 
 # Bird Stats MCP Server
