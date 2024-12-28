@@ -25,12 +25,16 @@ Cross-reference BirdNET-Pi data with eBird observations using natural language p
 ### [Canvas LMS MCP Server](./Projects/mcp-server-canvas.html)
 A Model Context Protocol server for programmatic Canvas LMS management.
 
+### [BirdStatsGPT](./Projects/birdstatsgpt.html)
+OpenAPI-integrated CustomGPT (aka OpenAI Assistants function) for insightful bird vocalization data analysis.
+
 ## About
 
 This portfolio demonstrates my focus on:
 - Security analysis and tools
+- birbs 🐦
 - System utilities and monitoring
 - API integrations and data processing
-- Educational technology
+- Educational technology (birbs 🐥) 
 
-While the documentation site itself is intentionally minimal, the featured projects highlight my interests in building practical tools and backend systems.
+The featured projects highlight my interests in building practical tools and backend systems. And in full disclosure, building off a Jekyll Template highlights the peak of my frontend skills as well. 
