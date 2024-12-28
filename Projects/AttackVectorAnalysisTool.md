@@ -19,7 +19,7 @@ This tool provides an interactive visualization of various attack vectors, helpi
 ## Interactive Demo
 
 <iframe
-  src="../assets/trex.html"
+  src="/assets/trex.html"
   width="600"
   height="200"
   style="border: 1px solid #ccc;"
