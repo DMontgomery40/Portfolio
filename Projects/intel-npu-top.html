@@ -1,62 +1,185 @@
-# intel-npu-top
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>intel-npu-top</title>
+   <style>
+       body {
+           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+           line-height: 1.6;
+           max-width: 1200px;
+           margin: 0 auto;
+           padding: 20px;
+           color: #333;
+       }
+       h1, h2, h3 {
+           color: #111;
+       }
+       h1 {
+           font-size: 2.5em;
+           margin-bottom: 0.5em;
+       }
+       h2 {
+           font-size: 1.8em;
+           margin-top: 1.5em;
+       }
+       .description {
+           font-size: 1.2em;
+           color: #555;
+           margin-bottom: 2em;
+           line-height: 1.6;
+       }
+       .screenshot {
+           max-width: 100%;
+           height: auto;
+           margin: 2em 0;
+           border: 1px solid #ddd;
+           border-radius: 4px;
+           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+           background: #1E1E1E;
+           padding: 10px;
+       }
+       .feature-list {
+           list-style: none;
+           padding-left: 0;
+       }
+       .feature-list li {
+           margin-bottom: 1em;
+           padding-left: 1.5em;
+           position: relative;
+       }
+       .feature-list li strong {
+           color: #111;
+       }
+       .feature-list li::before {
+           content: "•";
+           position: absolute;
+           left: 0;
+           color: #0366d6;
+       }
+       code {
+           background: #f6f8fa;
+           padding: 0.2em 0.4em;
+           border-radius: 3px;
+           font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+           font-size: 85%;
+       }
+       .installation-method {
+           background: #f6f8fa;
+           border-radius: 6px;
+           padding: 1em;
+           margin: 1em 0;
+       }
+       .installation-method h3 {
+           margin-top: 0;
+           color: #0366d6;
+       }
+       .requirements-list {
+           list-style: none;
+           padding-left: 1.5em;
+       }
+       .requirements-list li::before {
+           content: "✓";
+           color: #28a745;
+           margin-right: 0.5em;
+       }
+       .usage-section code {
+           display: block;
+           padding: 1em;
+           margin: 1em 0;
+           background: #f6f8fa;
+           border-radius: 6px;
+       }
+       .footer {
+           margin-top: 3em;
+           padding-top: 1em;
+           border-top: 1px solid #eaecef;
+           font-style: italic;
+           color: #666;
+       }
+   </style>
+</head>
+<body>
+   <h1>intel-npu-top</h1>
+   
+   <p class="description">
+       A minimalist, zero-dependency monitoring tool for Intel Meteor Lake NPU usage in real-time via sysfs on Linux. 
+       Features clean ASCII-based visualization in just 52 lines of Python.
+   </p>
 
-A minimalist, zero-dependency monitoring tool for Intel Meteor Lake NPU usage in real-time via sysfs on Linux. Features clean ASCII-based visualization in just 52 lines of Python.
+   <img src="../assets/intel-npu-screenshot.png" alt="NPU Usage Monitor Screenshot" class="screenshot">
 
-![NPU Usage Monitor Screenshot](../assets/intel-npu-screenshot.png)
+   <h2>Features</h2>
+   <ul class="feature-list">
+       <li><strong>Dead Simple</strong>: Single Python file, zero dependencies - just copy and run</li>
+       <li><strong>Real-time Monitoring</strong>: Live NPU usage with ASCII bar chart visualization</li>
+       <li><strong>Usage History</strong>: Visual graph of the last 40 samples</li>
+       <li><strong>Clean Interface</strong>: Pure Python + ASCII = prettier than intel_gpu_top</li>
+       <li><strong>Auto-refresh</strong>: Continuous monitoring out of the box</li>
+   </ul>
 
-## Features
+   <h2>Installation</h2>
+   
+   <div class="installation-method">
+       <h3>Standalone Script (Recommended!)</h3>
+       <p>Just copy STANDALONE.py to your system and run it - that's it! No dependencies, no package management, no fuss.</p>
+   </div>
 
-* **Dead Simple**: Single Python file, zero dependencies - just copy and run
-* **Real-time Monitoring**: Live NPU usage with ASCII bar chart visualization
-* **Usage History**: Visual graph of the last 40 samples
-* **Clean Interface**: Pure Python + ASCII = prettier than intel_gpu_top 
-* **Auto-refresh**: Continuous monitoring out of the box
+   <div class="installation-method">
+       <h3>Also available via PyPI</h3>
+       <code>pip3 install intel-npu-top</code>
+   </div>
 
-## Installation
-
-### Standalone Script (Recommended!)
-Just copy STANDALONE.py to your system and run it - that's it! No dependencies, no package management, no fuss.
-
-### Also available via PyPI
-pip3 install intel-npu-top
-
-### From Source
-git clone https://github.com/DMontgomery40/intel-npu-top
+   <div class="installation-method">
+       <h3>From Source</h3>
+       <code>git clone https://github.com/DMontgomery40/intel-npu-top
 cd intel-npu-top
-python3 -m pip install .
+python3 -m pip install .</code>
+   </div>
 
-### Docker (if you really want to...)
-docker-compose up
-Note: Docker is overkill for local monitoring - but great if you're pulling NPU data from another VM!
+   <div class="installation-method">
+       <h3>Docker (if you really want to...)</h3>
+       <code>docker-compose up</code>
+       <p><em>Note: Docker is overkill for local monitoring - but great if you're pulling NPU data from another VM!</em></p>
+   </div>
 
-## Requirements
+   <h2>Requirements</h2>
+   <ul class="requirements-list">
+       <li>Linux system with Intel Meteor Lake NPU</li>
+       <li>Python 3.6 or higher</li>
+       <li>Root privileges for NPU sysfs access (required for all installation methods)
+           <ul>
+               <li>Verify with: <code>ls -lh /sys/devices/pci0000:00/0000:00:0b.0/accel/accel0</code></li>
+           </ul>
+       </li>
+   </ul>
 
-* Linux system with Intel Meteor Lake NPU
-* Python 3.6 or higher
-* Root privileges for NPU sysfs access (required for all installation methods)
-  * Verify with: ls -lh /sys/devices/pci0000:00/0000:00:0b.0/accel/accel0
+   <h2>Usage</h2>
+   <div class="usage-section">
+       <h3>If using standalone script:</h3>
+       <code>sudo python3 STANDALONE.py</code>
 
-## Usage
+       <h3>If installed via pip:</h3>
+       <code>sudo intel-npu-top</code>
 
-### If using standalone script:
-sudo python3 STANDALONE.py
+       <p>The interface shows:</p>
+       <ul>
+           <li>Current NPU usage percentage with visual bar</li>
+           <li>Device information (vendor ID, device ID, etc.)</li>
+           <li>Historical usage graph</li>
+           <li>Runtime status and NUMA node details</li>
+       </ul>
+   </div>
 
-### If installed via pip:
-sudo intel-npu-top
+   <h2>Acknowledgements</h2>
+   <p>This project builds upon <a href="https://github.com/ZoLArk173/nputop">ZoLArk173/nputop</a>. Thanks for the inspiration and groundwork!</p>
 
-The interface shows:
-- Current NPU usage percentage with visual bar
-- Device information (vendor ID, device ID, etc.)
-- Historical usage graph
-- Runtime status and NUMA node details
+   <h2>License</h2>
+   <p>MIT License - See LICENSE file for details.</p>
 
-## Acknowledgements
-
-This project builds upon [ZoLArk173/nputop](https://github.com/ZoLArk173/nputop). Thanks for the inspiration and groundwork!
-
-## License
-
-MIT License - See LICENSE file for details.
-
----
-Just 52 lines of pure Python. No dependencies. No complications. It just works.
+   <div class="footer">
+       Just 52 lines of pure Python. No dependencies. No complications. It just works.
+   </div>
+</body>
+</html>
