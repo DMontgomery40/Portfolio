@@ -19,7 +19,7 @@ An interactive vulnerability assessment tool with risk level analysis for common
 ### [Intel NPU Monitoring Tool](./Projects/intel-npu-top.html)
 A monitoring tool for Intel Meteor Lake NPU usage in real-time via sysfs on Linux.
 
-### [Bird Stats - A Model Context Protocol (MCP) Server](./Projects/mcp-server-birdstats.html)
+### [BirdStats - A Model Context Protocol (MCP) Server](./Projects/mcp-server-birdstats.html)
 Cross-reference BirdNET-Pi data with eBird observations using natural language processing.
 
 ### [Canvas LMS MCP Server](./Projects/mcp-server-canvas.html)
