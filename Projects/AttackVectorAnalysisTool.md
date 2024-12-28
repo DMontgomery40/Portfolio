@@ -4,33 +4,140 @@ layout: page
 nav_order: 3
 parent: Projects
 ---
-
-# Attack Vector Analysis Tool
-
+**# Attack Vector Analysis Tool**
 An interactive security vulnerability assessment interface that maps relationships between common attack vectors, showing prerequisites, potential consequences, and risk levels for each attack type.
-
-## Overview
-
+**## Overview**
 This tool provides an interactive visualization of various attack vectors, helping security professionals and students understand:
-
 - How different attack types relate to each other
 - Which vulnerabilities can lead to other exploits
 - Risk levels and severity of different attacks
 - Common attack patterns and chains
-
-## Interactive Demo
-
+**## Interactive Demo**
 [Click Here If Demo Is Blank Below](https://claude.site/artifacts/abcf42a2-194c-4593-afbd-9ba562b56d79){: .btn .btn-primary }
 {: .text-center }
-
 <div class="code-example" markdown="1">
-<iframe
+<div id="iframe-container">
+  <iframe
+    id="demo-iframe"
     src="https://claude.site/artifacts/abcf42a2-194c-4593-afbd-9ba562b56d79"
     width="100%"
     height="600px"
     style="border: 1px solid #ccc; border-radius: 4px;"
-    frameborder="0">
-</iframe>
+    frameborder="0"
+    onload="this.style.display='block'"
+    onerror="handleIframeError()">
+  </iframe>
+  
+  <div id="dino-fallback" style="display:none; height: 600px; border: 1px solid #ccc; border-radius: 4px;" markdown="0">
+    <style>
+      .game {
+        width: 100%;
+        max-width: 600px;
+        height: 150px;
+        border: 1px solid var(--border-color);
+        margin: 2rem auto;
+        background: var(--background-color);
+      }
+      
+      #dino {
+        width: 50px;
+        height: 50px;
+        background-image: url(https://raw.githubusercontent.com/MysticReborn/t-rexGame/master/images/trex1.png);
+        background-size: 50px 50px;
+        position: relative;
+        top: 98px;
+      }
+      
+      #cactus {
+        width: 20px;
+        height: 40px;
+        background-image: url(https://raw.githubusercontent.com/MysticReborn/t-rexGame/master/images/obstacle1.png);
+        background-size: 20px 40px;
+        position: relative;
+        top: 58px;
+        left: calc(100% - 20px);
+        animation: block 1s infinite linear;
+      }
+      
+      @keyframes block {
+        0% {left: calc(100% - 20px);}
+        100% {left: -20px;}
+      }
+      
+      .jump {
+        animation: jump 0.3s linear;
+      }
+      
+      @keyframes jump {
+        0% {top: 98px;}
+        30% {top: 70px;}
+        50% {top: 50px;}
+        80% {top: 70px;}
+        100% {top: 98px;}
+      }
+
+      .retry-button {
+        display: block;
+        margin: 1rem auto;
+        padding: 0.5rem 1rem;
+        background: var(--btn-primary-color);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+
+    <p style="text-align: center; margin: 1rem;">Demo failed to load - Enjoy this game while you wait! Press any key to jump.</p>
+    
+    <div class="game">
+      <div id="dino"></div>
+      <div id="cactus"></div>
+    </div>
+
+    <button class="retry-button" onclick="retryLoad()">Retry Loading Demo</button>
+
+    <script>
+      function handleIframeError() {
+        document.getElementById('demo-iframe').style.display = 'none';
+        document.getElementById('dino-fallback').style.display = 'block';
+      }
+
+      function retryLoad() {
+        document.getElementById('demo-iframe').src = document.getElementById('demo-iframe').src;
+        document.getElementById('demo-iframe').style.display = 'block';
+        document.getElementById('dino-fallback').style.display = 'none';
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const dino = document.getElementById("dino");
+        const cactus = document.getElementById("cactus");
+
+        function jump() {
+          if (!dino.classList.contains("jump")) {
+            dino.classList.add("jump");
+            setTimeout(function () {
+              dino.classList.remove("jump");
+            }, 300);
+          }
+        }
+
+        let isAlive = setInterval(function () {
+          let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+          let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
+          
+          if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+            alert("Game Over!");
+          }
+        }, 10);
+
+        document.addEventListener("keydown", function (event) {
+          jump();
+        });
+      });
+    </script>
+  </div>
+</div>
 </div>
 
 ## Features
