@@ -9,25 +9,29 @@ permalink: /trex.html
   <title>Dino Game</title>
   <style>
     body {
-      margin: 0; padding: 0;
+      margin: 0; 
+      padding: 0;
       background: #222;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center;
       height: 100vh;
       color: #fff;
     }
     .game {
       width: 600px;
-      height: 200px;
+      height: 300px;             /* Increase container height */
       border: 1px solid #ccc;
       position: relative;
       background: #222;
+      overflow: hidden;
     }
     #dino {
       width: 50px;
       height: 50px;
       position: absolute;
-      top: 145px;     /* Dino sits near bottom of 200px container */
+      top: 240px;                /* Dino starts near bottom */
       left: 50px;
       background-image: url("https://raw.githubusercontent.com/MysticReborn/t-rexGame/master/images/trex1.png");
       background-size: 50px 50px;
@@ -36,7 +40,7 @@ permalink: /trex.html
       width: 20px;
       height: 40px;
       position: absolute;
-      top: 160px;     /* So cactus is on same “floor” or slightly lower */
+      top: 260px;                /* Cactus sits just a bit lower than Dino */
       left: calc(100% - 20px);
       background-image: url("https://raw.githubusercontent.com/MysticReborn/t-rexGame/master/images/obstacle1.png");
       background-size: 20px 40px;
@@ -46,13 +50,20 @@ permalink: /trex.html
       0%   { left: calc(100% - 20px); }
       100% { left: -20px; }
     }
-    .jump { animation: jump 0.3s linear; }
+    .jump {
+      animation: jump 0.4s linear;
+    }
+    /* Tweak jump to give a bit more height */
     @keyframes jump {
-      0%   { top: 145px; }
-      30%  { top: 100px; }
-      50%  { top: 80px; }
-      80%  { top: 100px; }
-      100% { top: 145px; }
+      0%   { top: 240px; }
+      30%  { top: 190px; }
+      50%  { top: 150px; }
+      70%  { top: 190px; }
+      100% { top: 240px; }
+    }
+    p {
+      margin-top: 10px;
+      font-size: 18px;
     }
   </style>
 </head>
@@ -71,7 +82,7 @@ permalink: /trex.html
       function jump() {
         if (!dino.classList.contains("jump")) {
           dino.classList.add("jump");
-          setTimeout(() => dino.classList.remove("jump"), 300);
+          setTimeout(() => dino.classList.remove("jump"), 400);
         }
       }
 
@@ -79,8 +90,12 @@ permalink: /trex.html
         let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
         let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
 
-        // If cactus is close to dino & dino is down low => collision
-        if (cactusLeft < 120 && cactusLeft > 50 && dinoTop >= 130) {
+        /*
+          If the cactus is between left=50 and left=120 
+          (roughly near the Dino), and the Dino is "low" 
+          (>= 200), call it a collision.
+        */
+        if (cactusLeft < 120 && cactusLeft > 50 && dinoTop >= 200) {
           alert("Game Over!");
         }
       }, 10);
