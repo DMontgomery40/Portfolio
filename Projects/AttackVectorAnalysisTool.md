@@ -18,61 +18,13 @@ This tool provides an interactive visualization of various attack vectors, helpi
 
 ## Interactive Demo
 
-<div markdown="0">
-<div class="game" style="width: 100%; max-width: 600px; height: 150px; border: 1px solid var(--border-color); margin: 2rem auto; background: var(--background-color);">
-  <div id="dino" style="width: 50px; height: 50px; background-image: url('https://raw.githubusercontent.com/MysticReborn/t-rexGame/master/images/trex1.png'); background-size: 50px 50px; position: relative; top: 98px;"></div>
-  <div id="cactus" style="width: 20px; height: 40px; background-image: url('https://raw.githubusercontent.com/MysticReborn/t-rexGame/master/images/obstacle1.png'); background-size: 20px 40px; position: relative; top: 58px; left: calc(100% - 20px); animation: block 1s infinite linear;"></div>
-  <p style="text-align: center; margin-top: 10px;">Press any key to jump!</p>
-</div>
+<iframe
+  src="../assets/trex.html"
+  width="600"
+  height="200"
+  style="border: 1px solid #ccc;"
+></iframe>
 
-<style>
-@keyframes block {
-  0% {left: calc(100% - 20px);}
-  100% {left: -20px;}
-}
-
-.jump {
-  animation: jump 0.3s linear;
-}
-
-@keyframes jump {
-  0% {top: 98px;}
-  30% {top: 70px;}
-  50% {top: 50px;}
-  80% {top: 70px;}
-  100% {top: 98px;}
-}
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const dino = document.getElementById("dino");
-  const cactus = document.getElementById("cactus");
-
-  function jump() {
-    if (!dino.classList.contains("jump")) {
-      dino.classList.add("jump");
-      setTimeout(function () {
-        dino.classList.remove("jump");
-      }, 300);
-    }
-  }
-
-  let isAlive = setInterval(function () {
-    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
-    let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
-    
-    if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
-      alert("Game Over!");
-    }
-  }, 10);
-
-  document.addEventListener("keydown", function (event) {
-    jump();
-  });
-});
-</script>
-</div>
 
 ## Features
 
