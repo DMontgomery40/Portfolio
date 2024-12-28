@@ -1,5 +1,5 @@
 ---
-title: Project Name
+title: mcp-server-canvas
 layout: page
 parent: Projects
 nav_order: 6
