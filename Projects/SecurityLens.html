@@ -1,34 +1,129 @@
-# SecurityLens 
-![An open-source security analysis platform for education and vulnerability discovery.](https://securitylens.netlify.app/)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SecurityLens</title>
+   <style>
+       body {
+           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+           line-height: 1.6;
+           max-width: 1200px;
+           margin: 0 auto;
+           padding: 20px;
+           color: #333;
+       }
+       h1, h2, h3 {
+           color: #111;
+       }
+       h1 {
+           font-size: 2.5em;
+           margin-bottom: 0.5em;
+       }
+       h2 {
+           font-size: 1.8em;
+           margin-top: 1.5em;
+       }
+       h3 {
+           font-size: 1.3em;
+           margin-top: 1.2em;
+       }
+       .link-image {
+           max-width: 100%;
+           height: auto;
+           margin: 1em 0;
+       }
+       .description {
+           font-size: 1.2em;
+           color: #555;
+           margin-bottom: 2em;
+       }
+       iframe {
+           margin: 2em 0;
+           width: 100%;
+           border: 1px solid #ccc;
+           border-radius: 4px;
+       }
+       ul {
+           padding-left: 1.5em;
+       }
+       li {
+           margin-bottom: 0.5em;
+       }
+       .checkbox-list {
+           list-style: none;
+           padding-left: 0;
+       }
+       .checkbox-list li {
+           display: flex;
+           align-items: center;
+           margin-bottom: 0.5em;
+       }
+       .checkbox-list li::before {
+           content: '☐';
+           margin-right: 0.5em;
+       }
+       .checkbox-list li.checked::before {
+           content: '☑';
+       }
+       .screenshot {
+           max-width: 100%;
+           height: auto;
+           margin: 2em 0;
+           border: 1px solid #ddd;
+           border-radius: 4px;
+           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+       }
+   </style>
+</head>
+<body>
+   <h1>SecurityLens</h1>
+   
+   <a href="https://securitylens.netlify.app/" class="description">
+       An open-source security analysis platform for education and vulnerability discovery.
+   </a>
 
-## Live Tool
-<iframe 
-  src="https://securitylens.netlify.app" 
-  width="100%" 
-  height="800px"
-  style="border: 1px solid #ccc; border-radius: 4px;"
-  frameborder="0"
-  allow="clipboard-write"
->
-</iframe>
+   <h2>Live Tool</h2>
+   <iframe
+       src="https://securitylens.netlify.app"
+       width="100%"
+       height="800px"
+       style="border: 1px solid #ccc; border-radius: 4px;"
+       frameborder="0"
+       allow="clipboard-write">
+   </iframe>
 
-## Current Features
-- Static code analysis for common security vulnerabilities
-- Pattern-based vulnerability detection
-- Detailed explanations and recommendations
-## Roadmap
-### Phase 1 (Current)
-- [x] Basic vulnerability scanning
-- [x] CVE database integration
-- [ ] Dependency vulnerability checking
-### Phase 2 (Future)
-- [ ] Binary analysis capabilities
-- [ ] Integration with reverse engineering tools
-- [ ] Interactive learning modules
-### Phase 3 (Long-term)
-- [ ] Collaborative analysis features
-- [ ] Integration with additional security tools
-- [ ] Advanced binary analysis
-## Current Results Page Example
+   <h2>Current Features</h2>
+   <ul>
+       <li>Static code analysis for common security vulnerabilities</li>
+       <li>Pattern-based vulnerability detection</li>
+       <li>Detailed explanations and recommendations</li>
+   </ul>
 
-![SecurityLens Screenshot](../assets/security-lens-screenshot.png)
+   <h2>Roadmap</h2>
+   
+   <h3>Phase 1 (Current)</h3>
+   <ul class="checkbox-list">
+       <li class="checked">Basic vulnerability scanning</li>
+       <li class="checked">CVE database integration</li>
+       <li>Dependency vulnerability checking</li>
+   </ul>
+
+   <h3>Phase 2 (Future)</h3>
+   <ul class="checkbox-list">
+       <li>Binary analysis capabilities</li>
+       <li>Integration with reverse engineering tools</li>
+       <li>Interactive learning modules</li>
+   </ul>
+
+   <h3>Phase 3 (Long-term)</h3>
+   <ul class="checkbox-list">
+       <li>Collaborative analysis features</li>
+       <li>Integration with additional security tools</li>
+       <li>Advanced binary analysis</li>
+   </ul>
+
+   <h2>Current Results Page Example</h2>
+   <img src="../assets/security-lens-screenshot.png" alt="SecurityLens Screenshot" class="screenshot">
+</body>
+</html>
