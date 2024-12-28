@@ -1,8 +1,8 @@
 ---
 title: SecurityLens
 layout: page
-nav_order: 2
 parent: Projects
+nav_order: 4
 ---
 
 # SecurityLens
