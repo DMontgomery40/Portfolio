@@ -1,5 +1,5 @@
 ---
-title: Project Name
+title: BirdStats GPT
 layout: page
 parent: Projects
 nav_order: 7
