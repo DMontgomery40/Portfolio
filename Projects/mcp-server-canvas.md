@@ -1,5 +1,3 @@
-"""
-
 # Canvas MCP Server
 A Model Context Protocol (MCP) server for interacting with the Canvas API. This server allows you to manage courses, assignments, enrollments, and grades within Canvas.
 ## Prerequisites
@@ -8,60 +6,63 @@ A Model Context Protocol (MCP) server for interacting with the Canvas API. This 
 - Canvas Domain: Typically canvas.instructure.com
 ## Setup
 1. Clone the Repository
-   bash
+ ```
    git clone https://github.com/yourusername/canvas-mcp-server.git
    cd canvas-mcp-server
+```
 2. **Install Dependencies**
-   bash
+  ```
    npm install
-   
+   ```
 3. **Configure Environment Variables**
 Copy the example environment file:
-   bash
+  ```
    cp .env.example .env
-   
+   ```
    Edit .env and replace the placeholder values with your actual Canvas API token and domain.
 Build the Project
-   bash
+ ```
    npm run build
-   
+  ``` 
 4. **Run the Server**
-   bash
+```
    npm start
-   
+   ```
    The server will start and listen for MCP requests via stdio.
 ### Connecting to Claude Desktop
 1. **Update Claude Configuration**
    Add the MCP server configuration to your claude_desktop_config.json:
-
+```
   "canvas-mcp-server": {
       "command": "npx",
       "args": ["-y", "canvas-mcp-server"]
     },
-``
+```
 Restart Claude Desktop
    Quit Claude Desktop completely.
    Start Claude Desktop again.
    Navigate to the 🔌 menu to find and connect your Canvas MCP server.
 ### Available Tools (more student focused stuff coming soon)
-- canvas_create_course: Create a new course in Canvas.
-- canvas_update_course: Update an existing course in Canvas.
-- canvas_create_assignment: Create a new assignment in a Canvas course.
-- canvas_update_assignment: Update an existing assignment.
-- canvas_submit_grade: Submit a grade for a student's assignment.
-- canvas_enroll_user: Enroll a user in a course.
+- `canvas_create_course`: Create a new course in Canvas.
+- `canvas_update_course`: Update an existing course in Canvas.
+- `canvas_create_assignment`: Create a new assignment in a Canvas course.
+- `canvas_update_assignment`: Update an existing assignment.
+- `canvas_submit_grade`: Submit a grade for a student's assignment.
+- `canvas_enroll_user`: Enroll a user in a course.
 ### Error Handling
-Tools return error messages with isError: true to indicate issues.
+Tools return error messages with `isError: true` to indicate issues.
 Ensure all required environment variables are set to avoid runtime errors.
 ### Troubleshooting
 - **Build Errors:**
-Check TypeScript version: npx tsc --version
-   Clean and rebuild: rm -rf build/ && npm run build
+Check TypeScript version: 
+```npx tsc --version```
+   Clean and rebuild: 
+```rm -rf build/ && npm run build```
 - **Runtime Errors:**
    Check logs for detailed error messages.
    Ensure environment variables are correctly set.
 - **Type Errors:**
-   Validate types using TypeScript's type checking: npx tsc --noEmit
+   Validate types using TypeScript's type checking: `npx tsc --noEmit`
 ### Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 ### License
