@@ -5,25 +5,28 @@ nav_order: 3
 parent: Projects
 ---
 **# Attack Vector Analysis Tool**
+
 An interactive security vulnerability assessment interface that maps relationships between common attack vectors, showing prerequisites, potential consequences, and risk levels for each attack type.
+
 **## Overview**
+
 This tool provides an interactive visualization of various attack vectors, helping security professionals and students understand:
 - How different attack types relate to each other
 - Which vulnerabilities can lead to other exploits
 - Risk levels and severity of different attacks
 - Common attack patterns and chains
-**## Interactive Demo**
+
+## Interactive Demo
+
+[Click Here If Demo Is Blank Below](https://claude.site/artifacts/abcf42a2-194c-4593-afbd-9ba562b56d79){: .btn .btn-primary }
+{: .text-center }
 
 <div markdown="0">
-  <iframe id="demo-iframe" 
-    src="https://claude.site/artifacts/abcf42a2-194c-4593-afbd-9ba562b56d79" 
-    width="100%" 
-    height="600px" 
-    style="border: 1px solid #ccc; border-radius: 4px;" 
-    frameborder="0" 
-    onload="this.style.display='block'" 
-    onerror="handleIframeError()">
-  </iframe>
+  <div class="game">
+    <div id="dino"></div>
+    <div id="cactus"></div>
+    <p style="text-align: center; margin-top: 200px;">Press any key to jump!</p>
+  </div>
 
   <style>
     .game {
@@ -73,19 +76,7 @@ This tool provides an interactive visualization of various attack vectors, helpi
     }
   </style>
 
-  <div id="fallback" style="display:none">
-    <div class="game">
-      <div id="dino"></div>
-      <div id="cactus"></div>
-    </div>
-  </div>
-
   <script>
-    function handleIframeError() {
-      document.getElementById('demo-iframe').style.display = 'none';
-      document.getElementById('fallback').style.display = 'block';
-    }
-
     document.addEventListener('DOMContentLoaded', function() {
       const dino = document.getElementById("dino");
       const cactus = document.getElementById("cactus");
@@ -115,8 +106,7 @@ This tool provides an interactive visualization of various attack vectors, helpi
   </script>
 </div>
 
-[Click Here If Demo Is Blank Below](https://claude.site/artifacts/abcf42a2-194c-4593-afbd-9ba562b56d79){: .btn .btn-primary }
-{: .text-center }
+
 ## Features
 
 ### Risk Assessment
