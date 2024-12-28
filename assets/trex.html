@@ -1,0 +1,104 @@
+---
+layout: none
+permalink: /trex.html
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Dino Game</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #222; /* or var(--background-color) if you define it */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .game {
+      width: 100%;
+      max-width: 600px;
+      height: 150px;
+      border: 1px solid #ccc; /* or var(--border-color) */
+      background: #222;        /* or var(--background-color) */
+      position: relative;
+    }
+    #dino {
+      width: 50px;
+      height: 50px;
+      background-image: url("https://raw.githubusercontent.com/MysticReborn/t-rexGame/master/images/trex1.png");
+      background-size: 50px 50px;
+      position: absolute;
+      top: 98px;
+      left: 50px; /* So it’s not flush on the left edge */
+    }
+    #cactus {
+      width: 20px;
+      height: 40px;
+      background-image: url("https://raw.githubusercontent.com/MysticReborn/t-rexGame/master/images/obstacle1.png");
+      background-size: 20px 40px;
+      position: absolute;
+      top: 58px;
+      left: calc(100% - 20px);
+      animation: block 1s infinite linear;
+    }
+    @keyframes block {
+      0% { left: calc(100% - 20px); }
+      100% { left: -20px; }
+    }
+    .jump {
+      animation: jump 0.3s linear;
+    }
+    @keyframes jump {
+      0%   { top: 98px; }
+      30%  { top: 70px; }
+      50%  { top: 50px; }
+      80%  { top: 70px; }
+      100% { top: 98px; }
+    }
+    p {
+      text-align: center;
+      margin-top: 10px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="game">
+    <div id="dino"></div>
+    <div id="cactus"></div>
+  </div>
+  <p>Press any key to jump!</p>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const dino = document.getElementById("dino");
+      const cactus = document.getElementById("cactus");
+
+      function jump() {
+        if (!dino.classList.contains("jump")) {
+          dino.classList.add("jump");
+          setTimeout(function () {
+            dino.classList.remove("jump");
+          }, 300);
+        }
+      }
+
+      let isAlive = setInterval(function () {
+        let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+        let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
+
+        // If the cactus is close to the dino AND the dino is too low => game over
+        if (cactusLeft < 90 && cactusLeft > 50 && dinoTop >= 70) {
+          alert("Game Over!");
+        }
+      }, 10);
+
+      document.addEventListener("keydown", jump);
+    });
+  </script>
+</body>
+</html>
