@@ -6,21 +6,23 @@ nav_order: 1
 
 # Project Portfolio
 
-> **Note**: This portfolio represents a random sampling of various development projects. While these projects showcase different technical capabilities, they're primarily focused on backend development, security tools, and system utilities rather than frontend development. And in full disclosure, building off a Jekyll Template highlights the peak of my frontend skills.  
+> **Note**: This portfolio represents a random sampling of various development projects. While these projects showcase different technical capabilities, they're primarily focused on backend development, security tools, and system utilities rather than frontend development.  
+>
+> And in full disclosure, building off a Jekyll Template highlights the peak of my frontend skills.
 
 ## Featured Projects
 
 ### [Intel NPU Monitoring Tool](./Projects/intel-npu-top.html)
-A very simple tool for Intel Meteor Lake NPU usage in real-time via sysfs on Linux. 
+A very simple tool for the dozen(s?) of people running inference on a 14th gen Intel: We finally have a tool to monitor Intel Meteor Lake NPU usage in real-time via sysfs on Linux. 
 
-*Just 52 lines of pure Python. No dependencies. No complications. It just works.*
+>*Just 52 lines of pure Python. No dependencies. No complications. It just works.*
 
 ![NPU Usage Monitor Screenshot](/assets/intel-npu-screenshot.png)
 
 ### [SecurityLens w/ Live Demo](./Projects/SecurityLens.html)
 An open-source security analysis platform for education and vulnerability discovery.
 
-*No downloads, no installs, just drag/drop or copy/paste.*
+>*No downloads, no installs, just drag/drop or copy/paste.*
 
 ![SecurityLens Screenshot](/assets/security-lens-screenshot.png)
 
