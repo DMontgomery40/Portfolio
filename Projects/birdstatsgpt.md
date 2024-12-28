@@ -1,3 +1,10 @@
+---
+title: Project Name
+layout: page
+parent: Projects
+nav_order: 7
+---
+
 # BirdStatsGPT
 
 **https://chat.openai.com/g/g-G8R6D6ufP-birdstats-gpt**
