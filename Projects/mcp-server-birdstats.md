@@ -1,11 +1,13 @@
 ---
-title: Bird Stats MCP Server
+title: BirdStats - A Model Context Protocol (MCP) Server
+
 layout: page
 parent: Projects
 nav_order: 5
 ---
 
-# Bird Stats MCP Server
+# BirdStats - A Model Context Protocol (MCP) Server
+
 
 Cross-reference your BirdNET-Pi data with eBird observations using natural language.
 
