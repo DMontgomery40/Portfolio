@@ -1,3 +1,10 @@
+---
+title: Project Name
+layout: page
+parent: Projects
+nav_order: 6
+---
+
 # Canvas MCP Server
 A Model Context Protocol (MCP) server for interacting with the Canvas API. This server allows you to manage courses, assignments, enrollments, and grades within Canvas.
 ## Prerequisites
