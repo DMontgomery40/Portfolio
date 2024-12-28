@@ -17,7 +17,7 @@ This tool provides an interactive visualization of various attack vectors, helpi
 - Common attack patterns and chains
 
 ## Interactive Demo
-```
+
 <div markdown="0">
 <div class="game" style="width: 100%; max-width: 600px; height: 150px; border: 1px solid var(--border-color); margin: 2rem auto; background: var(--background-color);">
   <div id="dino" style="width: 50px; height: 50px; background-image: url('https://raw.githubusercontent.com/MysticReborn/t-rexGame/master/images/trex1.png'); background-size: 50px 50px; position: relative; top: 98px;"></div>
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 </div>
-```
+
 ## Features
 
 ### Risk Assessment
