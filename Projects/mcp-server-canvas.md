@@ -1,11 +1,11 @@
 ---
-title: mcp-server-canvas
+title: Canvas LMS MCP Server
 layout: page
 parent: Projects
 nav_order: 6
 ---
 
-# Canvas MCP Server
+# Canvas LMS MCP Server
 A Model Context Protocol (MCP) server for interacting with the Canvas API. This server allows you to manage courses, assignments, enrollments, and grades within Canvas.
 ## Prerequisites
 - Node.js: Version 18 or higher
