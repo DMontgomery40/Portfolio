@@ -1,66 +1,129 @@
-# Attack Vector Analysis Tool
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack Vector Analysis Tool</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #111;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 1.5em;
+        }
+        h3 {
+            font-size: 1.3em;
+            margin-top: 1.2em;
+        }
+        ul {
+            padding-left: 1.5em;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        iframe {
+            margin: 2em 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attack Vector Analysis Tool</h1>
+    
+    <p>An interactive security vulnerability assessment interface that maps relationships between common attack vectors, showing prerequisites, potential consequences, and risk levels for each attack type.</p>
+    
+    <h2>Overview</h2>
+    <p>This tool provides an interactive visualization of various attack vectors, helping security professionals and students understand:</p>
+    <ul>
+        <li>How different attack types relate to each other</li>
+        <li>Which vulnerabilities can lead to other exploits</li>
+        <li>Risk levels and severity of different attacks</li>
+        <li>Common attack patterns and chains</li>
+    </ul>
 
-An interactive security vulnerability assessment interface that maps relationships between common attack vectors, showing prerequisites, potential consequences, and risk levels for each attack type.
+    <h2>Interactive Demo</h2>
+    <iframe
+        src="https://claude.site/artifacts/abcf42a2-194c-4593-afbd-9ba562b56d79"
+        width="100%"
+        height="2400px"
+        style="border: 1px solid #ccc; border-radius: 4px;"
+        frameborder="0">
+    </iframe>
 
-## Overview
-This tool provides an interactive visualization of various attack vectors, helping security professionals and students understand:
-- How different attack types relate to each other
-- Which vulnerabilities can lead to other exploits
-- Risk levels and severity of different attacks
-- Common attack patterns and chains
+    <h2>Features</h2>
+    
+    <h3>Risk Assessment</h3>
+    <ul>
+        <li>Visual risk level indicators (Medium to Critical)</li>
+        <li>Numerical risk scores (5/10 - 10/10)</li>
+        <li>Terminal indicators for command-line based attacks</li>
+        <li>Filterable view by risk level</li>
+    </ul>
 
-## Interactive Demo
-<iframe 
-  src="https://claude.site/artifacts/abcf42a2-194c-4593-afbd-9ba562b56d79" 
-  width="100%" 
-  height="2400px"
-  style="border: 1px solid #ccc; border-radius: 4px;"
-  frameborder="0">
-</iframe>
+    <h3>Attack Vector Mapping</h3>
+    <ul>
+        <li>Target information (e.g., Login Form, Database, User Sessions)</li>
+        <li>Common aliases and related techniques</li>
+        <li>Risk level and severity score</li>
+        <li>Prerequisites ("Caused By")</li>
+        <li>Potential consequences ("Can Lead To")</li>
+    </ul>
 
-## Features
+    <h3>Interactive Navigation</h3>
+    <ul>
+        <li>Click-through relationship exploration</li>
+        <li>Follow attack chains from initial breach to potential escalations</li>
+        <li>Filter by risk level or attack type</li>
+        <li>Detailed view for each attack vector</li>
+    </ul>
 
-### Risk Assessment
-- Visual risk level indicators (Medium to Critical)
-- Numerical risk scores (5/10 - 10/10)
-- Terminal indicators for command-line based attacks
-- Filterable view by risk level
+    <h3>Attack Types Covered</h3>
+    <ul>
+        <li>Authentication attacks (Brute Force, Password Spraying)</li>
+        <li>Data extraction (SQL Injection)</li>
+        <li>Social attacks (Phishing, Social Engineering)</li>
+        <li>Session attacks (Hijacking, Cookie Theft)</li>
+        <li>System attacks (Zero-Day Exploits)</li>
+        <li>Network attacks (Man-in-the-Middle, DNS Cache Poisoning)</li>
+        <li>Client-side attacks (XSS, Keylogging)</li>
+        <li>Physical security (Physical Security Breach)</li>
+        <li>Cryptographic attacks (Rainbow Table Attack)</li>
+    </ul>
 
-### Attack Vector Mapping
-Each attack vector entry includes:
-- Target information (e.g., Login Form, Database, User Sessions)
-- Common aliases and related techniques
-- Risk level and severity score
-- Prerequisites ("Caused By")
-- Potential consequences ("Can Lead To")
+    <h2>Technical Implementation</h2>
+    <p>Built using React with:</p>
+    <ul>
+        <li>Interactive relationship mapping</li>
+        <li>Risk level visualization</li>
+        <li>Dynamic content loading</li>
+        <li>Responsive design for various screen sizes</li>
+    </ul>
 
-### Interactive Navigation
-- Click-through relationship exploration
-- Follow attack chains from initial breach to potential escalations
-- Filter by risk level or attack type
-- Detailed view for each attack vector
-
-### Attack Types Covered
-- Authentication attacks (Brute Force, Password Spraying)
-- Data extraction (SQL Injection)
-- Social attacks (Phishing, Social Engineering)
-- Session attacks (Hijacking, Cookie Theft)
-- System attacks (Zero-Day Exploits)
-- Network attacks (Man-in-the-Middle, DNS Cache Poisoning)
-- Client-side attacks (XSS, Keylogging)
-- Physical security (Physical Security Breach)
-- Cryptographic attacks (Rainbow Table Attack)
-
-## Technical Implementation
-Built using React with:
-- Interactive relationship mapping
-- Risk level visualization
-- Dynamic content loading
-- Responsive design for various screen sizes
-
-## Educational Purpose
-This tool is designed for:
-- Security education and training
-- Threat modeling and analysis
-- Understanding attack relationships
-- Security assessment visualization
+    <h2>Educational Purpose</h2>
+    <p>This tool is designed for:</p>
+    <ul>
+        <li>Security education and training</li>
+        <li>Threat modeling and analysis</li>
+        <li>Understanding attack relationships</li>
+        <li>Security assessment visualization</li>
+    </ul>
+</body>
+</html>
