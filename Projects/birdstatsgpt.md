@@ -9,7 +9,7 @@ nav_order: 7
 
 **[Play With It Here](https://chat.openai.com/g/g-G8R6D6ufP-birdstats-gpt)**
 
-![BirdStatsGPT Screenshot](/..assets/birdstatsgpt-screenshot.png)
+![BirdStatsGPT Screenshot](../assets/birdstatsgpt-screenshot.png)
 
 ## Introduction
 
