@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Early Hacker Days
+title: Early Days
 parent: Storytime
 nav_order: 1
 ---
 
-# early_hacker_days.md
+# Early Days
 
 I've always had that hacker mindset, starting with a subscription to 2600 - my monthly window into the fascinating world of phone phreaking and early computer security. Like many before me, I tried my hand at the classic quarter-on-a-fishing-line payphone hack. There was something captivating about understanding how systems worked and finding creative ways to interact with them.
 
