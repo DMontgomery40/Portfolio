@@ -13,4 +13,4 @@ At the time, OpenAI didn't have their graphical interface for fine-tuning. I don
 
 My time working on the language model fine-tuning gave me such an incredibly strong appreciation for what we have now in terms of technology and ease of use.
 
-[Next: Self Driving Side Quest](self_driving_side_quest.html)
+[Next: Self Driving Side Quest](/Portfolio/Storytime/self_driving_side_quest.html)

@@ -5,7 +5,7 @@ parent: Storytime
 nav_order: 4
 ---
 
-# unexpected_ai_classroom.md
+# The Unexpected AI Classroom
 
 BirdNet Pi turned out to be my gateway drug into practical AI applications. Based on Cornell Lab of Ornithology's BirdNet Analyzer, it's essentially the always-on version of their Merlin app. But what fascinated me most was how it worked under the hood.
 
@@ -13,4 +13,4 @@ The system doesn't actually analyze bird sounds directly - that would be too com
 
 This project taught me more about AI architectures than any online course could have. It showed me how clever design choices and optimization could make AI accessible even on modest hardware. Who knew that identifying a chickadee would teach me so much about neural networks?
 
-[Next Chapter: Surveillance State for Songbirds](surveillance_state_for_songbirds.html)
+[Next Chapter: Surveillance State for Songbirds](/Portfolio/Storytime/surveillance_state_for_songbirds.html)

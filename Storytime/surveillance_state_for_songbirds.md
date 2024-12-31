@@ -5,7 +5,7 @@ parent: Storytime
 nav_order: 5
 ---
 
-# surveillance_state_for_songbirds.md
+# Surveillance State for Songbirds
 
 Once I started combining cameras with home automation, things escalated quickly. I needed a bird feeder cam, a bird bath cam, and a proper NVR setup. I set up a home server running Scrypted as the NVR  and dove deep into training YOLO models on OpenVINO, specifically leveraging the optimization capabilities of OpenVINO's architecture with Intel's low-power iGPU.
 
@@ -21,4 +21,4 @@ The technical challenges were numerous:
 
 I ended up implementing a multi-stage classification pipeline that considered temporal and geographical context alongside visual features, significantly improving accuracy over standard object detection approaches.
 
-[Next Chapter: The Birth of Bird GPT](birth_of_bird_gpt.html)
+[Next Chapter: The Birth of BirdStatsGPT](/Portfolio/Storytime/birth_of_bird_gpt.html)

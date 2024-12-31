@@ -5,7 +5,7 @@ parent: Storytime
 nav_order: 3
 ---
 
-# from_covid_to_corvids.md
+# From COVID to Corvids
 
 During the pandemic, with a newborn keeping me homebound, I discovered an unexpected passion: birds. Being stuck at home meant spending a lot of time looking out windows, and I started noticing the fascinating world of songbirds right in my backyard. This wasn't just casual bird watching - it became a full-blown technical obsession that would merge perfectly with my growing interest in AI.
 
