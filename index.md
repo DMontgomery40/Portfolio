@@ -4,15 +4,15 @@ layout: home
 nav_order: 1
 ---
 
+# Storytime 
+
+### [It started with a missing lightswitch](/MyStory.htnl).
+
 # Project Portfolio
 
 > **Note**: This portfolio represents a random sampling of various development projects. While these projects showcase different technical capabilities, they're primarily focused on backend development, security tools, and system utilities rather than frontend development.  
 >
 > And in full disclosure, building off a Jekyll Template highlights the peak of my frontend skills.
-
-## Storytime 
-
-### [It started with a missing lightswitch](/MyStory.htnl).
 
 ## Featured Projects
 
