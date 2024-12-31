@@ -10,6 +10,10 @@ nav_order: 1
 >
 > And in full disclosure, building off a Jekyll Template highlights the peak of my frontend skills.
 
+## Storytime 
+
+### [It started with a missing lightswitch](/MyStory.htnl).
+
 ## Featured Projects
 
 ### [Intel NPU Monitoring Tool](./Projects/intel-npu-top.html)
@@ -19,7 +23,7 @@ A very simple tool for the dozen(s?) of people running inference on a 14th gen I
 
 ![NPU Usage Monitor Screenshot](/assets/intel-npu-screenshot.png)
 
-### [SecurityLens w/ Live Demo](./Projects/SecurityLens.html)
+### [SecurityLens](./Projects/SecurityLens.html)
 An open-source security analysis platform for education and vulnerability discovery.
 
 >*No downloads, no installs, just drag/drop or copy/paste.*
