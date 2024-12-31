@@ -3,6 +3,7 @@ layout: default
 title: Storytime
 nav_order: 2
 has_children: true
+has_toc: true
 ---
 
 # My Journey into AI 
