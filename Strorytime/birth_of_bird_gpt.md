@@ -1,45 +1,14 @@
 ---
 layout: default
-title: The Birth of Bird GPT
+title: The Birth of BirdStatsGPT
 parent: Storytime
 nav_order: 6
 ---
 
-# The Birth of BirdStatsGPT (and later the Birdstats MCP Server)
+# The Birth of BirdStats (GPT and MCP)
 
-After building out the detection system, I faced a new challenge: making sense of the massive amount of data being collected. The BirdWeather.app database and eBird's API both offered valuable data, but their interfaces were cumbersome for complex queries. The former has an API with too few endpoints, the latter has quite the opposite problem (but they're equally cumbersome problems). 
+The obvious next natural step is to build a system that is combining both the object seen and the sound heard, and connecting them in real time. But we haven't crossed that bridge yet, and it's actually incredibly hard to directionalize microphones with that cardioid pattern and level of sensitivity. 
 
-This led me to build a custom GPT-powered interface that could handle natural language queries across both datasets.
+Anyway, last thing on birds, I did make a model context protocol server and a custom GPT that I think is really cool. Since the eBird database and the database where you can upload your BirdNetPi data, which is something called BirdWeather.app, they're both kind of convoluted and difficult to go through in their own ways, so wouldn't it be nice to just query in natural language to compare the two for use cases like, "Hey, so my BirdNetPi said it heard a cedar waxwing this morning. They're not very common around here. Have other people near me reported seeing them on eBird recently?" Stuff like that. Or "Make me a seasonal migration analysis of my top ten bird species over the last two years." Or even comparing your station with other stations in your area. Possibilities for analysis and visualization are pretty endless when you have upwards of a million data points a year, which is what I typically have.
 
-The technical implementation involved:
-- OpenAI's Assistants endpoint, as well as the 'CustomGPT Interface', with both eBird and Birdweather APIs structured in OpenAPI yaml
-- Later on, Creating a Model Context Protocol server to handle the integration 
-- Developing a custom prompt engineering system that could translate natural language queries into structured API calls
-- Creating a geospatial index to efficiently compare local observations with regional patterns
-
-The system could handle simple queries like:
-```
-# Example query handling
-complex_query = "Compare my BirdNetPi Cedar Waxwing detections 
-                with eBird sightings within 5 miles over the last week"
-
-# Translates to structured data operations:
-async def process_bird_query(query):
-    local_detections = await get_birdnet_detections(
-        species="Cedar Waxwing",
-        timeframe="7d",
-        confidence_threshold=0.85
-    )
-    
-    ebird_sightings = await get_ebird_observations(
-        species_code="cedwax",
-        lat=station_lat,
-        lng=station_lng,
-        radius=5,
-        days=7
-    )
-    
-    return analyze_detection_patterns(local_detections, ebird_sightings)
-```
-
-As well as far more complex research involving historical data across multiple timeframes to track things like changes in migration patterns. 
+[Next: Accidental Enterprise AI](accidental_enterprise_ai.html)
