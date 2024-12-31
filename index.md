@@ -6,7 +6,7 @@ nav_order: 1
 
 # Storytime 
 
-### [It started with a missing lightswitch](.Storytime/index.html).
+### [It started with a missing lightswitch](./Storytime/index.html).
 
 # Project Portfolio
 
