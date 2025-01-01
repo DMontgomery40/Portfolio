@@ -26,29 +26,37 @@ I'm sure there are many challenges and limitations to this approach that I haven
 ### Proposal Memo: Leveraging Image-Based Pattern Recognition for Long-Term Behavioral Analysis
 
 **Overview**
+
 In fields like bird call identification, we’ve seen impressive results by converting complex audio waveforms into 2D spectrograms and then applying CNN-based image classification. This technique trades direct audio analysis for pattern recognition in what amounts to “pictures” of the sound, enabling fast and accurate identification on relatively modest hardware.
 
 **Applying This to Security**
+
 A parallel strategy could be used for detecting long-term, sophisticated cyberattacks. Instead of crunching raw logs over years—logins, network traffic, API calls, etc.—we could transform them into standardized 2D images, effectively creating “behavioral spectrograms.” With the right encoding, patterns that unfold over months or years might visually pop out, even if they’re missed by traditional detection methods looking only at shorter time spans.
 
 **Why High-Resolution QR Codes?**
+
 A core challenge is the balance between capturing years of data and retaining enough granularity to detect subtle anomalies. High-resolution QR codes offer a potential solution. QR codes are designed to encode large amounts of information into a relatively compact 2D image. This helps address the problem of losing important details when compressing massive datasets into a smaller visual footprint. By embedding key contextual or metadata elements into these codes—alongside time-sequenced data points—your CNN-based models can preserve more relevant detail while still benefiting from a standard 2D image format.
 
 1. **Compression Without Extreme Fidelity Loss**  
+
    - QR codes can hold substantial data. Designing a custom high-res QR code “template” could store multiple dimensions (e.g., time ranges, event types, risk scores) without collapsing the data so far that critical anomalies disappear.
 
 2. **Automated Training Data Generation**  
+
    - Agentic AI can continuously label confirmed security incidents, convert them into these high-resolution QR-coded “behavioral images,” and feed them back into training. Over time, the model grows more adept at spotting the low-and-slow threats.
 
 3. **Computational Efficiency**  
+
    - Once the raw data is converted to image form (QR codes or other structured images), classification tasks can be done with lightweight CNNs. The approach scales well and can even run on edge-like devices.
 
 4. **Potential Challenges**  
+
    - **Standardization**: Defining a universal QR format or template across varied organizations’ data might be tricky.  
    - **Labeling Accuracy**: If threat labels are incorrect or incomplete, the CNN might learn flawed patterns.  
    - **Interpretability**: CNNs excel at classification but can be black-box. Post-detection forensics will still require diving into raw logs to confirm the root cause.
 
 ## Conclusion
+
 Visualizing multi-year logs as high-resolution QR codes could be a powerful way to spot subtle anomalies that typical time-series analyses miss. We’d get a “big picture” overview with enough detail to train robust CNN models. Over time, the system’s performance would improve as more labeled incidents are introduced.
 
 
