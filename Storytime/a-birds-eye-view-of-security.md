@@ -25,6 +25,25 @@ I can see the validity of this response: "so, compression..." But it's really mo
 
 I'm sure there are many challenges and limitations to this approach that I haven't considered, but seeing how effectively static image classification works in other domains made me wonder about its potential applications in security, especially for catching those most patient and sophisticated attackers. Would be very interested in learning whether similar approaches have been explored in the field (or maybe you've already essentially been doing this for all I know).
 
+## Update: 1/1/2025
+
+After sleeping on what was essentially a stream of consciousness brainstorm, more challenges have come to mind, in regard to the actual implementation.  
+
+  - What is the computational expense of transforming that data into a 2D image, and what are the actual net savings?
+    - I think after growing pains this could be overcome
+  - I'm picturing pitching this feature to potential client: 
+    - "We are now shipping a new feature that essentially plans on us missing potential threats for many months or years at a time"
+    - Easy to spin that a different way but made me chuckle
+
+### Other edits, thoughts, and additions: 
+
+  - One potential extension worth exploring would be multi-channel encoding, similar to how RGB images encode different layers of information. Rather than flattening behavioral metrics into a single-channel representation, we could create multi-dimensional behavioral signatures where each channel captures distinct activity patterns. This could allow the CNN to detect correlations between channels that might be obscured in a single-layer approach.
+
+  - The application of wavelet transform concepts to these behavioral spectrograms could offer additional insight. By analyzing behavior across multiple temporal resolutions simultaneously, this approach could potentially identify both rapid automated attacks and long-term patterns that emerge over months of patient operation. This multi-scale analysis might help bridge the gap between traditional real-time detection and long-term behavioral analysis.
+     - I am not a mathmetiician, and I'm not capable of implementing this; nevertheless, from the little I know, it seems to a logical addition. 
+
+  - A key enhancement to consider would be entropy-weighted encoding. Given that sophisticated attackers excel at mimicking normal behavior patterns, an encoding scheme that emphasizes rare or high-entropy events could be valuable. By adjusting the visual weighting based on statistical probability, the model could become more sensitive to subtle deviations while maintaining the computational efficiency of CNN-based pattern recognition.
+     - I'm not ignorant to the contradiction here: how do put a weight on that before seeing it... chicken / egg sitation, maybe the Agentic stuff can figure it at some stage, just thought it was worth mentioning 
 
 
 [Back to Storytime](/Portfolio/Storytime/index.html)
