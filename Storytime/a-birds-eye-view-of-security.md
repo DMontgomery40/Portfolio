@@ -1,11 +1,11 @@
 ---
 layout: default
-title: A Potential Pattern Recognition Approach 
+title: A Potential Image Classification Approach to Historical Behavioral Analysis 
 parent: Storytime
 nav_order: 9
 ---
 
-# A Potential Pattern Recognition Approach
+# A Potential Image Classification Approach to Historical Behavioral Analysis 
 
 A thought that hit me while working on this write up for Ghost: in my birdnet project experience, we're dealing with these incredibly complex audio waveforms, converting them into simple 2D spectrograms, and then using super efficient CNN-based image classification to identify species. We're not analyzing the sound at all - we're just looking at shapes and patterns.
 
@@ -19,4 +19,4 @@ The computational efficiency could be remarkable. Just like how a small Pi can r
 
 I'm sure there are many challenges and limitations to this approach that I haven't considered, but seeing how effectively static image classification works in other domains made me wonder about its potential applications in security, especially for catching those most patient and sophisticated attackers. Would be very interested in learning whether similar approaches have been explored in the field (or maybe you've already essentially been doing this for all I know).
 
-[Back to Storytime](../storytime.html)
+[A Potential Image Classification Approach to Historical Behavioral Analysis](../storytime.html)
