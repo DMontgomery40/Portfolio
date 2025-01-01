@@ -7,7 +7,7 @@ nav_order: 9
 
 # A Potential Pattern Recognition Approach
 
-So here's a thought that hit me while working on this whole write up for Ghost: in my bird project experience, we're taking these incredibly complex audio waveforms of bird calls, converting them into simple 2D spectrograms, and then using super efficient CNN-based image classification to identify species. We're not analyzing the sound at all - we're just looking at shapes and patterns.
+A thought that hit me while working on this write up for Ghost: in my birdnet project experience, we're dealing with these incredibly complex audio waveforms, converting them into simple 2D spectrograms, and then using super efficient CNN-based image classification to identify species. We're not analyzing the sound at all - we're just looking at shapes and patterns.
 
 It made me wonder about behavioral analysis in security, particularly when trying to spot the most sophisticated attackers - the ones who are incredibly patient and whose patterns only emerge over very long time periods. Currently, analyzing years of raw behavioral data - login patterns, API calls, network traffic - in its native form requires massive computational resources. But what if there was a way to apply a similar pattern recognition approach?
 
