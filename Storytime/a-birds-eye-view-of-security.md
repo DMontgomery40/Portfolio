@@ -17,7 +17,13 @@ One impoprtant difference between an actual spectrogram of a sound, and this spe
 
 Then, instead of running complex behavioral analysis algorithms on massive datasets, a CNN could be trained to recognize patterns in these images. But here's where it gets interesting - by leveraging agentic AI, you could have agents continuously identifying confirmed incidents and their resolutions, automatically generating training data by converting those years-long attack patterns into these visual representations. The model would get exponentially better at recognizing these subtle, long-term patterns - the kind that might indicate a careful, patient operator who's playing the long game.
 
-The computational efficiency could be remarkable. Just like how a small Pi can run bird call classification locally because it's just doing lightweight image processing, this could potentially allow for efficient analysis of massive historical datasets. And since it would be looking for visual patterns rather than specific behaviors, it might help identify those subtle, years-long patterns that even experienced analysts might miss when looking at shorter time windows.
+The computational efficiency could be remarkable. Just like how a small Pi can run bird call classification locally because it's just doing lightweight image processing, this could potentially allow for efficient analysis of massive historical datasets. And since it would be looking for visual patterns rather than specific behaviors, it might help identify those subtle, years-long patterns that even experienced analysts might miss when looking at shorter time windows. 
+
+I can see the validity of this response: "so, compression..." But it's really more like: 
+
+```Data Recontextualization Through Geometric Perspective Transformation. DaRT GPT. ``` 
+
+(I want the last 45 minutes of my life back, that's how long that name / accronym took me)
 
 I'm sure there are many challenges and limitations to this approach that I haven't considered, but seeing how effectively static image classification works in other domains made me wonder about its potential applications in security, especially for catching those most patient and sophisticated attackers. Would be very interested in learning whether similar approaches have been explored in the field (or maybe you've already essentially been doing this for all I know).
 
