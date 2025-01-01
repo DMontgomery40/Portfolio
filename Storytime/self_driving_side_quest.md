@@ -13,4 +13,4 @@ I didn't really know that I needed a partly self-driving car, but it was George 
 
 So taking a dive into the back end of the OpenPilot GitHub has been a really fun adventure as has following that Discord, particularly the dev Discord. George "Geohot" is now more focused full-time on his tiny grad/tiny box project. So of course now I need to buy a tiny box. I mean it's only 40 grand so really how could you afford not to lol.
 
-[Back to Storytime](/Portfolio/Storytime/)
+[A Bird's Eye View of Security](/Portfolio/Storytime/a-birds-eye-view-of-security.html)
