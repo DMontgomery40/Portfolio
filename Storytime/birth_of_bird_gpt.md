@@ -5,12 +5,12 @@ parent: Storytime
 nav_order: 6
 ---
 
-# The Birth of BirdStatsGPT
+# BirdStatsGPT (and now MCP)
 
-I discovered the BirdNet Pi project on GitHub. BirdNet Pi is a project based on the BirdNet Analyzer by Cornell Lab of Ornithology. Anybody can download an app called Merlin to your phone totally free and it will tell you exactly what bird you're hearing and a bunch of fun facts, etc. It's pretty cool. I wanted to take a deeper dive into this, the back end of this AI technology. 
+Another challenge I considered was combining visual and audio detection into a unified system. While no one has fully solved this yet due to the complexity of directionalizing cardioid microphone patterns with the required sensitivity levels, the project led me into some fascinating work with large language models.
 
-So, a BirdNet Pi is essentially Merlin, but it's always running in the background. And it runs inference locally, which was also very intriguing to me. No cloud, but a little tiny device that could run TensorFlow Lite completely local on such a tiny processor with 4 gigs of RAM.
+I built a Model Context Protocol server and Custom GPT to interface between two major bird databases - eBird and BirdWeather.app (where BirdNetPi uploads its data). Both have powerful and complex APIs, so I created a natural language interface to analyze and compare data between them, and vizualize relationships. This allows people to ask questions like "Has anyone else in my area reported cedar waxwings since my system detected one this morning?" or "Show me migration patterns for my top detected species over the last two years."
 
-This was my first interaction with AI outside of natural language processing and purely just language models. The BirdNet analyzer does not analyze sound at all. That's actually a lot harder. What it does is object detection or image classification. It takes the spectrogram left by the vocalization of the bird and compares that. This was my first lesson on the efficiency of CNN architecture for the simplification and speed and low latency of analyzing a 2D spectrogram, as opposed to the RNN approach of actually analyzing a WAV sound file.
+The scale of data made this particularly interesting - my station alone generates around a million detection points annually. Being able to efficiently process and compare this against broader regional data opened up endless possibilities for pattern analysis and visualization, especially for understanding unusual sightings and migration patterns. None of those insights are novel, but one would have to be well versed in R and Python to garner that data. Now it's accessible via a poorly worded prompt, and it's neat to see people are enjoying it. 
 
 [Next Chapter: Accidental Enterprise AI](/Portfolio/Storytime/accidental_enterprise_ai.html)
