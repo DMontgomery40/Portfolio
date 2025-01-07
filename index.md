@@ -24,10 +24,10 @@ A very simple tool for the dozen(s?) of people running inference on a 14th gen I
 ![NPU Usage Monitor Screenshot](/assets/intel-npu-screenshot.png)
 
 ### [SecurityLens](./Projects/SecurityLens.html)
-An open-source security analysis platform for education and vulnerability discovery.
+An open-source security analysis platform for education and vulnerability discovery. With functionality to scan binaries and firmware files, coming soon!
 
 >*No downloads, no installs, just drag/drop or copy/paste.*
-
+![SecurityLens Screenshot](/assets/security-lens-screenshot-2.png)
 ![SecurityLens Screenshot](/assets/security-lens-screenshot.png)
 
 ### [BirdStatsGPT](./Projects/birdstatsgpt.html)
