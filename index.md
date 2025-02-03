@@ -4,9 +4,9 @@ layout: home
 nav_order: 1
 ---
 
-# Storytime 
+# Musings
 
-### [It started with a missing lightswitch](/Portfolio/Storytime/early_days.html)
+### [Observations and Tutorials](/Portfolio/Musings/index.html)
 
 # Project Portfolio
 
@@ -34,6 +34,10 @@ An open-source security analysis platform for education and vulnerability discov
 OpenAPI-integrated CustomGPT (aka OpenAI Assistants function) for insightful bird vocalization data analysis.
 
 ![BirdStatsGPT Screenshot](/assets/birdstatsgpt-screenshot.png)
+
+# Storytime 
+
+### [It started with a missing lightswitch](/Portfolio/Storytime/early_days.html)
 
 
 
