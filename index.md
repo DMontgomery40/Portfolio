@@ -6,7 +6,7 @@ nav_order: 1
 
 # Musings
 
-### [Observations and Tutorials](/Portfolio/Musings/index.html)
+### [Observations and Tutorials](/Musings/index.html)
 
 # Project Portfolio
 
