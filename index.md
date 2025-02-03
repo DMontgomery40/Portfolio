@@ -3,18 +3,17 @@ title: Home
 layout: home
 nav_order: 1
 ---
-
 # Musings
-
 ### [Observations and Tutorials](/Musings/index.html)
-
 # Project Portfolio
-
 > **Note**: This portfolio represents a random sampling of various development projects. While these projects showcase different technical capabilities, they're primarily focused on backend development, security tools, and system utilities rather than frontend development.  
 >
 > And in full disclosure, building off a Jekyll Template highlights the peak of my frontend skills.
-
 ## Featured Projects
+### [Deepseek MCP Server](./Projects/deepseek-mcp-server.html)
+A Python tool leveraging deepseek-mcp for running large language models locally. Complete server implementation with API endpoints for text generation and embeddings.
+>*Local LLM inference with simple REST API interface. Easy to deploy, easy to use.*
+
 
 ### [Intel NPU Monitoring Tool](./Projects/intel-npu-top.html)
 A very simple tool for the dozen(s?) of people running inference on a 14th gen Intel: We finally have a tool to monitor Intel Meteor Lake NPU usage in real-time via sysfs on Linux. 
