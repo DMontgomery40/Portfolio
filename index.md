@@ -25,9 +25,16 @@ A very simple tool for the dozen(s?) of people running inference on a 14th gen I
 ### [SecurityLens](./Projects/SecurityLens.html)
 An open-source security analysis platform for education and vulnerability discovery. With functionality to scan binaries and firmware files, coming soon!
 
->*No downloads, no installs, just drag/drop or copy/paste.*
-![SecurityLens Screenshot](/assets/security-lens-screenshot.png)
-![SecurityLens Screenshot](/assets/security-lens-screenshot-2.png)
+<div class="code-example" markdown="1">
+  <iframe
+    src="https://securitylens.io"
+    width="100%"
+    height="800px"
+    style="border: 1px solid #ccc; border-radius: 4px;"
+    frameborder="0"
+    allow="clipboard-write">
+  </iframe>
+</div>
 
 ### [BirdStatsGPT](./Projects/birdstatsgpt.html)
 OpenAPI-integrated CustomGPT (aka OpenAI Assistants function) for insightful bird vocalization data analysis.
