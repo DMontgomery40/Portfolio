@@ -1,6 +1,8 @@
 ---
 title: Deepseek MCP Server
-layout: default
+layout: page
+parent: Projects
+nav_order: 1  # Or whatever order number you want it to appear in
 ---
 
 <div id="readme-content">
