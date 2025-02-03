@@ -25,7 +25,7 @@ Above, there is a side-by-side screen recording. The video used a regular web in
 
 Second...
 
-This article isn't really about DeepSeek...
+> ***This article isn't really about DeepSeek...***
 
 DeepSeek happens to be the trending topic right now — so I'm using it to get your attention and showcase the open-source potential of Model Context Protocol).
 
@@ -35,11 +35,9 @@ However — if you are sick of "server busy" you are in the right place!
 
 It's technically complex, but the short version is: They just do. Yes, it can be slightly slower, but reliability often trumps speed.
 
-![API Call Endpoints in Debug](../assets/mcp-api-call-endponts-in%20debug.webp)
-
 On top of that, the DeepSeek MCP integration includes fallback mechanisms and optimizations in the API call process. I'm still working on streaming Chain-of-Thought (CoT) — I hope to wrap that up soon, but some elements lie outside my control.
 
-Note: You might notice that in the MCP GUI in the screen recording, the final output is Claude's summary of "R1's" output. This summarization is extremely helpful for quick reference, but you can still see the full output by expanding the relevant field arrow.
+> Note: You might notice that in the MCP GUI in the screen recording, the final output is Claude's summary of "R1's" output. This summarization is extremely helpful for quick reference, but you can still see the full output by expanding the relevant field arrow.
 
 ## What Is MCP (Model Context Protocol)?
 
@@ -77,6 +75,13 @@ Think of MCP as a "universal connector" — a protocol that lets different servi
 
 Shout out to [anaisbetts/mcp-installer](https://github.com/anaisbetts/mcp-installer) for this magic!
 
+The server maintains context across multiple exchanges, preserving configuration settings throughout.
+I just want to pause to highlight an important point, maybe the whole point, of the Model Context Protocol. Nearly everything is done just like this, with natural language.
+
+> When people hear about what MCP can do, there is a natural tendency to shrug and thing, “cool, another thing that does stuff I can already do with a little work and some code”
+
+Natural language communication between your CRM, your mongobd instance, your web browser, your playwright crawler, your everything else — you just a text field and words — that’s it.
+
 ## Reference Servers
 
 ![Reference Servers](../assets/reference-servers.webp)
@@ -91,11 +96,13 @@ Through proxying, the other side only sees a generic request from Anthropic, kee
 
 You can use Dev Tools with Claude Desktop! If you ever have any doubt about who is REALLY making the API calls and what is being shown, it's all right here, every header, response, parameter, and payload.
 
+![API Call Endpoints in Debug](../assets/mcp-api-call-endponts-in%20debug.webp)
+
 ### Multi-Turn Conversations
 
 ![Multi-round Conversations](../assets/multi-round-convos.webp)
 
-The server maintains context across multiple exchanges, preserving configuration settings throughout.
+
 
 ### Natural Language Configuration
 
