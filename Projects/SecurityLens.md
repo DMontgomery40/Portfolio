@@ -7,7 +7,7 @@ nav_order: 4
 
 # SecurityLens
 
-[Go To Site](https://securitylens.netlify.app/) {: .btn .btn-primary }
+[Go To Site](https://securitylens.io/) {: .btn .btn-primary }
 {: .text-center }
 
 An open-source security analysis platform for education and vulnerability discovery.
@@ -16,7 +16,7 @@ An open-source security analysis platform for education and vulnerability discov
 
 <div class="code-example" markdown="1">
   <iframe
-    src="https://securitylens.netlify.app"
+    src="https://securitylens.io"
     width="100%"
     height="800px"
     style="border: 1px solid #ccc; border-radius: 4px;"
