@@ -2,19 +2,16 @@
 
 *Originally published on [Medium](https://medium.com/@dmontg/deepseek-mcp-server-circumventing-server-busy-errors-and-keeping-your-data-private) - February 2025*
 
-![Header Image](../assets/images/mcp-server/header.jpg)
-*Photo by Nong on Unsplash*
-
 By David Montgomery, SecurityLens.io
 
 DeepSeek MCP Server offers a robust way to bypass the frustrating "server busy" errors you encounter at DeepSeek.com.
 Beyond its reliability, it also protects your data from being sent to foreign governments by routing everything through Anthropic's servers.
 
-## Overview
-
 <div class="video-container">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/sahlsDPi5nE" frameborder="0" allowfullscreen></iframe>
 </div>
+
+## Overview
 
 This article covers:
 
@@ -25,8 +22,6 @@ This article covers:
 ## A couple of disclaimers
 
 Above, there is a side-by-side screen recording. The video used a regular web interface for DeepSeek for comparison sake, but please note that I took extreme precautions. Generally, you should not use the standard DeepSeek.com web interface.
-
-![Screen Recording](../assets/images/mcp-server/screen-recording.gif)
 
 Second...
 
@@ -40,7 +35,7 @@ However — if you are sick of "server busy" you are in the right place!
 
 It's technically complex, but the short version is: They just do. Yes, it can be slightly slower, but reliability often trumps speed.
 
-![API Process](../assets/images/mcp-server/api-process.png)
+![API Call Endpoints in Debug](../assets/mcp-api-call-endponts-in%20debug.webp)
 
 On top of that, the DeepSeek MCP integration includes fallback mechanisms and optimizations in the API call process. I'm still working on streaming Chain-of-Thought (CoT) — I hope to wrap that up soon, but some elements lie outside my control.
 
@@ -50,7 +45,7 @@ Note: You might notice that in the MCP GUI in the screen recording, the final ou
 
 MCP is an open-source protocol released by Anthropic in November 2024. It is not a language model nor a cloud-based service. In other words, it's not comparable to tools like ChatGPT or AWS or much of anything else.
 
-![MCP Diagram](../assets/images/mcp-server/mcp-diagram.png)
+![MCP Ecosystem Diagram](../assets/mermaid-digram-mcp-ecosystem.webp)
 
 Think of MCP as a "universal connector" — a protocol that lets different services interact.
 
@@ -58,13 +53,11 @@ Think of MCP as a "universal connector" — a protocol that lets different servi
 
 1. Download Node.js
 2. Download Claude Desktop
+   ![Install Claude Desktop](../assets/install-claude-desktop.webp)
 3. Go to settings, Developer, Edit Config
+   ![Config File Location](../assets/config-file-folder.webp)
 
-![Settings Menu](../assets/images/mcp-server/settings-menu.png)
-
-4. This will popup after you hit Edit Config:
-
-![Config Popup](../assets/images/mcp-server/config-popup.png)
+4. This will popup after you hit Edit Config
 
 5. Open this up with some kind of code editor that will correct any errors (and text editor will technically work), and paste in:
 
@@ -80,14 +73,15 @@ Think of MCP as a "universal connector" — a protocol that lets different servi
 ```
 
 6. Now that you have this magical little server, you can install others with natural language:
-
-![Natural Language Install](../assets/images/mcp-server/natural-language.png)
+   ![MCP Server Installation](../assets/mcp-server%20installation%202.webp)
 
 Shout out to [anaisbetts/mcp-installer](https://github.com/anaisbetts/mcp-installer) for this magic!
 
-## DeepSeek Integration with MCP
+## Reference Servers
 
-![Integration Diagram](../assets/images/mcp-server/integration-diagram.png)
+![Reference Servers](../assets/reference-servers.webp)
+
+## DeepSeek Integration with MCP
 
 DeepSeek and MCP integration is far more than a simple chatbot. Here are some additional perks and features:
 
@@ -95,15 +89,18 @@ DeepSeek and MCP integration is far more than a simple chatbot. Here are some ad
 
 Through proxying, the other side only sees a generic request from Anthropic, keeping your identity private.
 
-![Dev Tools](../assets/images/mcp-server/dev-tools.png)
-
 You can use Dev Tools with Claude Desktop! If you ever have any doubt about who is REALLY making the API calls and what is being shown, it's all right here, every header, response, parameter, and payload.
+
+### Multi-Turn Conversations
+
+![Multi-round Conversations](../assets/multi-round-convos.webp)
+
+The server maintains context across multiple exchanges, preserving configuration settings throughout.
 
 ### Natural Language Configuration
 
 The server interprets your natural language requests and automatically maps them to the correct configurations:
-
-![Natural Language Config](../assets/images/mcp-server/nl-config.png)
+![MCP Installation](../assets/install-mcp-screenshit%20.webp)
 
 ### Coming Soon: Running Models Locally with MCP
 
