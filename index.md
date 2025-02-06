@@ -6,7 +6,7 @@ nav_order: 1
 # [Musings](https://medium.com/@dmontg)
 <div class="code-example" markdown="1">
   <iframe
-    src="[Medium.com](https://medium.com/@dmontg)"
+    src="https://medium.com/@dmontg"
     width="100%"
     height="800px"
     style="border: 1px solid #ccc; border-radius: 4px;"
@@ -53,10 +53,10 @@ An open-source security analysis platform for education and vulnerability discov
   </iframe>
 </div>
 
-### [BirdStatsGPT](./Projects/birdstatsgpt.html)
-OpenAPI-integrated CustomGPT (aka OpenAI Assistants function) for insightful bird vocalization data analysis.
+# Resume
 
-![BirdStatsGPT Screenshot](/assets/birdstatsgpt-screenshot.png)
+<iframe src="/Portfolio/assets/davidMontgomery.pdf" width="100%" height="800px" style="border: none;"></iframe>
+
 
 # Storytime 
 
