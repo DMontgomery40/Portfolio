@@ -5,11 +5,19 @@ nav_order: 1
 ---
 # Musings
 ### [Observations and Tutorials](/Musings/index.html)
+
+# HomeLab
+![HomeLab](/assets/homelab.webp)
+
 # Project Portfolio
 > **Note**: This portfolio represents a random sampling of various development projects. While these projects showcase different technical capabilities, they're primarily focused on backend development, security tools, and system utilities rather than frontend development.  
 >
 > And in full disclosure, building off a Jekyll Template highlights the peak of my frontend skills.
+
+
 ## Featured Projects
+
+
 ### [Deepseek MCP Server](./Projects/deepseek-mcp-server.html)
 A Python tool leveraging deepseek-mcp for running large language models locally. Complete server implementation with API endpoints for text generation and embeddings.
 >*Local LLM inference with simple REST API interface. Easy to deploy, easy to use.*
