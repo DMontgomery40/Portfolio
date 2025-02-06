@@ -3,8 +3,17 @@ title: Home
 layout: home
 nav_order: 1
 ---
-# Musings
-### [Observations and Tutorials](/Musings/index.html)
+# [Musings](https://medium.com/@dmontg)
+<div class="code-example" markdown="1">
+  <iframe
+    src="[Medium.com](https://medium.com/@dmontg)"
+    width="100%"
+    height="800px"
+    style="border: 1px solid #ccc; border-radius: 4px;"
+    frameborder="0"
+    allow="clipboard-write">
+  </iframe>
+</div>
 
 # HomeLab
 ![HomeLab](/assets/homelab.webp)
