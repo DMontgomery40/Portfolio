@@ -1,0 +1,16 @@
+name: Sync Medium Articles
+on:
+  schedule:
+    - cron: '0 * * * *'  # Runs hourly
+  workflow_dispatch:  # Manual trigger option
+jobs:
+  update-articles:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Fetch Medium articles
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://medium.com/feed/@dmontg"
+          max_post_count: "7"  # Adjust as needed
