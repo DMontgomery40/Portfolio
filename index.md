@@ -11,14 +11,14 @@ nav_order: 1
 ### [AI Co-ops: A Radical Approach to Community-Owned AI](https://medium.com/@dmontg/ai-co-ops-a-radical-approach-to-community-owned-ai-b4a2b07d27b8)
 
 
-# HomeLab({{site.baseurl}}/Homelab/index.html)
+# [HomeLab]({{site.baseurl}}/Homelab/index.html)
 
-[![HomeLab Image]({{ site.baseurl }}/assets/homelab.jpg)]({{site.baseurl}}/assets/homelab.jpg){:target="_blank"}
+![HomeLab Image](/assets/homelab.jpg)
 
-[![MCP Ecosystem Diagram]({{ site.baseurl }}/assets/mermaid-digram-mcp-ecosystem.jpg)]({{site.baseurl}}/assets/mermaid-digram-mcp-ecosystem.jpg){:target="_blank"}
+![MCP Ecosystem Diagram](/assets/mermaid-digram-mcp-ecosystem.webp)
 
 
-# [Project Portfolio]({{ site.baseurl }}/Projects/index.html)
+# [Project Portfolio]({{site.baseurl}}/Projects/index.html)
 > **Note**: This portfolio represents a random sampling of various development projects. While these projects showcase different technical capabilities, they're primarily focused on backend development, security tools, and system utilities rather than frontend development.  
 >
 > And in full disclosure, building off a Jekyll Template highlights the peak of my frontend skills.
@@ -34,7 +34,7 @@ nav_order: 1
 > A very simple tool for the dozen(s?) of people running inference on a 14th gen Intel:  
 > *Just 52 lines of pure Python. No dependencies. No complications. It just works.*
 
-![NPU Usage Monitor Screenshot]({{site.baseurl}}/assets/intel-npu-screenshot.png){:width="400px"}
+![NPU Usage Monitor Screenshot](/assets/intel-npu-screenshot.png){:width="400px"}
 
 ### [SecurityLens]({{site.baseurl}}/Projects/SecurityLens.html)
 > An open-source security analysis platform for education and vulnerability discovery.
