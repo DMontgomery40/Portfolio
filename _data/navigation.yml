@@ -1,0 +1,38 @@
+# Navigation configuration for Just the Docs
+# This file organizes the left sidebar navigation with dropdown menus
+# Each top-level item represents a main section of the site
+
+- title: Projects
+  url: "{{ site.baseurl }}/Projects/index.html"
+  children:
+    - title: AttackVectorAnalysisTool
+      url: "{{ site.baseurl }}/Projects/AttackVectorAnalysisTool.md"
+    - title: SecurityLens
+      url: "{{ site.baseurl }}/Projects/SecurityLens.md"
+    - title: birdstatsgpt
+      url: "{{ site.baseurl }}/Projects/birdstatsgpt.md"
+    - title: deepseek-mcp-server
+      url: "{{ site.baseurl }}/Projects/deepseek-mcp-server.md"
+    - title: intel-npu-top
+      url: "{{ site.baseurl }}/Projects/intel-npu-top.md"
+    - title: mcp-server-birdstats
+      url: "{{ site.baseurl }}/Projects/mcp-server-birdstats.md"
+    - title: mcp-server-canvas
+      url: "{{ site.baseurl }}/Projects/mcp-server-canvas.md"
+
+- title: Latest Articles
+  url: "{{ site.baseurl }}/articles/index.html"
+
+- title: Homelab
+  url: "{{ site.baseurl }}/Homelab/index.html"
+  children:
+    - title: Homelab
+      url: "{{ site.baseurl }}/Homelab/Homelab.md"
+    - title: MCP EcoSystem
+      url: "{{ site.baseurl }}/Homelab/MCP EcoSystem.md"
+
+- title: Resume
+  url: "{{ site.baseurl }}/Resume/index.html"
+
+- title: Other
+  url: "{{ site.baseurl }}/Other/index.html"

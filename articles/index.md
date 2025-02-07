@@ -1,5 +1,5 @@
 ---
-title: Musings      
+title: Latest Articles      
 parent: Musings
 layout: page
 nav_order: 1

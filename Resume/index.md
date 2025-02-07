@@ -1,10 +1,11 @@
 ---
-title: PDF Embedded Resume
+title: Resume
 layout: page
-parent: Resume
 nav_order: 4
-has_toc: true
 ---
+
+This is my resume.
+
 # Links to Socials and Work Examples
 
 ### [Full GitHub](https://github.com/DMontgomery40/)
@@ -29,9 +30,3 @@ has_toc: true
 >
   <a href="Portfolio/assets/davidMontgomery.pdf">Download PDF</a>.
 </iframe>
-
-
-
-
-
-
