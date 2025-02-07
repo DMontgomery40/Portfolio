@@ -1,8 +1,8 @@
 ---
 title: DeepSeek MCP Server
-layout: page
+layout: article
 nav_order: 2
-parent: Musings
+parent: articles
 ---
 
 # DeepSeek MCP Server: Circumventing "Server Busy" Errors and Keeping Your Data Private

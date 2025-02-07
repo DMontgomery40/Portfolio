@@ -2,12 +2,12 @@ title: David Montgomery
 remote_theme: just-the-docs/just-the-docs
 description: A collection of various development projects and tools
 url: https://dmontgomery40.github.io/Portfolio/
-baseurl: ""
+baseurl: "/Portfolio"
 favicon: "/Portfolio/assets/favicon.ico"
 
 aux_links:
   "View on GitHub":
-    - "https://github.com/DMontgomery40"
+    - "https://github.com/DMontgomery40/Portfolio"
 
 color_scheme: dark
 
@@ -42,6 +42,18 @@ collections:
   articles:
     output: true
     permalink: /articles/:title/
+  homelab:
+    output: true
+    permalink: /homelab/:title/
+  storytime:
+    output: true
+    permalink: /storytime/:title/
+  resume:
+    output: true
+    permalink: /resume/:title/
+  other:
+    output: true
+    permalink: /other/:title/
   # Add other collections if needed
 
 
@@ -49,10 +61,40 @@ collections:
 defaults:
   -
     scope:
-      path: "/Portfolio/*"
-      type: "defaults"
+      path: "/Portfolio"
+      type: "projects"
     values:
-      layout: "default"
+      layout: "project"
+  -
+    scope:
+      path: "/Portfolio"
+      type: "articles"
+    values:
+      layout: "article"
+  -
+    scope:
+      path: "/Portfolio"
+      type: "homelab"
+    values:
+      layout: "homelab"
+  -
+    scope:
+      path: "/Portfolio"
+      type: "storytime"
+    values:
+      layout: "storytime"
+  -
+    scope:
+      path: "/Portfolio"
+      type: "resume"
+    values:
+      layout: "resume"
+  -
+    scope:
+      path: "/Portfolio"
+      type: "other"
+    values:
+      layout: "other"
 
 callouts:
   note:

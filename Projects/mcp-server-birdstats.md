@@ -1,7 +1,7 @@
 ---
 title: BirdStats - A Model Context Protocol (MCP) Server
 
-layout: page
+layout: article
 parent: Projects
 nav_order: 5
 ---

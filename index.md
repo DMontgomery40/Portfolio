@@ -4,27 +4,27 @@ layout: home
 nav_order: 1
 ---
 
-# [Latest Articles]({{site.baseurl}}/musings/index.html)
+# [Latest Articles]({{site.baseurl}}/articles/index.html)
 
 ### [Decoding Quantization: Understanding all Those Qs and Ks, and the Art of Running LLMs Locally](https://medium.com/@dmontg/decoding-quantization-understanding-all-those-qs-and-ks-and-the-art-of-running-llms-locally-c8391f099ed7)
 
 ### [AI Co-ops: A Radical Approach to Community-Owned AI](https://medium.com/@dmontg/ai-co-ops-a-radical-approach-to-community-owned-ai-b4a2b07d27b8)
 
 
-# [HomeLab]({{site.baseurl}}/Homelab/index.html)
-
+# [HomeLab]({{ site.baseurl }}/Homelab/index.html)
+  
 ![HomeLab Image](/assets/homelab.jpg)
 
 ![MCP Ecosystem Diagram](/assets/mermaid-digram-mcp-ecosystem.webp)
 
 
-# [Project Portfolio]({{site.baseurl}}/Projects/index.html)
+# [Project Portfolio]({{ site.baseurl }}/Projects/index.html)
 > **Note**: This portfolio represents a random sampling of various development projects. While these projects showcase different technical capabilities, they're primarily focused on backend development, security tools, and system utilities rather than frontend development.  
 >
 > And in full disclosure, building off a Jekyll Template highlights the peak of my frontend skills.
 
 
-## [Featured Projects]({{site.baseurl}}/Projects/index.html)
+## [Featured Projects]({{ site.baseurl }}/Projects/index.html)
 
 ### [Deepseek MCP Server]({{site.baseurl}}/Projects/deepseek-mcp-server.html)
 > A Python tool leveraging deepseek-mcp for running large language models locally. Complete server implementation with API endpoints for text generation and embeddings.

@@ -1,6 +1,6 @@
 ---
 title: Intel NPU Monitoring Tool
-layout: page
+layout: project
 nav_order: 4
 parent: Projects
 ---
@@ -9,8 +9,8 @@ parent: Projects
 
 A minimalist, zero-dependency monitoring tool for Intel Meteor Lake NPU usage in real-time via sysfs on Linux. Features clean ASCII-based visualization in just 52 lines of Python.
 
-![NPU Usage Monitor Screenshot](../assets/intel-npu-screenshot.png)
-{: .text-center }
+![NPU Usage Monitor Screenshot]({{ site.baseurl }}/assets/intel-npu-screenshot.png)
+
 
 ## Features
 
