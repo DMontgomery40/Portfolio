@@ -2,7 +2,7 @@
 title: Canvas LMS MCP Server
 layout: page
 parent: Projects
-nav_order: 6
+nav_order: 8
 ---
 
 # Canvas LMS MCP Server

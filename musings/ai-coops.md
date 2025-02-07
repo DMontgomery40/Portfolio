@@ -1,3 +1,11 @@
+---
+title: AI Co-ops: Reimagining Community-Owned Artificial Intelligence
+layout: page
+nav_order: 1
+parent: Musings
+--- 
+
+
 # AI Co-ops: Reimagining Community-Owned Artificial Intelligence
 
 *Originally published on [Medium](https://medium.com/@dmontg/ai-co-ops-a-radical-approach-to-community-owned-ai-b4a2b07d27b8) - February 2025*
