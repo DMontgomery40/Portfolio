@@ -1,6 +1,6 @@
 ---
 title: Enterprise AI and Security Homelab
-layout: homelab
+layout: default
 parent: Homelab
 nav_order: 1
 has_toc: true

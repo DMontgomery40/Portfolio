@@ -1,6 +1,6 @@
 ---
 title: MCP EcoSystem
-layout: page
+layout: default
 parent: Homelab
 nav_order: 2
 has_toc: true
@@ -8,7 +8,7 @@ has_toc: true
 
 # MCP Is a Powerful Beast 
 
-![MCP Ecosystem Diagram]({{ site.baseurl }}/assets/mermaid-digram-mcp-ecosystem.jpg)
+![MCP Ecosystem Diagram]({{ site.baseurl }}/assets/mermaid-digram-mcp-ecosystem.webp)
 
 # Clients and Servers
 
@@ -26,7 +26,7 @@ has_toc: true
 ## Servers 
 
 ### Current Config: 
-> Note: This can change the hour lol 
+> Note: This can change by the hour lol 
 ```
 {
   "mcpServers": {

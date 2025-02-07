@@ -1,14 +1,14 @@
 - name: Home
   link: /
 - name: Projects
-  link: /projects/
+  link: /Projects/
 - name: Articles
-  link: /articles/
+  link: /Articles/
 - name: Homelab
-  link: /homelab/
+  link: /Homelab/
 - name: Storytime
-  link: /storytime/
+  link: /Storytime/
 - name: Resume
-  link: /resume/
+  link: /Resume/
 - name: Other
-  link: /other/
+  link: /Other/
