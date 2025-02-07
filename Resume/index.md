@@ -1,6 +1,6 @@
 ---
 title: Resume
-layout: page
+layout: default
 nav_order: 4
 ---
 
@@ -19,14 +19,6 @@ This is my resume.
 ### [LinkedIn Profile](https://www.linkedin.com/in/david-montgomery-5a07656b/)
 
 
-# Resume
-### [Download Resume](Portfolio/assets/davidMontgomery.pdf)
-<!-- Embed your resume PDF -->
-
-<iframe 
-  src="Portfolio/assets/davidMontgomery.pdf#toolbar=0" 
-  width="80%" 
-  height="600px"
->
-  <a href="Portfolio/assets/davidMontgomery.pdf">Download PDF</a>.
-</iframe>
+# [Resume]({{site.baseurl}}/Resume/index.html) 
+[Download PDF](/assets/davidMontgomery.pdf)
+<iframe src="/Portfolio/assets/davidMontgomery.pdf" width="100%" height="800px" style="border: none;"></iframe>

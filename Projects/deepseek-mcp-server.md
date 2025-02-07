@@ -1,6 +1,6 @@
 ---
 title: Deepseek MCP Server
-layout: page
+layout: default
 parent: Projects
 nav_order: 1
 ---

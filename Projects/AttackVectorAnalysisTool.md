@@ -1,6 +1,6 @@
 ---
 title: Attack Vector Analysis Tool
-layout: page
+layout: default
 nav_order: 3
 parent: Projects
 ---

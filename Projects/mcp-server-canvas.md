@@ -1,6 +1,6 @@
 ---
 title: Canvas LMS MCP Server
-layout: project
+layout: default
 parent: Projects
 nav_order: 8
 ---

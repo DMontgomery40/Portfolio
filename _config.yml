@@ -70,36 +70,42 @@ defaults:
       path: "/Portfolio"
       type: "articles"
     values:
-      layout: "article"
+      layout: "default"
   -
     scope:
       path: "/Portfolio"
       type: "homelab"
     values:
-      layout: "homelab"
+      layout: "default"
   -
     scope:
       path: "/Portfolio"
       type: "storytime"
     values:
-      layout: "storytime"
+      layout: "default"
   -
     scope:
       path: "/Portfolio"
       type: "resume"
     values:
-      layout: "resume"
+      layout: "default"
   -
     scope:
       path: "/Portfolio"
       type: "other"
     values:
-      layout: "other"
+      layout: "default"
 
 callouts:
   note:
     title: Note
-    color: blue
+    color: white
+  tip:
+    title: Tip
+    color: white
+  warning:
+    title: Warning
+    color: white
 
 gh_edit_link: false
 

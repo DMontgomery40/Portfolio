@@ -1,6 +1,6 @@
 ---
 title: Intel NPU Monitoring Tool
-layout: project
+layout: default
 nav_order: 4
 parent: Projects
 ---

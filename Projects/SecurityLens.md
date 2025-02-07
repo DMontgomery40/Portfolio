@@ -1,6 +1,6 @@
 ---
 title: SecurityLens
-layout: page
+layout: default 
 parent: Projects
 nav_order: 6
 ---

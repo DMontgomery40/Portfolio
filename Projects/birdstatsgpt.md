@@ -1,6 +1,6 @@
 ---
 title: BirdStatsGPT
-layout: page
+layout: default
 parent: Projects
 nav_order: 7
 ---

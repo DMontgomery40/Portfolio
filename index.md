@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: home
+layout: default
 nav_order: 1
 ---
 
@@ -12,7 +12,7 @@ nav_order: 1
 
 
 # [HomeLab]({{ site.baseurl }}/Homelab/index.html)
-  
+
 ![HomeLab Image](/assets/homelab.jpg)
 
 ![MCP Ecosystem Diagram](/assets/mermaid-digram-mcp-ecosystem.webp)
