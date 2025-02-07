@@ -12,7 +12,9 @@ nav_order: 1
 
 
 # HomeLab({{ site.baseurl }}/Homelab/index.html)
+
 [![HomeLab Image]({{ site.baseurl }}/assets/homelab.jpg)]({{ site.baseurl }}/assets/homelab.jpg){:target="_blank"}
+
 [![MCP Ecosystem Diagram]({{ site.baseurl }}/assets/mermaid-digram-mcp-ecosystem.jpg)]({{ site.baseurl }}/assets/mermaid-digram-mcp-ecosystem.jpg){:target="_blank"}
 
 
