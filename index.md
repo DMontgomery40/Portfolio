@@ -2,7 +2,7 @@
 title: Home
 layout: home
 nav_order: 1
----
+
 
 ## Latest Articles
 <!-- BLOG-POST-LIST:START -->
@@ -16,16 +16,20 @@ nav_order: 1
 # HomeLab
 ![HomeLab Image]({{ site.baseurl }}/assets/homelab.jpg)
 
+
 # Project Portfolio
 > **Note**: This portfolio represents a random sampling of various development projects. While these projects showcase different technical capabilities, they're primarily focused on backend development, security tools, and system utilities rather than frontend development.  
 >
 > And in full disclosure, building off a Jekyll Template highlights the peak of my frontend skills.
 
+
 ## Featured Projects
 
-### [Deepseek MCP Server]({{ site.baseurl }}/Projects/deepseek-mcp-server.html)
-A Python tool leveraging deepseek-mcp for running large language models locally.  
-*Local LLM inference with a simple REST API interface. Easy to deploy, easy to use.*
+
+### [Deepseek MCP Server](./Projects/deepseek-mcp-server.html)
+A Python tool leveraging deepseek-mcp for running large language models locally. Complete server implementation with API endpoints for text generation and embeddings.
+>*Local LLM inference with simple REST API interface. Easy to deploy, easy to use.*
+
 
 ### [Intel NPU Monitoring Tool]({{ site.baseurl }}/Projects/intel-npu-top.html)
 A very simple tool for the dozen(s?) of people running inference on a 14th gen Intel:  
@@ -33,8 +37,9 @@ A very simple tool for the dozen(s?) of people running inference on a 14th gen I
 
 ![NPU Usage Monitor Screenshot]({{ site.baseurl }}/assets/intel-npu-screenshot.png)
 
-### [SecurityLens]({{ site.baseurl }}/Projects/SecurityLens.html)
-An open-source security analysis platform for education and vulnerability discovery.
+
+### [SecurityLens](./Projects/SecurityLens.html)
+An open-source security analysis platform for education and vulnerability discovery. With functionality to scan binaries and firmware files, coming soon!
 
 <div class="code-example" markdown="1">
   <iframe
@@ -48,19 +53,11 @@ An open-source security analysis platform for education and vulnerability discov
 </div>
 
 # Resume
-[Download Resume](/assets/davidMontgomery.pdf){: .btn .btn-primary }
-<!-- Embed your resume PDF -->
-# My Resume
+[Download PDF](/assets/davidMontgomery.pdf)
+<iframe src="/Portfolio/assets/davidMontgomery.pdf" width="100%" height="800px" style="border: none;"></iframe>
 
-<iframe 
-  src="/assets/davidMontgomery.pdf#toolbar=0" 
-  width="100%" 
-  height="600px"
->
-  <a href="/assets/davidMontgomery.pdf">Download PDF</a>.
-</iframe>
 
-[Download PDF](/assets/davidMontgomery.pdf){: .btn }
-# Storytime
+# Storytime 
 
-### [It started with a missing lightswitch]({{ site.baseurl }}/Storytime/early_days.html)
+### [It started with a missing lightswitch](/Portfolio/Storytime/early_days.html)
+
