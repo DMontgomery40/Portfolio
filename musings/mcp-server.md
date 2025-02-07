@@ -1,3 +1,10 @@
+---
+title: DeepSeek MCP Server
+layout: page
+nav_order: 2
+parent: Musings
+---
+
 # DeepSeek MCP Server: Circumventing "Server Busy" Errors and Keeping Your Data Private
 
 *Originally published on [Medium](https://medium.com/@dmontg/deepseek-mcp-server-circumventing-server-busy-errors-and-keeping-your-data-private) - February 2025*

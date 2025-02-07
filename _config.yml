@@ -32,22 +32,24 @@ enable_copy_code_button: true
 heading_anchors: true
 
 # Footer content
-footer_content: "Copyright &copy; 2024 David Montgomery. Distributed under an MIT license."
+footer_content: "Copyright &copy; 2025 David Montgomery."
 
 # Collections
 collections:
   projects:
-    permalink: "/:collection/:path/"
     output: true
+    permalink: /projects/:path/
+    exclude: 
+      - Projects/index.md
 
 # Default values
 defaults:
   -
     scope:
-      path: ""
-      type: projects
+      path: "Projects"
+      type: "projects"
     values:
-      layout: page
+      layout: project-page
 
 callouts:
   note:
