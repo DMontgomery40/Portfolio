@@ -1,8 +1,8 @@
 title: David Montgomery
 remote_theme: just-the-docs/just-the-docs
 description: A collection of various development projects and tools
-url: https://dmontgomery40.github.io
-baseurl: /Portfolio
+url: https://dmontgomery40.github.io/Portfolio/
+baseurl: ""
 favicon: "/Portfolio/assets/favicon.ico"
 
 aux_links:
@@ -39,8 +39,11 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-    exclude: 
-      - Projects/index.md
+  articles:
+    output: true
+    permalink: /articles/:title/
+  # Add other collections if needed
+
 
 # Default values
 defaults:
