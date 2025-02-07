@@ -46,10 +46,10 @@ collections:
 defaults:
   -
     scope:
-      path: "Projects"
-      type: "projects"
+      path: "/Portfolio/*"
+      type: "defaults"
     values:
-      layout: project-page
+      layout: "default"
 
 callouts:
   note:

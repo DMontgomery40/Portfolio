@@ -1,7 +1,7 @@
 ---
 title: Musings      
-parent: Home
-layout: default
+parent: Musings
+layout: page
 nav_order: 1
 has_children: true
 has_toc: true

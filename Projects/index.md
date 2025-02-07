@@ -4,6 +4,7 @@ layout: default
 nav_order: 2
 has_children: true
 has_toc: true
+parent: Projects
 projects: 
   exclude: true
 ---
@@ -12,7 +13,6 @@ projects:
 
 This section contains a collection of software development projects focused on backend systems, security tools, bird-related applications, and educational technology. Each project demonstrates different aspects of software development, from security analysis to data processing.
 
-## [HomeLab Infrastructure]({{ site.baseurl }}/Projects/Homelab.html)
 
 {% comment %}
   The following snippet dynamically lists all pages that have "parent: Projects"
