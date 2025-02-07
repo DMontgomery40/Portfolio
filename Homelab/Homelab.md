@@ -1,8 +1,9 @@
 ---
 title: Enterprise AI and Security Homelab
 layout: page
-parent: Projects
-nav_order: 8
+parent: Homelab
+nav_order: 1
+has_toc: true
 ---
 
 # Enterprise-Grade AI and Security Homelab
