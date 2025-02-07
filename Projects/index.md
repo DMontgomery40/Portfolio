@@ -28,3 +28,13 @@ This section contains a collection of software development projects focused on b
 {% else %}
 <p>No projects found.</p>
 {% endif %}
+
+## Projects Table of Contents
+
+- [AttackVectorAnalysisTool]({{ site.baseurl }}/Projects/AttackVectorAnalysisTool.md)
+- [SecurityLens]({{ site.baseurl }}/Projects/SecurityLens.md)
+- [birdstatsgpt]({{ site.baseurl }}/Projects/birdstatsgpt.md)
+- [deepseek-mcp-server]({{ site.baseurl }}/Projects/deepseek-mcp-server.md)
+- [intel-npu-top]({{ site.baseurl }}/Projects/intel-npu-top.md)
+- [mcp-server-birdstats]({{ site.baseurl }}/Projects/mcp-server-birdstats.md)
+- [mcp-server-canvas]({{ site.baseurl }}/Projects/mcp-server-canvas.md)

@@ -17,3 +17,5 @@ has_toc: true
 - [Enter Here]({{ site.baseurl }}/Homelab/Homelab.md)
 - [![Local Cluster Diagram]({{ site.baseurl }}/assets/homelab.jpg)]({{ site.baseurl }}/assets/homelab.jpg){:target="_blank"}
 
+## Index
+- [Welcome to Homelab]({{ site.baseurl }}/Homelab/index.md)
