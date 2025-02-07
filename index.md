@@ -2,21 +2,20 @@
 title: Home
 layout: home
 nav_order: 1
----
-# [Musings](https://medium.com/@dmontg)
-<div class="code-example" markdown="1">
-  <iframe
-    src="https://medium.com/@dmontg"
-    width="100%"
-    height="800px"
-    style="border: 1px solid #ccc; border-radius: 4px;"
-    frameborder="0"
-    allow="clipboard-write">
-  </iframe>
-</div>
+
+
+## Latest Articles
+<!-- BLOG-POST-LIST:START -->
+
+
+
+
+
+<!-- BLOG-POST-LIST:END -->
 
 # HomeLab
-![HomeLab](/assets/homelab.webp)
+![HomeLab Image]({{ site.baseurl }}/assets/homelab.jpg)
+
 
 # Project Portfolio
 > **Note**: This portfolio represents a random sampling of various development projects. While these projects showcase different technical capabilities, they're primarily focused on backend development, security tools, and system utilities rather than frontend development.  
@@ -32,12 +31,12 @@ A Python tool leveraging deepseek-mcp for running large language models locally.
 >*Local LLM inference with simple REST API interface. Easy to deploy, easy to use.*
 
 
-### [Intel NPU Monitoring Tool](./Projects/intel-npu-top.html)
-A very simple tool for the dozen(s?) of people running inference on a 14th gen Intel: We finally have a tool to monitor Intel Meteor Lake NPU usage in real-time via sysfs on Linux. 
+### [Intel NPU Monitoring Tool]({{ site.baseurl }}/Projects/intel-npu-top.html)
+A very simple tool for the dozen(s?) of people running inference on a 14th gen Intel:  
+*Just 52 lines of pure Python. No dependencies. No complications. It just works.*
 
->*Just 52 lines of pure Python. No dependencies. No complications. It just works.*
+![NPU Usage Monitor Screenshot]({{ site.baseurl }}/assets/intel-npu-screenshot.png)
 
-![NPU Usage Monitor Screenshot](/assets/intel-npu-screenshot.png)
 
 ### [SecurityLens](./Projects/SecurityLens.html)
 An open-source security analysis platform for education and vulnerability discovery. With functionality to scan binaries and firmware files, coming soon!
@@ -54,14 +53,11 @@ An open-source security analysis platform for education and vulnerability discov
 </div>
 
 # Resume
-
+[Download PDF](/assets/davidMontgomery.pdf)
 <iframe src="/Portfolio/assets/davidMontgomery.pdf" width="100%" height="800px" style="border: none;"></iframe>
 
 
 # Storytime 
 
 ### [It started with a missing lightswitch](/Portfolio/Storytime/early_days.html)
-
-
-
 
