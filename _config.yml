@@ -51,11 +51,6 @@ collections:
   resume:
     output: true
     permalink: /resume/:title/
-  other:
-    output: true
-    permalink: /other/:title/
-  # Add other collections if needed
-
 
 # Default values
 defaults:
@@ -89,12 +84,6 @@ defaults:
       type: "resume"
     values:
       layout: "default"
-  -
-    scope:
-      path: "/Portfolio"
-      type: "other"
-    values:
-      layout: "default"
 
 callouts:
   note:
@@ -109,9 +98,16 @@ callouts:
 
 gh_edit_link: false
 
-search_enabled: true
-
 kramdown:
   parse_block_html: true
 
-heading_anchors: true
+# Navigation structure
+nav_order: 1
+nav_sort: case_sensitive
+
+# External navigation
+nav_external_links:
+  - title: LinkedIn
+    url: https://linkedin.com/in/dmontgomery40
+  - title: Medium
+    url: https://medium.com/@dmontg
