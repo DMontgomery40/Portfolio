@@ -1,6 +1,6 @@
 ---
 title: DeepSeek MCP Server
-layout: article
+layout: default
 nav_order: 2
 parent: articles
 ---
@@ -85,9 +85,9 @@ Shout out to [anaisbetts/mcp-installer](https://github.com/anaisbetts/mcp-instal
 The server maintains context across multiple exchanges, preserving configuration settings throughout.
 I just want to pause to highlight an important point, maybe the whole point, of the Model Context Protocol. Nearly everything is done just like this, with natural language.
 
-> When people hear about what MCP can do, there is a natural tendency to shrug and thing, “cool, another thing that does stuff I can already do with a little work and some code”
+> When people hear about what MCP can do, there is a natural tendency to shrug and thing, "cool, another thing that does stuff I can already do with a little work and some code"
 
-Natural language communication between your CRM, your mongobd instance, your web browser, your playwright crawler, your everything else — you just a text field and words — that’s it.
+Natural language communication between your CRM, your mongobd instance, your web browser, your playwright crawler, your everything else — you just a text field and words — that's it.
 
 ## Reference Servers
 
