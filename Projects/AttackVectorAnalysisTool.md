@@ -18,15 +18,7 @@ This tool provides an interactive visualization of various attack vectors, helpi
 
 ## Interactive Demo
 
-[Click Here if not rendered below](https://claude.site/artifacts/08047bb5-f7cd-4b8c-adc4-c15e3618cf9f)](https://claude.site/artifacts/08047bb5-f7cd-4b8c-adc4-c15e3618cf9f)
-
-<iframe
-  src="[Vector Analysis](https://claude.site/artifacts/08047bb5-f7cd-4b8c-adc4-c15e3618cf9f)](https://claude.site/artifacts/08047bb5-f7cd-4b8c-adc4-c15e3618cf9f)"
-  width="1400"
-  height="1000"
-  style="border: 1px solid #ccc;"
-></iframe>
-
+[Click Here](https://claude.site/artifacts/08047bb5-f7cd-4b8c-adc4-c15e3618cf9f)](https://claude.site/artifacts/08047bb5-f7cd-4b8c-adc4-c15e3618cf9f)
 
 ## Features
 
