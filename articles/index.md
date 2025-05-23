@@ -2,7 +2,7 @@
 title: Articles
 layout: default
 nav_order: 5
-has_children: false
+has_children: true
 ---
 
 # Technical Articles & Publications
