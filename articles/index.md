@@ -9,6 +9,17 @@ has_children: false
 
 A collection of my technical writing on AI, security, and software development topics.
 
+## Security & Cryptography
+
+### [Wireless Network Security in 2025 and Beyond](https://medium.com/@dmontg/wireless-network-security-in-2025-and-beyond-71f7c13f9889?sk=c89972083bc34df9a7e81d4a30c0da66)
+Exploring the evolving landscape of wireless security, emerging threats, and future-proof protection strategies.
+
+### [Deep Dive: Fundamentals and the Future of Hashing and Cryptography](https://medium.com/@dmontg/deep-dive-fundamentals-and-the-future-of-hashing-and-cryptography-94ad3e458a7e?sk=cbfb0c889123e9f19c6382d343f02feb)
+A comprehensive exploration of cryptographic hashing, from basic principles to quantum-resistant algorithms.
+
+### [Quick Start Guide to WiFi Password Cracking: Techniques, Tools, and Advanced Attacks](https://medium.com/@dmontg/quick-start-guide-to-wifi-password-cracking-techniques-tools-and-advanced-attacks-9be021b55b46)
+Educational guide on WiFi security testing methodologies and defense strategies.
+
 ## Model Context Protocol (MCP)
 
 ### [DeepSeek MCP Server: Circumventing "Server Busy" Errors and Keeping Your Data Private](https://medium.com/@dmontg/deepseek-mcp-server-circumventing-server-busy-errors-and-keeping-your-data-private-c52dc7981ba2)
