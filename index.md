@@ -12,11 +12,14 @@ Welcome to my portfolio showcasing various development projects, with a focus on
 
 ### Recent Publications
 
-- [**Decoding Quantization: Understanding all Those Qs and Ks, and the Art of Running LLMs Locally**](https://medium.com/@dmontg/decoding-quantization-understanding-all-those-qs-and-ks-and-the-art-of-running-llms-locally-c8391f099ed7)
-  - A deep dive into quantization techniques for running large language models on consumer hardware
+- [**Wireless Network Security in 2025 and Beyond**](https://medium.com/@dmontg/wireless-network-security-in-2025-and-beyond-71f7c13f9889?sk=c89972083bc34df9a7e81d4a30c0da66)
+  - Exploring the evolving landscape of wireless security, emerging threats, and future-proof protection strategies
 
-- [**AI Co-ops: A Radical Approach to Community-Owned AI**](https://medium.com/@dmontg/ai-co-ops-a-radical-approach-to-community-owned-ai-b4a2b07d27b8)
-  - Exploring cooperative models for democratizing AI development and ownership
+- [**Deep Dive: Fundamentals and the Future of Hashing and Cryptography**](https://medium.com/@dmontg/deep-dive-fundamentals-and-the-future-of-hashing-and-cryptography-94ad3e458a7e?sk=cbfb0c889123e9f19c6382d343f02feb)
+  - A comprehensive exploration of cryptographic hashing, from basic principles to quantum-resistant algorithms
+
+- [**Quick Start Guide to WiFi Password Cracking: Techniques, Tools, and Advanced Attacks**](https://medium.com/@dmontg/quick-start-guide-to-wifi-password-cracking-techniques-tools-and-advanced-attacks-9be021b55b46)
+  - Educational guide on WiFi security testing methodologies and defense strategies
 
 ## [HomeLab]({{ site.baseurl }}/Homelab/index.html)
 
