@@ -2,7 +2,7 @@
 title: Homelab
 layout: default
 nav_order: 3
-has_children: false
+has_children: true
 ---
 
 # Enterprise-Grade AI and Security Homelab
