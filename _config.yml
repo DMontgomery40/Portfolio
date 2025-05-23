@@ -47,20 +47,6 @@ defaults:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
-      path: "Projects"
-      type: "pages"
-    values:
-      layout: "default"
-      parent: "Projects"
-  -
-    scope:
-      path: "articles"
-      type: "pages"
-    values:
-      layout: "default"
-      parent: "Articles"
 
 # Markdown settings
 markdown: kramdown
