@@ -4,21 +4,22 @@ layout: default
 nav_order: 4
 ---
 
-This is my resume.
+# David Montgomery - Resume
 
-# Links to Socials and Work Examples
+## Professional Links
 
-### [Full GitHub](https://github.com/DMontgomery40/)
+- [**GitHub**](https://github.com/DMontgomery40/) - Full portfolio of open source projects
+- [**LinkedIn**](https://www.linkedin.com/in/david-montgomery-5a07656b/) - Professional network and experience
+- [**Medium**](https://medium.com/@dmontg) - Technical articles and tutorials
+- [**NPM Packages**](https://www.npmjs.com/~dmontgomery40) - Published Node.js packages
+- [**TryHackMe**](https://tryhackme.com/p/dmontgomery40) - Cybersecurity challenges and achievements
 
-### [Medium Articles](https://medium.com/@dmontg)
+## Resume Document
 
-### [Published NPM Packages](https://www.npmjs.com/dmontgomery40)
+[Download PDF]({{site.baseurl}}/assets/davidMontgomery.pdf)
 
-### [TryHackMe Profile](https://tryhackme.com/p/dmontgomery40)
+<iframe src="{{site.baseurl}}/assets/davidMontgomery.pdf" width="100%" height="800px" style="border: 1px solid #ccc; border-radius: 4px;"></iframe>
 
-### [LinkedIn Profile](https://www.linkedin.com/in/david-montgomery-5a07656b/)
+---
 
-
-# [Resume]({{site.baseurl}}/Resume/index.html) 
-[Download PDF](/assets/davidMontgomery.pdf)
-<iframe src="/Portfolio/assets/davidMontgomery.pdf" width="100%" height="800px" style="border: none;"></iframe>
+[← Back to Home]({{site.baseurl}}/) | [View Projects →]({{site.baseurl}}/Projects/)
