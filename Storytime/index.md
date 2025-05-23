@@ -3,6 +3,7 @@ layout: default
 title: Storytime
 nav_order: 6
 has_children: true
+nav_exclude: true
 ---
 
 # Storytime: My Journey into AI
