@@ -71,6 +71,28 @@ An open-source security analysis platform designed for education and vulnerabili
 
 [Visit SecurityLens.io →](https://securitylens.io)
 
+### [Pentest MCP]({{site.baseurl}}/Projects/pentest-mcp.html)
+Comprehensive penetration testing toolkit with Model Context Protocol integration.
+
+**Capabilities:**
+- AI-powered reconnaissance and vulnerability analysis
+- Integration with popular security tools (Nmap, Burp, Metasploit)
+- Automated report generation
+- Intelligent exploit suggestion
+
+[View on GitHub →](https://github.com/DMontgomery40/pentest-mcp)
+
+### [MCP 3D Printer Server]({{site.baseurl}}/Projects/mcp-3D-printer-server.html)
+AI-powered 3D printer control and monitoring through Model Context Protocol.
+
+**Features:**
+- Universal printer support (OctoPrint, Klipper, Duet, etc.)
+- Natural language printer control
+- Intelligent print optimization
+- Multi-printer management
+
+[View on GitHub →](https://github.com/DMontgomery40/mcp-3D-printer-server)
+
 ### [More Projects]({{site.baseurl}}/Projects/index.html)
 Explore additional projects including:
 - **BirdStats GPT** - AI-powered bird observation analysis
@@ -79,7 +101,9 @@ Explore additional projects including:
 
 ## [Resume]({{site.baseurl}}/Resume/index.html)
 
-[Download PDF]({{site.baseurl}}/assets/davidMontgomery.pdf) | [View HTML Version]({{site.baseurl}}/Resume/index.html)
+View my professional experience and qualifications.
+
+[Download PDF]({{site.baseurl}}/assets/davidMontgomery.pdf) | [View Online]({{site.baseurl}}/Resume/index.html)
 
 ## Connect
 
