@@ -3,7 +3,7 @@ title: Projects
 layout: default
 nav_order: 2
 has_children: true
-has_toc: true
+has_toc: false
 ---
 
 # Projects Portfolio
@@ -20,6 +20,15 @@ A collection of software development projects demonstrating expertise in backend
 - Built with Python, Flask, and modern web technologies
 
 [Live Demo](https://securitylens.io) | [View Details →]({{ site.baseurl }}/Projects/SecurityLens.html)
+
+### [Pentest MCP]({{ site.baseurl }}/Projects/pentest-mcp.html)
+**Penetration testing toolkit with AI integration**
+- AI-powered reconnaissance and vulnerability analysis
+- Integration with Nmap, Burp Suite, Metasploit
+- Automated exploit suggestion and reporting
+- Model Context Protocol for AI assistance
+
+[GitHub](https://github.com/DMontgomery40/pentest-mcp) | [View Details →]({{ site.baseurl }}/Projects/pentest-mcp.html)
 
 ### [Attack Vector Analysis Tool]({{ site.baseurl }}/Projects/AttackVectorAnalysisTool.html)
 **Automated vulnerability assessment framework**
@@ -49,7 +58,16 @@ A collection of software development projects demonstrating expertise in backend
 
 [GitHub](https://github.com/DMontgomery40/intel-npu-top) | [View Details →]({{ site.baseurl }}/Projects/intel-npu-top.html)
 
-## 🦅 Specialized Applications
+## 🛠️ Specialized Tools
+
+### [MCP 3D Printer Server]({{ site.baseurl }}/Projects/mcp-3D-printer-server.html)
+**AI-powered 3D printer control**
+- Universal printer support (OctoPrint, Klipper, Duet)
+- Natural language printer control
+- Intelligent print optimization
+- Multi-printer management
+
+[GitHub](https://github.com/DMontgomery40/mcp-3D-printer-server) | [View Details →]({{ site.baseurl }}/Projects/mcp-3D-printer-server.html)
 
 ### [BirdStats GPT]({{ site.baseurl }}/Projects/birdstatsgpt.html)
 **AI-powered bird observation analysis**
@@ -84,18 +102,26 @@ A collection of software development projects demonstrating expertise in backend
 
 These projects utilize a variety of technologies:
 - **Languages**: Python, JavaScript, TypeScript, Go
-- **Frameworks**: Flask, FastAPI, Node.js
-- **Security**: Binary analysis, static/dynamic analysis
-- **AI/ML**: Local LLM deployment, neural processing
-- **APIs**: REST, GraphQL, Model Context Protocol
+- **Frameworks**: Flask, FastAPI, Node.js, Express
+- **Security**: Binary analysis, static/dynamic analysis, penetration testing
+- **AI/ML**: Local LLM deployment, neural processing, Model Context Protocol
+- **APIs**: REST, GraphQL, WebSocket
+- **Infrastructure**: Docker, Kubernetes, various 3D printer firmwares
 
-## 📊 Project Status
+## 📊 Project Categories
 
-All projects are actively maintained and welcome contributions. Check individual project pages for:
-- Installation instructions
-- Usage examples
-- API documentation
-- Contribution guidelines
+### By Technology
+- **Python Projects**: 7
+- **Node.js Projects**: 3
+- **Security Tools**: 3
+- **AI/ML Tools**: 5
+- **Hardware Integration**: 2
+
+### By Status
+- **Active Development**: All projects
+- **Production Ready**: 6
+- **Beta/Preview**: 3
+- **Experimental**: 1
 
 ## 🤝 Contributing
 
