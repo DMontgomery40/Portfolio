@@ -8,7 +8,7 @@ has_toc: true
 
 # All Projects
 
-View all projects in the portfolio:
+View all projects in the **[Portfolio Here]({{ site.baseurl }}/Projects/)** 
 
 ## Security & Analysis Tools
 - [SecurityLens]({{ site.baseurl }}/Projects/SecurityLens.html)
