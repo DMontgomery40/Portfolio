@@ -21,7 +21,7 @@ The Model Context Protocol (MCP) ecosystem powers my AI infrastructure, enabling
 - **API Gateway**: Unified interface for all AI services
 - **Message Queue**: Asynchronous processing for scalability
 
-[Learn more about MCP →]({{ site.baseurl }}/Homelab/MCP-EcoSystem.html)
+[Learn more about MCP →]({{ site.baseurl }}/Homelab/MCP%20EcoSystem.html)
 
 ## Local Cluster and Network Infrastructure
 
@@ -35,8 +35,6 @@ My homelab features a comprehensive network setup designed for security, perform
 - **Storage**: NAS with 40TB raw capacity, ZFS for data integrity
 - **Compute**: Mix of Intel NUCs and custom-built servers
 - **Monitoring**: Prometheus, Grafana, and custom dashboards
-
-[Explore the infrastructure →]({{ site.baseurl }}/Homelab/Infrastructure.html)
 
 ## Featured Projects Running in the Lab
 
@@ -65,12 +63,6 @@ My homelab features a comprehensive network setup designed for security, perform
 | **Network Backbone** | 10Gbit fiber between nodes |
 | **Power Redundancy** | Dual UPS systems with 4-hour runtime |
 | **Internet Connection** | 1Gbit symmetric fiber |
-
-## Learning Resources
-
-- [Building Your Own Homelab]({{ site.baseurl }}/articles/homelab-guide.html)
-- [MCP Implementation Guide]({{ site.baseurl }}/articles/mcp-implementation.html)
-- [Security Best Practices]({{ site.baseurl }}/articles/homelab-security.html)
 
 ## Future Expansions
 
