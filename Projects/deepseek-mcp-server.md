@@ -7,8 +7,11 @@ nav_order: 1
 
 # Deepseek MCP Server
 
-A Python-based Model Context Protocol (MCP) server implementation for running large language models locally using the Deepseek framework.
+A Python and NPM-based Model Context Protocol (MCP) server implementation for running large language models locally using the Deepseek framework.
 
+{% if site.github %}
+[![GitHub stars](https://img.shields.io/github/stars/{{ site.github.repository_nwo | uri_escape }}?style=social)](https://github.com/{{ site.github.repository_nwo }}/stargazers)
+{% endif %} |
 [View on GitHub](https://github.com/DMontgomery40/deepseek-mcp-server) | [Report Issues](https://github.com/DMontgomery40/deepseek-mcp-server/issues)
 
 ## Overview
