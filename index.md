@@ -4,53 +4,85 @@ layout: default
 nav_order: 1
 ---
 
-# [Latest Articles]({{site.baseurl}}/articles/index.html)
+# David Montgomery's Portfolio
 
-### [Decoding Quantization: Understanding all Those Qs and Ks, and the Art of Running LLMs Locally](https://medium.com/@dmontg/decoding-quantization-understanding-all-those-qs-and-ks-and-the-art-of-running-llms-locally-c8391f099ed7)
+Welcome to my portfolio showcasing various development projects, with a focus on backend development, security tools, and system utilities.
 
-### [AI Co-ops: A Radical Approach to Community-Owned AI](https://medium.com/@dmontg/ai-co-ops-a-radical-approach-to-community-owned-ai-b4a2b07d27b8)
+## [Latest Articles]({{site.baseurl}}/articles/index.html)
 
+### Recent Publications
 
-# [HomeLab]({{ site.baseurl }}/Homelab/index.html)
+- [**Decoding Quantization: Understanding all Those Qs and Ks, and the Art of Running LLMs Locally**](https://medium.com/@dmontg/decoding-quantization-understanding-all-those-qs-and-ks-and-the-art-of-running-llms-locally-c8391f099ed7)
+  - A deep dive into quantization techniques for running large language models on consumer hardware
 
-![HomeLab Image](/assets/homelab.jpg)
+- [**AI Co-ops: A Radical Approach to Community-Owned AI**](https://medium.com/@dmontg/ai-co-ops-a-radical-approach-to-community-owned-ai-b4a2b07d27b8)
+  - Exploring cooperative models for democratizing AI development and ownership
 
-![MCP Ecosystem Diagram](/assets/mermaid-digram-mcp-ecosystem.webp)
+## [HomeLab]({{ site.baseurl }}/Homelab/index.html)
 
+My home infrastructure setup for development, testing, and running various services.
 
-# [Project Portfolio]({{ site.baseurl }}/Projects/index.html)
-> **Note**: This portfolio represents a random sampling of various development projects. While these projects showcase different technical capabilities, they're primarily focused on backend development, security tools, and system utilities rather than frontend development.  
->
-> And in full disclosure, building off a Jekyll Template highlights the peak of my frontend skills.
+![HomeLab Image]({{site.baseurl}}/assets/homelab.jpg)
 
+### MCP Ecosystem Architecture
+
+![MCP Ecosystem Diagram]({{site.baseurl}}/assets/mermaid-digram-mcp-ecosystem.webp)
 
 ## [Featured Projects]({{ site.baseurl }}/Projects/index.html)
 
+> **Note**: This portfolio represents a sampling of various development projects. While these projects showcase different technical capabilities, they're primarily focused on backend development, security tools, and system utilities rather than frontend development.
+>
+> *Building off a Jekyll template highlights the peak of my frontend skills!*
+
 ### [Deepseek MCP Server]({{site.baseurl}}/Projects/deepseek-mcp-server.html)
-> A Python tool leveraging deepseek-mcp for running large language models locally. Complete server implementation with API endpoints for text generation and embeddings.
-> *Local LLM inference with simple REST API interface. Easy to deploy, easy to use.*
+A Python-based Model Context Protocol (MCP) server for running large language models locally.
+
+**Key Features:**
+- Complete server implementation with REST API endpoints
+- Support for text generation and embeddings
+- Easy deployment with minimal configuration
+- Optimized for local LLM inference
+
+[View on GitHub →](https://github.com/DMontgomery40/deepseek-mcp-server)
 
 ### [Intel NPU Monitoring Tool]({{site.baseurl}}/Projects/intel-npu-top.html)
-> A very simple tool for the dozen(s?) of people running inference on a 14th gen Intel:  
-> *Just 52 lines of pure Python. No dependencies. No complications. It just works.*
+A lightweight monitoring tool for Intel Neural Processing Units (NPUs) on 14th gen processors.
 
-![NPU Usage Monitor Screenshot](/assets/intel-npu-screenshot.png){:width="400px"}
+**Highlights:**
+- Just 52 lines of pure Python
+- Zero dependencies
+- Real-time NPU usage monitoring
+- Simple and effective
+
+![NPU Usage Monitor Screenshot]({{site.baseurl}}/assets/intel-npu-screenshot.png){:style="max-width: 600px;"}
+
+[View on GitHub →](https://github.com/DMontgomery40/intel-npu-top)
 
 ### [SecurityLens]({{site.baseurl}}/Projects/SecurityLens.html)
-> An open-source security analysis platform for education and vulnerability discovery.
-> *With functionality to scan binaries and firmware files, coming soon!*
+An open-source security analysis platform designed for education and vulnerability discovery.
 
-<div class="code-example" markdown="1">
-  <iframe
-    src="https://securitylens.io"
-    width="100%"
-    height="800px"
-    style="border: 1px solid #ccc; border-radius: 4px;"
-    frameborder="0"
-    allow="clipboard-write">
-  </iframe>
-</div>
+**Features:**
+- Web-based security scanning interface
+- Binary and firmware analysis (coming soon)
+- Educational resources for security researchers
+- Active development with regular updates
 
-# [Resume]({{site.baseurl}}/Resume/index.html) 
-[Download PDF](/assets/davidMontgomery.pdf)
-<iframe src="/Portfolio/assets/davidMontgomery.pdf" width="100%" height="800px" style="border: none;"></iframe>
+![SecurityLens Screenshot]({{site.baseurl}}/assets/security-lens-screenshot.png){:style="max-width: 800px;"}
+
+[Visit SecurityLens.io →](https://securitylens.io)
+
+### [More Projects]({{site.baseurl}}/Projects/index.html)
+Explore additional projects including:
+- **BirdStats GPT** - AI-powered bird observation analysis
+- **MCP Canvas Server** - Canvas LMS integration via MCP
+- **Attack Vector Analysis Tool** - Security vulnerability assessment
+
+## [Resume]({{site.baseurl}}/Resume/index.html)
+
+[Download PDF]({{site.baseurl}}/assets/davidMontgomery.pdf) | [View HTML Version]({{site.baseurl}}/Resume/index.html)
+
+## Connect
+
+- [GitHub](https://github.com/DMontgomery40)
+- [LinkedIn](https://linkedin.com/in/dmontgomery40)
+- [Medium](https://medium.com/@dmontg)
