@@ -1,115 +1,301 @@
 ---
+layout: home
 title: Home
-layout: default
-nav_order: 1
+description: Full Stack Developer & Security Researcher specializing in backend systems, AI infrastructure, and cybersecurity tools
 ---
 
-# David Montgomery's Portfolio
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="hero-background"></div>
+    <div class="hero-particles"></div>
+    <div class="hero-content">
+        <div class="container">
+            <h1 class="hero-title">David Montgomery</h1>
+            <h2 class="hero-subtitle">Full Stack Developer & <span class="typing-text" id="typing-text">Security Researcher</span></h2>
+            <p class="hero-description">
+                Building the backend, securing the stack, and making AI accessible to everyone. 
+                Specializing in security tools, AI infrastructure, and system utilities.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i> View Projects
+                </a>
+                <a href="{{ site.baseurl }}/assets/davidMontgomery.pdf" class="btn btn-secondary" target="_blank">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
-Welcome to my portfolio showcasing various development projects, with a focus on backend development, security tools, and system utilities.
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" data-count="15">0</div>
+                <div class="stat-label">Active Projects</div>
+                <div class="stat-description">Open source tools and applications</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-count="50">0</div>
+                <div class="stat-label">GitHub Repositories</div>
+                <div class="stat-description">Contributions to the community</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-count="8">0</div>
+                <div class="stat-label">Technical Articles</div>
+                <div class="stat-description">Published on Medium</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-count="3">0</div>
+                <div class="stat-label">NPM Packages</div>
+                <div class="stat-description">Published libraries</div>
+            </div>
+        </div>
+    </div>
+</section>
 
-## [Latest Articles]({{site.baseurl}}/articles/index.html)
+<!-- Featured Projects -->
+<section class="featured-projects" id="projects">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A showcase of my latest work in security, AI, and system utilities</p>
+        
+        <div class="projects-grid grid-3">
+            <div class="project-card card">
+                <div class="project-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="project-title">SecurityLens</h3>
+                <p class="project-description">
+                    Open-source security analysis platform for vulnerability discovery and education. 
+                    Features web-based scanning interface and binary analysis capabilities.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Security</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">Vue.js</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://securitylens.io" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="{{ site.baseurl }}/projects/securitylens/" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
 
-### Recent Publications
+            <div class="project-card card">
+                <div class="project-icon">
+                    <i class="fas fa-bug"></i>
+                </div>
+                <h3 class="project-title">Pentest MCP</h3>
+                <p class="project-description">
+                    Professional penetration testing toolkit with STDIO/HTTP/SSE support. 
+                    Integrates Nmap, Gobuster, Nikto, John the Ripper, and Hashcat with GPU acceleration through natural language commands.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Security</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">GPU</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/DMontgomery40/pentest-mcp" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="{{ site.baseurl }}/projects/pentest-mcp/" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
 
-- [**Wireless Network Security in 2025 and Beyond**](https://medium.com/@dmontg/wireless-network-security-in-2025-and-beyond-71f7c13f9889?sk=c89972083bc34df9a7e81d4a30c0da66)
-  - Exploring the evolving landscape of wireless security, emerging threats, and future-proof protection strategies
+            <div class="project-card card">
+                <div class="project-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="project-title">Deepseek MCP Server</h3>
+                <p class="project-description">
+                    Model Context Protocol server for running large language models locally. 
+                    Provides REST API for text generation and embeddings with privacy focus.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">AI/ML</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">Docker</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/DMontgomery40/deepseek-mcp-server" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="{{ site.baseurl }}/projects/deepseek-mcp-server/" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
 
-- [**Deep Dive: Fundamentals and the Future of Hashing and Cryptography**](https://medium.com/@dmontg/deep-dive-fundamentals-and-the-future-of-hashing-and-cryptography-94ad3e458a7e?sk=cbfb0c889123e9f19c6382d343f02feb)
-  - A comprehensive exploration of cryptographic hashing, from basic principles to quantum-resistant algorithms
+        <div class="text-center" style="margin-top: 3rem;">
+            <a href="{{ site.baseurl }}/Projects/" class="btn btn-primary">
+                <i class="fas fa-th"></i> View All Projects
+            </a>
+        </div>
+    </div>
+</section>
 
-- [**Quick Start Guide to WiFi Password Cracking: Techniques, Tools, and Advanced Attacks**](https://medium.com/@dmontg/quick-start-guide-to-wifi-password-cracking-techniques-tools-and-advanced-attacks-9be021b55b46)
-  - Educational guide on WiFi security testing methodologies and defense strategies
+<!-- Latest Articles -->
+<section class="latest-articles">
+    <div class="container">
+        <h2 class="section-title">Latest Articles</h2>
+        <p class="section-subtitle">Technical writing on security, AI, and modern development</p>
+        
+        <div class="articles-grid grid-2">
+            <article class="article-card card">
+                <div class="article-icon">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <div class="article-content">
+                    <h3 class="article-title">Wireless Network Security in 2025</h3>
+                    <p class="article-excerpt">
+                        Exploring the evolving landscape of wireless security, emerging threats, 
+                        and future-proof protection strategies.
+                    </p>
+                    <div class="article-meta">
+                        <span class="article-date">January 2025</span>
+                        <span class="article-read-time">8 min read</span>
+                    </div>
+                    <a href="https://medium.com/@dmontg/wireless-network-security-in-2025-and-beyond-71f7c13f9889" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fab fa-medium"></i> Read on Medium
+                    </a>
+                </div>
+            </article>
 
-## [HomeLab]({{ site.baseurl }}/Homelab/index.html)
+            <article class="article-card card">
+                <div class="article-icon">
+                    <i class="fas fa-key"></i>
+                </div>
+                <div class="article-content">
+                    <h3 class="article-title">Fundamentals of Cryptography</h3>
+                    <p class="article-excerpt">
+                        A comprehensive exploration of cryptographic hashing, from basic principles 
+                        to quantum-resistant algorithms.
+                    </p>
+                    <div class="article-meta">
+                        <span class="article-date">December 2024</span>
+                        <span class="article-read-time">12 min read</span>
+                    </div>
+                    <a href="https://medium.com/@dmontg/deep-dive-fundamentals-and-the-future-of-hashing-and-cryptography-94ad3e458a7e" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fab fa-medium"></i> Read on Medium
+                    </a>
+                </div>
+            </article>
+        </div>
 
-My home infrastructure setup for development, testing, and running various services.
+        <div class="text-center" style="margin-top: 2rem;">
+            <a href="{{ site.baseurl }}/articles/" class="btn btn-secondary">
+                <i class="fas fa-newspaper"></i> View All Articles
+            </a>
+        </div>
+    </div>
+</section>
 
-![HomeLab Image]({{site.baseurl}}/assets/homelab.jpg)
+<!-- Skills Overview -->
+<section class="skills-overview">
+    <div class="container">
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">A comprehensive toolkit for modern development and security</p>
+        
+        <div class="skills-grid grid-4">
+            <div class="skill-category card">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Backend Development</h3>
+                <ul>
+                    <li>Python (FastAPI, Flask)</li>
+                    <li>Node.js (Express, NestJS)</li>
+                    <li>Go & Rust</li>
+                    <li>API Design</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category card">
+                <div class="skill-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security & Pentesting</h3>
+                <ul>
+                    <li>Vulnerability Assessment</li>
+                    <li>Binary Analysis</li>
+                    <li>Network Security</li>
+                    <li>Cryptography</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category card">
+                <div class="skill-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>AI/ML & Data</h3>
+                <ul>
+                    <li>PyTorch & TensorFlow</li>
+                    <li>Local LLM Deployment</li>
+                    <li>Computer Vision</li>
+                    <li>Model Optimization</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category card">
+                <div class="skill-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Infrastructure</h3>
+                <ul>
+                    <li>Docker & Kubernetes</li>
+                    <li>AWS & Cloud Services</li>
+                    <li>Linux Administration</li>
+                    <li>CI/CD Pipelines</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
-### MCP Ecosystem Architecture
-
-![MCP Ecosystem Diagram]({{site.baseurl}}/assets/mermaid-digram-mcp-ecosystem.webp)
-
-## [Featured Projects]({{ site.baseurl }}/Projects/index.html)
-
-> **Note**: This portfolio represents a sampling of various development projects. While these projects showcase different technical capabilities, they're primarily focused on backend development, security tools, and system utilities rather than frontend development.
->
-> *Building off a Jekyll template highlights the peak of my frontend skills!*
-
-### [Deepseek MCP Server]({{site.baseurl}}/Projects/deepseek-mcp-server.html)
-A Python-based Model Context Protocol (MCP) server for running large language models locally.
-
-**Key Features:**
-- Complete server implementation with REST API endpoints
-- Support for text generation and embeddings
-- Easy deployment with minimal configuration
-- Optimized for local LLM inference
-
-[View on GitHub →](https://github.com/DMontgomery40/deepseek-mcp-server)
-
-### [Intel NPU Monitoring Tool]({{site.baseurl}}/Projects/intel-npu-top.html)
-A lightweight monitoring tool for Intel Neural Processing Units (NPUs) on 14th gen processors.
-
-**Highlights:**
-- Just 52 lines of pure Python
-- Zero dependencies
-- Real-time NPU usage monitoring
-- Simple and effective
-
-![NPU Usage Monitor Screenshot]({{site.baseurl}}/assets/intel-npu-screenshot.png){:style="max-width: 600px;"}
-
-[View on GitHub →](https://github.com/DMontgomery40/intel-npu-top)
-
-### [SecurityLens]({{site.baseurl}}/Projects/SecurityLens.html)
-An open-source security analysis platform designed for education and vulnerability discovery.
-
-**Features:**
-- Web-based security scanning interface
-- Binary and firmware analysis (coming soon)
-- Educational resources for security researchers
-- Active development with regular updates
-
-![SecurityLens Screenshot]({{site.baseurl}}/assets/security-lens-screenshot.png){:style="max-width: 800px;"}
-
-[Visit SecurityLens.io →](https://securitylens.io)
-
-### [Pentest MCP]({{site.baseurl}}/Projects/pentest-mcp.html)
-Comprehensive penetration testing toolkit with Model Context Protocol integration.
-
-**Capabilities:**
-- AI-powered reconnaissance and vulnerability analysis
-- Integration with popular security tools (Nmap, Burp, Metasploit)
-- Automated report generation
-- Intelligent exploit suggestion
-
-[View on GitHub →](https://github.com/DMontgomery40/pentest-mcp)
-
-### [MCP 3D Printer Server]({{site.baseurl}}/Projects/mcp-3D-printer-server.html)
-AI-powered 3D printer control and monitoring through Model Context Protocol.
-
-**Features:**
-- Universal printer support (OctoPrint, Klipper, Duet, etc.)
-- Natural language printer control
-- Intelligent print optimization
-- Multi-printer management
-
-[View on GitHub →](https://github.com/DMontgomery40/mcp-3D-printer-server)
-
-### [More Projects]({{site.baseurl}}/Projects/index.html)
-Explore additional projects including:
-- **BirdStats GPT** - AI-powered bird observation analysis
-- **MCP Canvas Server** - Canvas LMS integration via MCP
-- **Attack Vector Analysis Tool** - Security vulnerability assessment
-
-## [Resume]({{site.baseurl}}/Resume/index.html)
-
-View my professional experience and qualifications.
-
-[Download PDF]({{site.baseurl}}/assets/davidMontgomery.pdf) | [View Online]({{site.baseurl}}/Resume/index.html)
-
-## Connect
-
-- [GitHub](https://github.com/DMontgomery40)
-- [LinkedIn](https://linkedin.com/in/dmontgomery40)
-- [Medium](https://medium.com/@dmontg)
+<!-- Quick Links -->
+<section class="quick-links">
+    <div class="container">
+        <h2 class="section-title">Explore More</h2>
+        <div class="quick-links-grid grid-3">
+            <a href="{{ site.baseurl }}/Homelab/" class="quick-link-card card">
+                <div class="quick-link-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3>HomeLab</h3>
+                <p>Enterprise-grade infrastructure for development and AI research</p>
+                <span class="quick-link-arrow"><i class="fas fa-arrow-right"></i></span>
+            </a>
+            
+            <a href="{{ site.baseurl }}/Storytime/" class="quick-link-card card">
+                <div class="quick-link-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Story Time</h3>
+                <p>My journey from phone phreaking to modern AI development</p>
+                <span class="quick-link-arrow"><i class="fas fa-arrow-right"></i></span>
+            </a>
+            
+            <a href="{{ site.baseurl }}/Resume/" class="quick-link-card card">
+                <div class="quick-link-icon">
+                    <i class="fas fa-file-user"></i>
+                </div>
+                <h3>Resume</h3>
+                <p>Professional experience and qualifications</p>
+                <span class="quick-link-arrow"><i class="fas fa-arrow-right"></i></span>
+            </a>
+        </div>
+    </div>
+</section>

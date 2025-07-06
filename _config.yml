@@ -1,23 +1,82 @@
-title: David Montgomery
-remote_theme: just-the-docs/just-the-docs
-description: A collection of various development projects and tools
+# _config.yml - GitHub Pages Compatible
+title: David Montgomery - Full Stack Developer & Security Researcher
+description: Building the backend, securing the stack, and making AI accessible to everyone
 url: https://dmontgomery40.github.io
 baseurl: "/Portfolio"
 
-# Theme settings
-color_scheme: dark
-search_enabled: true
-heading_anchors: true
+# Author information
+author:
+  name: David Montgomery
+  email: contact@securitylens.io
+  github: DMontgomery40
+  linkedin: dmontgomery40
+  medium: dmontg
 
-# Aux links
-aux_links:
-  "GitHub":
-    - "https://github.com/DMontgomery40"
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
 
-# Footer
-footer_content: "Copyright &copy; 2025 David Montgomery."
+# GitHub Pages safe plugins only
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-relative-links
 
-# Exclude files
+# Collections (simplified for GitHub Pages)
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  articles:
+    output: true
+    permalink: /articles/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Navigation (simple array for GitHub Pages)
+navigation:
+  - name: Home
+    url: /
+  - name: Projects
+    url: /projects/
+  - name: Articles  
+    url: /articles/
+  - name: Homelab
+    url: /homelab/
+  - name: Resume
+    url: /resume/
+
+# Social links
+social:
+  github: https://github.com/DMontgomery40
+  linkedin: https://linkedin.com/in/dmontgomery40
+  medium: https://medium.com/@dmontg
+  email: contact@securitylens.io
+
+# SEO settings
+google_analytics: # Add your GA tracking ID if you have one
+
+# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -26,30 +85,25 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-
-# Collections
-collections:
-  projects:
-    output: true
-  articles:
-    output: true
-  homelab:
-    output: true
-  storytime:
-    output: true
-  resume:
-    output: true
-
-# Defaults
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
+  - README.md
+  - LICENSE
+  - .gitignore
+  - "*.sh"
 
 # Markdown settings
-markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+# Sass settings (GitHub Pages compatible)
+sass:
+  style: compressed
+
+# Timezone
+timezone: America/Denver
+
+# GitHub Pages settings
+github: [metadata]
+repository: DMontgomery40/Portfolio
