@@ -58,13 +58,13 @@ navigation:
   - name: Home
     url: /
   - name: Projects
-    url: /projects/
+    url: /Projects/
   - name: Articles  
     url: /articles/
   - name: Homelab
-    url: /homelab/
+    url: /Homelab/
   - name: Resume
-    url: /resume/
+    url: /Resume/
 
 # Social links
 social:
