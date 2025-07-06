@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     
@@ -117,6 +117,9 @@
             flex-direction: column;
             cursor: pointer;
             padding: 0.5rem;
+            border: none;
+            background: none;
+            z-index: 1001;
         }
 
         .mobile-menu-toggle span {
@@ -125,6 +128,19 @@
             background: var(--text-primary);
             margin: 3px 0;
             transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        .mobile-menu-toggle.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .mobile-menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
         }
 
         /* Main Content */
@@ -400,6 +416,14 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
             .nav-links {
                 display: none;
                 position: absolute;
@@ -408,12 +432,27 @@
                 width: 100%;
                 background: var(--bg-dark);
                 flex-direction: column;
-                padding: 1rem 2rem;
+                padding: 1rem;
                 border-top: 1px solid var(--border);
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             }
 
             .nav-links.active {
                 display: flex;
+            }
+
+            .nav-links li {
+                margin: 0.5rem 0;
+            }
+
+            .nav-links a {
+                padding: 0.75rem 1rem;
+                border-radius: 8px;
+                transition: background 0.3s ease;
+            }
+
+            .nav-links a:hover {
+                background: var(--bg-hover);
             }
 
             .mobile-menu-toggle {
@@ -421,11 +460,36 @@
             }
 
             .page-header {
-                padding: 3rem 0 2rem;
+                padding: 2rem 0 1.5rem;
+            }
+
+            .page-title {
+                font-size: clamp(1.8rem, 6vw, 2.5rem);
+                line-height: 1.2;
+            }
+
+            .page-subtitle {
+                font-size: 1rem;
+                margin-bottom: 1rem;
             }
 
             .content {
                 padding: 2rem 0;
+            }
+
+            .content h1 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+                margin: 1.5rem 0 1rem;
+            }
+
+            .grid {
+                gap: 1.5rem;
+                margin: 1.5rem 0;
             }
 
             .grid-2,
@@ -434,9 +498,112 @@
                 grid-template-columns: 1fr;
             }
 
+            .card {
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .btn {
+                padding: 0.9rem 1.5rem;
+                font-size: 0.95rem;
+                min-height: 44px; /* Touch-friendly size */
+                justify-content: center;
+            }
+
+            .btn-sm {
+                padding: 0.75rem 1.25rem;
+                font-size: 0.9rem;
+                min-height: 44px;
+            }
+
             .footer-links {
                 flex-direction: column;
                 align-items: center;
+                gap: 1rem;
+            }
+
+            .footer-links a {
+                padding: 0.5rem;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            /* Improved scroll behavior on mobile */
+            html {
+                scroll-behavior: smooth;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            /* Better text selection on mobile */
+            * {
+                -webkit-tap-highlight-color: rgba(0, 245, 255, 0.2);
+            }
+
+            /* Ensure content doesn't get cut off */
+            .main-content {
+                margin-top: 70px;
+                min-height: calc(100vh - 70px);
+            }
+        }
+
+        /* Tablet improvements */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .grid-4 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Small mobile phones */
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 1rem;
+            }
+
+            .btn,
+            .btn-sm {
+                width: 100%;
+                margin: 0.25rem 0;
+            }
+
+            .project-links,
+            .cta-buttons {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .filter-tabs {
+                gap: 0.5rem;
+            }
+
+            .filter-tab {
+                padding: 0.6rem 1rem;
+                font-size: 0.85rem;
+            }
+
+            .project-tags {
+                justify-content: center;
+            }
+
+            .tag {
+                font-size: 0.75rem;
+                padding: 0.25rem 0.6rem;
             }
         }
 
@@ -598,8 +765,33 @@
         // Mobile menu toggle
         function toggleMobileMenu() {
             const navLinks = document.querySelector('.nav-links');
+            const toggle = document.querySelector('.mobile-menu-toggle');
             navLinks.classList.toggle('active');
+            
+            // Animate hamburger icon
+            toggle.classList.toggle('active');
+            
+            // Close menu when clicking outside
+            if (navLinks.classList.contains('active')) {
+                document.addEventListener('click', function closeMenu(e) {
+                    if (!navLinks.contains(e.target) && !toggle.contains(e.target)) {
+                        navLinks.classList.remove('active');
+                        toggle.classList.remove('active');
+                        document.removeEventListener('click', closeMenu);
+                    }
+                });
+            }
         }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navLinks = document.querySelector('.nav-links');
+                const toggle = document.querySelector('.mobile-menu-toggle');
+                navLinks.classList.remove('active');
+                toggle.classList.remove('active');
+            });
+        });
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {

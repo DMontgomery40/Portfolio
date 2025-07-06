@@ -569,22 +569,195 @@ description: A collection of software development projects demonstrating experti
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .projects-filter {
+        padding: 1.5rem 0;
+        position: static; /* Remove sticky on mobile */
+    }
+
     .filter-tabs {
         flex-direction: column;
         align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
     }
     
     .filter-tab {
         width: 200px;
         text-align: center;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
     }
     
-    .project-links {
-        flex-direction: column;
+    .filter-search {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .search-input {
+        font-size: 1rem; /* Prevent zoom on iOS */
+        padding: 0.9rem 1rem 0.9rem 3rem;
     }
     
+    .featured-projects-section,
+    .all-projects-section,
+    .project-stats-section {
+        padding: 2.5rem 0;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-badge {
+        top: 0.8rem;
+        right: 0.8rem;
+        padding: 0.2rem 0.6rem;
+        font-size: 0.7rem;
+    }
+
+    .project-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .project-description {
+        font-size: 0.95rem;
+        margin-bottom: 1.2rem;
+        min-height: auto;
+    }
+
     .project-stats {
         justify-content: center;
+        margin-bottom: 1.2rem;
+        flex-wrap: wrap;
+    }
+
+    .stat {
+        font-size: 0.8rem;
+    }
+
+    .project-tags {
+        justify-content: center;
+        margin-bottom: 1.2rem;
+    }
+
+    .tag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .project-links .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.8rem 1rem;
+    }
+
+    .project-stats-section .stat-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+    }
+
+    .stat-description {
+        font-size: 0.8rem;
+    }
+}
+
+/* Small mobile phones - Projects specific */
+@media (max-width: 480px) {
+    .projects-filter {
+        padding: 1rem 0;
+    }
+
+    .filter-tab {
+        width: 180px;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .featured-projects-section,
+    .all-projects-section,
+    .project-stats-section {
+        padding: 2rem 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-card {
+        padding: 1.2rem;
+    }
+
+    .project-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .project-stats {
+        margin-bottom: 1rem;
+    }
+
+    .project-tags {
+        margin-bottom: 1rem;
+        gap: 0.4rem;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
     }
 }
 
