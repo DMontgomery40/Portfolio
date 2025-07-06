@@ -82,7 +82,7 @@ description: Full Stack Developer & Security Researcher specializing in backend 
                     <a href="https://securitylens.io" class="btn btn-primary btn-sm" target="_blank">
                         <i class="fas fa-external-link-alt"></i> Live Demo
                     </a>
-                    <a href="{{ site.baseurl }}/projects/securitylens/" class="btn btn-secondary btn-sm">
+                    <a href="{{ site.baseurl }}/Projects/SecurityLens/" class="btn btn-secondary btn-sm">
                         <i class="fas fa-info-circle"></i> Learn More
                     </a>
                 </div>
@@ -107,7 +107,7 @@ description: Full Stack Developer & Security Researcher specializing in backend 
                     <a href="https://github.com/DMontgomery40/pentest-mcp" class="btn btn-primary btn-sm" target="_blank">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="{{ site.baseurl }}/projects/pentest-mcp/" class="btn btn-secondary btn-sm">
+                    <a href="{{ site.baseurl }}/Projects/pentest-mcp/" class="btn btn-secondary btn-sm">
                         <i class="fas fa-info-circle"></i> Learn More
                     </a>
                 </div>
@@ -132,7 +132,7 @@ description: Full Stack Developer & Security Researcher specializing in backend 
                     <a href="https://github.com/DMontgomery40/deepseek-mcp-server" class="btn btn-primary btn-sm" target="_blank">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="{{ site.baseurl }}/projects/deepseek-mcp-server/" class="btn btn-secondary btn-sm">
+                    <a href="{{ site.baseurl }}/Projects/deepseek-mcp-server/" class="btn btn-secondary btn-sm">
                         <i class="fas fa-info-circle"></i> Learn More
                     </a>
                 </div>
