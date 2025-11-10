@@ -156,6 +156,7 @@ description: A collection of software development projects demonstrating experti
             </div>
 
             <!-- Faxbot -->
+            <div class="project-card card" data-category="tools" data-keywords="fax communications hipaa compliance mcp api">
             <div class="project-card card" data-category="infrastructure tools" data-keywords="fax communications compliance hipaa api mcp">
                 <div class="project-badge featured">Featured</div>
                 <div class="project-icon">
@@ -163,6 +164,11 @@ description: A collection of software development projects demonstrating experti
                 </div>
                 <h3 class="project-title">Faxbot</h3>
                 <p class="project-description">
+                    The only known open‑source, self‑hosted fax server and API — and the only fax server (as far as known) that supports distinct inbound vs. outbound provider routing for cost, reliability, and compliance flexibility. HIPAA‑aligned design, Docker deploy, a clean REST surface, and MCP integration so AI assistants can send/receive faxes via auditable actions.
+                </p>
+                <div class="project-stats">
+                    <span class="stat"><i class="fas fa-shield-alt"></i> HIPAA-Aligned</span>
+                    <span class="stat"><i class="fas fa-server"></i> Self-Hosted</span>
                     The only known open-source, self-hosted fax server and API — and the only fax server (as far as known) that supports distinct inbound vs. outbound provider routing for cost, reliability, and compliance flexibility. HIPAA-aligned design, Docker deploy, a clean REST surface, and MCP integration so AI assistants can send/receive faxes via auditable actions.
                 </p>
                 <div class="project-stats">
@@ -200,6 +206,7 @@ description: A collection of software development projects demonstrating experti
         <div class="projects-grid grid-3" id="projectsContainer">
             
             <!-- vivified -->
+            <div class="project-card card" data-category="security" data-keywords="zero-trust security kernel policy isolation">
             <div class="project-card card" data-category="security" data-keywords="zero-trust security kernel policy-as-code">
             <div class="project-card card" data-category="security" data-keywords="zero-trust security policy kernel typescript python">
                 <div class="project-icon">
@@ -227,6 +234,9 @@ description: A collection of software development projects demonstrating experti
                     </a>
                 </div>
             </div>
+
+            <!-- agro-rag-engine -->
+            <div class="project-card card" data-category="ai-ml" data-keywords="rag retrieval vector ai ml agriculture">
             
             <!-- agro-rag-engine -->
             <div class="project-card card" data-category="ai-ml" data-keywords="rag vector retrieval ai ml agriculture">
@@ -262,6 +272,11 @@ description: A collection of software development projects demonstrating experti
                     </a>
                 </div>
             </div>
+
+            <!-- agentspec -->
+            <div class="project-card card" data-category="tools" data-keywords="python tooling ci spec ai documentation">
+                <div class="project-icon">
+                    <i class="fas fa-file-code"></i>
             
             <!-- agentspec -->
             <div class="project-card card" data-category="tools" data-keywords="python tooling ci spec docstrings ai">
@@ -455,6 +470,7 @@ description: A collection of software development projects demonstrating experti
             </div>
 
             <!-- Secure Anonymous Messaging System -->
+            <div class="project-card card" data-category="security" data-keywords="steganography security privacy messaging encryption">
             <div class="project-card card" data-category="security" data-keywords="security steganography encryption privacy zero-footprint">
             <div class="project-card card" data-category="security tools" data-keywords="security steganography crypto privacy zero-footprint">
                 <div class="project-icon">

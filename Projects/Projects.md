@@ -13,6 +13,12 @@ View all projects in the **[Portfolio Here]({{ site.baseurl }}/Projects/)**
 ## Communications & Compliance
 - [Faxbot]({{ site.baseurl }}/projects/faxbot/)
 
+## Zero‑Trust & Security Kernels
+- [vivified]({{ site.baseurl }}/projects/vivified/)
+
+## AI / ML & Retrieval Systems
+- [Deepseek MCP Server]({{ site.baseurl }}/projects/deepseek-mcp-server/)
+- [agro‑rag‑engine]({{ site.baseurl }}/projects/agro-rag-engine/)
 ## Zero-Trust & Security Kernels
 - [vivified]({{ site.baseurl }}/projects/vivified/)
 
@@ -23,6 +29,11 @@ View all projects in the **[Portfolio Here]({{ site.baseurl }}/Projects/)**
 ## AI Developer Tooling
 - [agentspec]({{ site.baseurl }}/projects/agentspec/)
 
+## Security & Analysis Tools
+- [SecurityLens]({{ site.baseurl }}/projects/securitylens/)
+- [Pentest MCP]({{ site.baseurl }}/projects/pentest-mcp/)
+- [Attack Vector Analysis Tool]({{ site.baseurl }}/projects/attackvectoranalysistool/)
+- [Secure Anonymous Messaging System]({{ site.baseurl }}/projects/secure-anonymous-messaging/)
 ## Security & Analysis Tools
 - [SecurityLens]({{ site.baseurl }}/projects/securitylens/)
 - [Pentest MCP]({{ site.baseurl }}/projects/pentest-mcp/)
