@@ -3,6 +3,7 @@ title: Attack Vector Analysis Tool
 layout: default
 nav_order: 3
 parent: Projects
+permalink: /projects/attackvectoranalysistool/
 ---
 # Attack Vector Analysis Tool
 

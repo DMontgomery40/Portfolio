@@ -3,6 +3,7 @@ title: MCP 3D Printer Server
 layout: default
 parent: Projects
 nav_order: 9
+permalink: /projects/mcp-3d-printer-server/
 ---
 
 # MCP 3D Printer Server

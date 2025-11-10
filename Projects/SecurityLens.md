@@ -9,6 +9,7 @@ status: Active
 date: 2024-12-01
 demo_url: https://securitylens.io
 github_url: https://github.com/DMontgomery40/SecurityLens
+permalink: /projects/securitylens/
 image: /assets/security-lens-screenshot.png
 tags:
   - Python
