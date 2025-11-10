@@ -89,6 +89,41 @@ description: A collection of software development projects demonstrating experti
                 </div>
             </div>
 
+            <!-- Faxbot -->
+            <div class="project-card card" data-category="tools infrastructure" data-keywords="fax communications hipaa api compliance mcp">
+                <div class="project-badge featured">Featured</div>
+                <div class="project-icon">
+                    <i class="fas fa-fax"></i>
+                </div>
+                <h3 class="project-title">Faxbot</h3>
+                <p class="project-description">
+                    The only known open‑source, self‑hosted fax server and API — and the only fax server (as far as known) that supports distinct inbound vs. outbound provider routing for cost, reliability, and compliance flexibility. HIPAA‑aligned design, Docker deploy, a clean REST surface, and MCP integration so AI assistants can send/receive faxes via auditable actions.
+                </p>
+                <div class="project-stats">
+                    <span class="stat"><i class="fas fa-shield-alt"></i> HIPAA Aligned</span>
+                    <span class="stat"><i class="fas fa-docker"></i> Docker Ready</span>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">REST</span>
+                    <span class="tag">MCP</span>
+                    <span class="tag">HIPAA</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://faxbot.net" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Live Site
+                    </a>
+                    <a href="https://github.com/DMontgomery40/Faxbot" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="{{ site.baseurl }}/projects/faxbot/" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-info-circle"></i> Details
+                    </a>
+                </div>
+            </div>
+
             <!-- Deepseek MCP Server -->
             <div class="project-card card" data-category="ai-ml" data-keywords="ai ml llm mcp server deepseek">
                 <div class="project-badge new">New</div>
@@ -122,6 +157,7 @@ description: A collection of software development projects demonstrating experti
 
             <!-- Faxbot -->
             <div class="project-card card" data-category="tools" data-keywords="fax communications hipaa compliance mcp api">
+            <div class="project-card card" data-category="infrastructure tools" data-keywords="fax communications compliance hipaa api mcp">
                 <div class="project-badge featured">Featured</div>
                 <div class="project-icon">
                     <i class="fas fa-fax"></i>
@@ -133,6 +169,11 @@ description: A collection of software development projects demonstrating experti
                 <div class="project-stats">
                     <span class="stat"><i class="fas fa-shield-alt"></i> HIPAA-Aligned</span>
                     <span class="stat"><i class="fas fa-server"></i> Self-Hosted</span>
+                    The only known open-source, self-hosted fax server and API — and the only fax server (as far as known) that supports distinct inbound vs. outbound provider routing for cost, reliability, and compliance flexibility. HIPAA-aligned design, Docker deploy, a clean REST surface, and MCP integration so AI assistants can send/receive faxes via auditable actions.
+                </p>
+                <div class="project-stats">
+                    <span class="stat"><i class="fas fa-server"></i> Self-Hosted</span>
+                    <span class="stat"><i class="fas fa-shield-alt"></i> HIPAA-Aligned</span>
                 </div>
                 <div class="project-tags">
                     <span class="tag">TypeScript</span>
@@ -166,16 +207,21 @@ description: A collection of software development projects demonstrating experti
             
             <!-- vivified -->
             <div class="project-card card" data-category="security" data-keywords="zero-trust security kernel policy isolation">
+            <div class="project-card card" data-category="security" data-keywords="zero-trust security kernel policy-as-code">
+            <div class="project-card card" data-category="security" data-keywords="zero-trust security policy kernel typescript python">
                 <div class="project-icon">
                     <i class="fas fa-lock"></i>
                 </div>
                 <h3 class="project-title">vivified</h3>
                 <p class="project-description">
+                    Zero-Trust Enterprise Application Kernel enforcing capability-gated interfaces, policy-as-code isolation, and least-privilege boundaries. Hardens multi-component architectures with auditable flows and minimized attack surface.
                     Zero‑Trust Enterprise Application Kernel enforcing capability‑gated interfaces, policy‑as‑code isolation, and least‑privilege boundaries. Hardens multi‑component architectures with auditable flows and minimized attack surface.
                 </p>
                 <div class="project-tags">
                     <span class="tag">TypeScript</span>
                     <span class="tag">Python</span>
+                    <span class="tag">Zero-Trust</span>
+                    <span class="tag">Policy-as-Code</span>
                     <span class="tag">Zero‑Trust</span>
                     <span class="tag">Policy‑as‑Code</span>
                 </div>
@@ -191,6 +237,18 @@ description: A collection of software development projects demonstrating experti
 
             <!-- agro-rag-engine -->
             <div class="project-card card" data-category="ai-ml" data-keywords="rag retrieval vector ai ml agriculture">
+            
+            <!-- agro-rag-engine -->
+            <div class="project-card card" data-category="ai-ml" data-keywords="rag vector retrieval ai ml agriculture">
+                <div class="project-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h3 class="project-title">agro-rag-engine</h3>
+                <p class="project-description">
+                    Domain-focused RAG engine for agricultural content: ingestion → structured chunking & embedding → vector indexing → high-signal retrieval → prompt orchestration grounding outputs in authoritative sources. Includes a demo UI for rapid iteration.
+
+            <!-- agro-rag-engine -->
+            <div class="project-card card" data-category="ai-ml" data-keywords="rag retrieval vector ai ml python typescript agricultural">
                 <div class="project-icon">
                     <i class="fas fa-seedling"></i>
                 </div>
@@ -219,6 +277,20 @@ description: A collection of software development projects demonstrating experti
             <div class="project-card card" data-category="tools" data-keywords="python tooling ci spec ai documentation">
                 <div class="project-icon">
                     <i class="fas fa-file-code"></i>
+            
+            <!-- agentspec -->
+            <div class="project-card card" data-category="tools" data-keywords="python tooling ci spec docstrings ai">
+                <div class="project-icon">
+                    <i class="fas fa-file-contract"></i>
+                </div>
+                <h3 class="project-title">agentspec</h3>
+                <p class="project-description">
+                    Schema-enforced, machine-readable docstrings for Python codebases enabling reliable AI/LLM tooling and CI validation. Contracts become parseable and enforceable to reduce ambiguity for tooling and model integrations.
+
+            <!-- agentspec -->
+            <div class="project-card card" data-category="tools" data-keywords="python tooling ci spec schema docstrings ai llm">
+                <div class="project-icon">
+                    <i class="fas fa-code"></i>
                 </div>
                 <h3 class="project-title">agentspec</h3>
                 <p class="project-description">
@@ -240,6 +312,7 @@ description: A collection of software development projects demonstrating experti
                 </div>
             </div>
             
+
             <!-- Intel NPU Monitor -->
             <div class="project-card card" data-category="tools infrastructure" data-keywords="intel npu monitoring hardware">
                 <div class="project-icon">
@@ -398,11 +471,14 @@ description: A collection of software development projects demonstrating experti
 
             <!-- Secure Anonymous Messaging System -->
             <div class="project-card card" data-category="security" data-keywords="steganography security privacy messaging encryption">
+            <div class="project-card card" data-category="security" data-keywords="security steganography encryption privacy zero-footprint">
+            <div class="project-card card" data-category="security tools" data-keywords="security steganography crypto privacy zero-footprint">
                 <div class="project-icon">
                     <i class="fas fa-user-secret"></i>
                 </div>
                 <h3 class="project-title">Secure Anonymous Messaging System | Open Source Contribution</h3>
                 <p class="project-description">
+                    Steganographic communications disguised as an e-commerce returns workflow; time-limited per-message unlock (10s), encrypted storage with decoy text, zero-footprint UX. Deployed to prevent harm in a domestic violence case.
                     Steganographic communications disguised as an e‑commerce returns workflow; time‑limited per‑message unlock (10s), encrypted storage with decoy text, zero‑footprint UX. Deployed to prevent harm in a domestic violence case.
                 </p>
                 <div class="project-tags">
@@ -410,6 +486,7 @@ description: A collection of software development projects demonstrating experti
                     <span class="tag">Steganography</span>
                     <span class="tag">Crypto</span>
                     <span class="tag">Privacy</span>
+                    <span class="tag">Zero-Footprint</span>
                     <span class="tag">Zero‑Footprint</span>
                 </div>
                 <div class="project-links">

@@ -20,6 +20,24 @@ layout: default
         <span class="project-date">{{ page.date | date: "%B %d, %Y" }}</span>
         {% endif %}
     </div>
+<div class="project-body">
+    {% if page.category %}
+    <div class="project-meta">
+        <span class="meta-item">
+            <i class="fas fa-folder"></i> {{ page.category }}
+        </span>
+        {% if page.status %}
+        <span class="meta-item">
+            <i class="fas fa-info-circle"></i> {{ page.status }}
+        </span>
+        {% endif %}
+        {% if page.date %}
+        <span class="meta-item">
+            <i class="fas fa-calendar"></i> {{ page.date | date: "%B %Y" }}
+        </span>
+        {% endif %}
+    </div>
+    {% endif %}
 
     {% if page.tags %}
     <div class="project-tags">
@@ -30,6 +48,8 @@ layout: default
     {% endif %}
 
     <div class="project-links-header">
+    {% if page.demo_url or page.github_url %}
+    <div class="project-actions">
         {% if page.demo_url %}
         <a href="{{ page.demo_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-external-link-alt"></i> Live Demo
@@ -67,6 +87,16 @@ layout: default
         {{ page.installation | markdownify }}
     </div>
     {% endif %}
+        <a href="{{ page.github_url }}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> View on GitHub
+        </a>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    <div class="project-content">
+        {{ content }}
+    </div>
 
     {% if page.related_projects %}
     <div class="related-projects">
@@ -79,6 +109,11 @@ layout: default
                     View Project
                 </a>
             </div>
+        <div class="related-grid">
+            {% for project in page.related_projects %}
+            <a href="{{ site.baseurl }}/projects/{{ project.slug }}/" class="related-card">
+                <h3>{{ project.title }}</h3>
+            </a>
             {% endfor %}
         </div>
     </div>
@@ -87,6 +122,10 @@ layout: default
 
 <style>
 .project-detail {
+</div>
+
+<style>
+.project-body {
     max-width: 900px;
     margin: 0 auto;
 }
@@ -142,6 +181,25 @@ layout: default
 .project-date {
     color: var(--text-muted);
     font-size: 0.9rem;
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.meta-item i {
+    color: var(--primary);
 }
 
 .project-tags {
@@ -152,6 +210,16 @@ layout: default
 }
 
 .project-links-header {
+.project-tags .tag {
+    background: rgba(0, 245, 255, 0.1);
+    color: var(--primary);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(0, 245, 255, 0.2);
+}
+
+.project-actions {
     display: flex;
     gap: 1rem;
     margin-bottom: 3rem;
@@ -199,6 +267,66 @@ layout: default
     margin-top: 4rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border);
+.project-content {
+    line-height: 1.8;
+}
+
+.project-content h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.project-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+}
+
+.project-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 2rem 0;
+    box-shadow: var(--shadow);
+}
+
+.related-projects {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border);
+}
+
+.related-projects h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.related-card {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.related-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow);
+}
+
+.related-card h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin: 0;
 }
 
 /* Responsive adjustments */
@@ -221,6 +349,23 @@ layout: default
     .project-links-header .btn {
         width: 100%;
         justify-content: center;
+    }
+    .project-meta {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .project-actions {
+        flex-direction: column;
+    }
+
+    .project-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .related-grid {
+        grid-template-columns: 1fr;
     }
 }
 </style>
