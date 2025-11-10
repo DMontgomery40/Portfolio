@@ -19,7 +19,7 @@ This tool provides an interactive visualization of various attack vectors, helpi
 
 ## Interactive Demo
 
-[Click Here](https://claude.site/artifacts/08047bb5-f7cd-4b8c-adc4-c15e3618cf9f)](https://claude.site/artifacts/08047bb5-f7cd-4b8c-adc4-c15e3618cf9f)
+<a href="https://claude.site/artifacts/08047bb5-f7cd-4b8c-adc4-c15e3618cf9f">Click Here</a>
 
 ## Features
 

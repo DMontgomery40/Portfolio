@@ -13,6 +13,21 @@ View all projects in the **[Portfolio Here]({{ site.baseurl }}/Projects/)**
 ## Communications & Compliance
 - [Faxbot]({{ site.baseurl }}/projects/faxbot/)
 
+## Zero-Trust & Security Kernels
+- [vivified]({{ site.baseurl }}/projects/vivified/)
+
+## AI / ML & Retrieval Systems
+- [agro-rag-engine]({{ site.baseurl }}/projects/agro-rag-engine/)
+- [Deepseek MCP Server]({{ site.baseurl }}/projects/deepseek-mcp-server/)
+
+## AI Developer Tooling
+- [agentspec]({{ site.baseurl }}/projects/agentspec/)
+
+## Security & Analysis Tools
+- [SecurityLens]({{ site.baseurl }}/projects/securitylens/)
+- [Pentest MCP]({{ site.baseurl }}/projects/pentest-mcp/)
+- [Attack Vector Analysis Tool]({{ site.baseurl }}/projects/attackvectoranalysistool/)
+- [Secure Anonymous Messaging System]({{ site.baseurl }}/projects/secure-anonymous-messaging/)
 ## Zero‑Trust & Security Kernels
 - [vivified]({{ site.baseurl }}/projects/vivified/)
 
@@ -28,16 +43,15 @@ View all projects in the **[Portfolio Here]({{ site.baseurl }}/Projects/)**
 ## AI Developer Tooling
 - [agentspec]({{ site.baseurl }}/projects/agentspec/)
 
-## AI/ML & Infrastructure
-- [Deepseek MCP Server]({{ site.baseurl }}/Projects/deepseek-mcp-server.html)
-- [Intel NPU Monitoring Tool]({{ site.baseurl }}/Projects/intel-npu-top.html)
+## Infrastructure & Monitoring
+- [Intel NPU Monitoring Tool]({{ site.baseurl }}/projects/intel-npu-top/)
 
 ## Specialized Tools
-- [MCP 3D Printer Server]({{ site.baseurl }}/Projects/mcp-3D-printer-server.html)
-- [BirdStats GPT]({{ site.baseurl }}/Projects/birdstatsgpt.html)
-- [MCP Server BirdStats]({{ site.baseurl }}/Projects/mcp-server-birdstats.html)
+- [MCP 3D Printer Server]({{ site.baseurl }}/projects/mcp-3d-printer-server/)
+- [BirdStats GPT]({{ site.baseurl }}/projects/birdstatsgpt/)
+- [MCP Server BirdStats]({{ site.baseurl }}/projects/mcp-server-birdstats/)
 
 ## Educational Technology
-- [MCP Server Canvas]({{ site.baseurl }}/Projects/mcp-server-canvas.html)
+- [MCP Server Canvas]({{ site.baseurl }}/projects/mcp-server-canvas/)
 
 [← Back to Projects Overview]({{ site.baseurl }}/Projects/)
