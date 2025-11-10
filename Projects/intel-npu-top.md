@@ -3,6 +3,7 @@ title: Intel NPU Monitoring Tool
 layout: default
 nav_order: 4
 parent: Projects
+permalink: /projects/intel-npu-top/
 ---
 
 # intel-npu-top

@@ -1,9 +1,9 @@
 ---
 title: BirdStats - A Model Context Protocol (MCP) Server
-
 layout: default
 parent: Projects
 nav_order: 5
+permalink: /projects/mcp-server-birdstats/
 ---
 
 # BirdStats - A Model Context Protocol (MCP) Server

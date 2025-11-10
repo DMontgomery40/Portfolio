@@ -3,6 +3,7 @@ title: BirdStatsGPT
 layout: default
 parent: Projects
 nav_order: 7
+permalink: /projects/birdstatsgpt/
 ---
 
 # BirdStatsGPT

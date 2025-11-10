@@ -3,6 +3,7 @@ title: Canvas LMS MCP Server
 layout: default
 parent: Projects
 nav_order: 8
+permalink: /projects/mcp-server-canvas/
 ---
 
 # Canvas LMS MCP Server
