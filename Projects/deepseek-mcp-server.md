@@ -8,6 +8,7 @@ license: MIT
 status: Active
 date: 2025-01-15
 github_url: https://github.com/DMontgomery40/deepseek-mcp-server
+permalink: /projects/deepseek-mcp-server/
 npm_url: https://www.npmjs.com/package/deepseek-mcp-server
 tags:
   - Python
