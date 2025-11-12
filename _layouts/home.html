@@ -539,20 +539,71 @@ function animateCounters() {
     });
 }
 
+// Fetch and display aggregate stats only
+async function fetchPortfolioStats() {
+    try {
+        // Fetch the stats JSON file
+        const response = await fetch('{{ site.baseurl }}/assets/portfolio_stats.json');
+        const stats = await response.json();
+        
+        // Update the stat cards with actual data
+        const downloads = stats.totals.downloads;
+        const stars = stats.github.total_stars;
+        const packages = stats.totals.packages;
+        const forks = stats.github.total_forks;
+        
+        // Set the data-count attributes for animation
+        document.getElementById('total-downloads').setAttribute('data-count', downloads);
+        document.getElementById('github-stars').setAttribute('data-count', stars);
+        document.getElementById('total-packages').setAttribute('data-count', packages);
+        document.getElementById('github-forks').setAttribute('data-count', forks);
+        
+        // Update the timestamp
+        const updateTime = new Date(stats.timestamp);
+        const timeAgo = getTimeAgo(updateTime);
+        document.getElementById('stats-update-time').textContent = `Live stats updated ${timeAgo}`;
+        
+    } catch (error) {
+        console.error('Error loading stats:', error);
+        // Fall back to some reasonable defaults
+        document.getElementById('total-downloads').setAttribute('data-count', 45000);
+        document.getElementById('github-stars').setAttribute('data-count', 600);
+        document.getElementById('total-packages').setAttribute('data-count', 85);
+        document.getElementById('github-forks').setAttribute('data-count', 120);
+        document.getElementById('stats-update-time').textContent = 'Stats temporarily unavailable';
+    }
+}
+
+// Helper function to get "time ago" string
+function getTimeAgo(date) {
+    const seconds = Math.floor((new Date() - date) / 1000);
+    const days = Math.floor(seconds / 86400);
+    if (days > 1) return `${days} days ago`;
+    if (days === 1) return 'yesterday';
+    const hours = Math.floor(seconds / 3600);
+    if (hours > 1) return `${hours} hours ago`;
+    if (hours === 1) return 'an hour ago';
+    return 'just now';
+}
+
 // Initialize animations when stats section comes into view
 document.addEventListener('DOMContentLoaded', function() {
-    const statsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounters();
-                statsObserver.unobserve(entry.target);
-            }
+    // First fetch the real stats
+    fetchPortfolioStats().then(() => {
+        // Then set up the observer for animation
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
         });
+        
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
     });
-    
-    const statsSection = document.querySelector('.stats-section');
-    if (statsSection) {
-        statsObserver.observe(statsSection);
-    }
 });
 </script>

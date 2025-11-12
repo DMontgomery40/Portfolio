@@ -28,30 +28,33 @@ description: Full Stack Developer & Security Researcher specializing in backend 
     </div>
 </div>
 
-<!-- Stats Section -->
+<!-- Live Stats Section -->
 <section class="stats-section">
     <div class="container">
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-number" data-count="15">0</div>
-                <div class="stat-label">Active Projects</div>
-                <div class="stat-description">Open source tools and applications</div>
+                <div class="stat-number" id="total-downloads" data-count="0">0</div>
+                <div class="stat-label">Package Downloads</div>
+                <div class="stat-description">NPM + PyPI combined</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" data-count="50">0</div>
-                <div class="stat-label">GitHub Repositories</div>
-                <div class="stat-description">Contributions to the community</div>
+                <div class="stat-number" id="github-stars" data-count="0">0</div>
+                <div class="stat-label">GitHub Stars</div>
+                <div class="stat-description">Community recognition</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" data-count="8">0</div>
-                <div class="stat-label">Technical Articles</div>
-                <div class="stat-description">Published on Medium</div>
+                <div class="stat-number" id="total-packages" data-count="0">0</div>
+                <div class="stat-label">Packages & Repos</div>
+                <div class="stat-description">Open source contributions</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" data-count="3">0</div>
-                <div class="stat-label">NPM Packages</div>
-                <div class="stat-description">Published libraries</div>
+                <div class="stat-number" id="github-forks" data-count="0">0</div>
+                <div class="stat-label">Repository Forks</div>
+                <div class="stat-description">Community collaboration</div>
             </div>
+        </div>
+        <div class="stats-update-note" style="text-align: center; margin-top: 1rem; color: var(--text-muted); font-size: 0.85rem;">
+            <span id="stats-update-time">Loading live stats...</span>
         </div>
     </div>
 </section>
