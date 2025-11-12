@@ -105,11 +105,6 @@ layout: default
                     View Project
                 </a>
             </div>
-        <div class="related-grid">
-            {% for project in page.related_projects %}
-            <a href="{{ site.baseurl }}/projects/{{ project.slug }}/" class="related-card">
-                <h3>{{ project.title }}</h3>
-            </a>
             {% endfor %}
         </div>
     </div>
