@@ -7,6 +7,6 @@ has_toc: true
 ---
 
 # [Resume]({{site.baseurl}}/Resume/index.html) 
-[Download PDF](/assets/davidMontgomery.pdf)
-<iframe src="/Portfolio/assets/davidMontgomery.pdf" width="100%" height="800px" style="border: none;"></iframe>
+[Download PDF]({{site.baseurl}}/assets/David_Montgomery_Resume_Developer_Focused.pdf)
+<iframe src="{{site.baseurl}}/assets/David_Montgomery_Resume_Developer_Focused.pdf" width="100%" height="800px" style="border: none;"></iframe>
 

@@ -87,16 +87,12 @@ layout: default
         {{ page.installation | markdownify }}
     </div>
     {% endif %}
+    
+    {% if page.github_url %}
         <a href="{{ page.github_url }}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github"></i> View on GitHub
         </a>
-        {% endif %}
-    </div>
     {% endif %}
-
-    <div class="project-content">
-        {{ content }}
-    </div>
 
     {% if page.related_projects %}
     <div class="related-projects">

@@ -1,11 +1,7 @@
 ---
 layout: project
-title: agro‑rag‑engine
-description: Domain‑focused RAG engine for agricultural content: ingestion, structured chunking, embeddings, vector indexing, retrieval, and prompt orchestration.
 title: agro-rag-engine
-description: Domain-focused RAG engine for agricultural content - ingestion, structured chunking, embeddings, vector indexing, retrieval, and prompt orchestration.
-title: agro‑rag‑engine
-description: Domain‑focused RAG engine for agricultural content with structured chunking, vector indexing, and high‑signal retrieval.
+description: Domain-focused RAG engine for agricultural content with structured chunking, embeddings, vector indexing, retrieval, and prompt orchestration.
 category: AI / ML & Retrieval Systems
 status: Active
 date: 2025-11-10

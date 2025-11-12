@@ -20,7 +20,7 @@ description: Full Stack Developer & Security Researcher specializing in backend 
                 <a href="#projects" class="btn btn-primary">
                     <i class="fas fa-code"></i> View Projects
                 </a>
-                <a href="{{ site.baseurl }}/assets/davidMontgomery.pdf" class="btn btn-secondary" target="_blank">
+                <a href="{{ site.baseurl }}/assets/David_Montgomery_Resume_Developer_Focused.pdf" class="btn btn-secondary" target="_blank">
                     <i class="fas fa-download"></i> Download Resume
                 </a>
             </div>
