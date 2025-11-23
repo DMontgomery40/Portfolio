@@ -1,27 +1,27 @@
 {
-  "timestamp": "2025-11-22T02:32:01.859464",
+  "timestamp": "2025-11-23T02:42:10.287577",
   "npm": {
-    "total_downloads": 23660,
+    "total_downloads": 23686,
     "packages": [
       "mcp-3d-printer-server",
       "deepseek-mcp-server",
-      "pentest-mcp",
       "meta-mcp-server",
+      "pentest-mcp",
       "canvas-mcp-server",
-      "scrypted-tempest",
       "scrypted-rachio",
       "@dmontgomery40/scrypted-telemetry",
       "3d-printer-mcp-server",
+      "scrypted-tempest",
       "faxbot",
-      "mcp-birdstats",
       "securitylens-mcp",
+      "mcp-birdstats",
       "faxbot-mcp",
       "mcp-server-birdstats"
     ],
     "package_count": 14
   },
   "pypi": {
-    "total_downloads": 22608,
+    "total_downloads": 22920,
     "packages": [
       "agentspec",
       "agro",
@@ -115,7 +115,7 @@
     "followers": 27
   },
   "totals": {
-    "downloads": 46268,
+    "downloads": 46606,
     "packages": 85,
     "engagement": 809
   }
