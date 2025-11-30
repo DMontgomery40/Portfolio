@@ -1,10 +1,10 @@
 {
-  "timestamp": "2025-11-29T02:34:01.302249",
+  "timestamp": "2025-11-30T02:41:09.402529",
   "npm": {
-    "total_downloads": 23773,
+    "total_downloads": 23797,
     "packages": [
-      "mcp-3d-printer-server",
       "deepseek-mcp-server",
+      "mcp-3d-printer-server",
       "pentest-mcp",
       "meta-mcp-server",
       "canvas-mcp-server",
@@ -21,7 +21,7 @@
     "package_count": 14
   },
   "pypi": {
-    "total_downloads": 24540,
+    "total_downloads": 24036,
     "packages": [
       "agentspec",
       "agro",
@@ -42,9 +42,9 @@
     "package_count": 15
   },
   "github": {
-    "total_stars": 681,
+    "total_stars": 684,
     "total_forks": 136,
-    "total_watchers": 681,
+    "total_watchers": 684,
     "total_issues": 63,
     "repos": [
       "agentspec",
@@ -115,8 +115,8 @@
     "followers": 28
   },
   "totals": {
-    "downloads": 48313,
+    "downloads": 47833,
     "packages": 85,
-    "engagement": 817
+    "engagement": 820
   }
 }
