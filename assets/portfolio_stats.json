@@ -1,7 +1,7 @@
 {
-  "timestamp": "2025-12-29T02:47:30.968370",
+  "timestamp": "2025-12-30T02:40:19.222607",
   "npm": {
-    "total_downloads": 22785,
+    "total_downloads": 22807,
     "packages": [
       "mcp-3d-printer-server",
       "meta-mcp-server",
@@ -21,7 +21,7 @@
     "package_count": 14
   },
   "pypi": {
-    "total_downloads": 24012,
+    "total_downloads": 24264,
     "packages": [
       "agentspec",
       "agro",
@@ -115,7 +115,7 @@
     "followers": 31
   },
   "totals": {
-    "downloads": 46797,
+    "downloads": 47071,
     "packages": 85,
     "engagement": 856
   }
