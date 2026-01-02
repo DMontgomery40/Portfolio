@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-01-01T02:48:37.562387",
+  "timestamp": "2026-01-02T02:41:53.843913",
   "npm": {
-    "total_downloads": 22841,
+    "total_downloads": 22888,
     "packages": [
       "mcp-3d-printer-server",
       "meta-mcp-server",
@@ -21,7 +21,7 @@
     "package_count": 14
   },
   "pypi": {
-    "total_downloads": 936,
+    "total_downloads": 7212,
     "packages": [
       "agentspec",
       "agro",
@@ -45,7 +45,7 @@
     "total_stars": 714,
     "total_forks": 145,
     "total_watchers": 714,
-    "total_issues": 66,
+    "total_issues": 67,
     "repos": [
       "agentspec",
       "agro",
@@ -115,7 +115,7 @@
     "followers": 31
   },
   "totals": {
-    "downloads": 23777,
+    "downloads": 30100,
     "packages": 85,
     "engagement": 859
   }
