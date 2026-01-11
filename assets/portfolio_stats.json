@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-01-10T02:37:48.720715",
+  "timestamp": "2026-01-11T02:49:06.802895",
   "npm": {
-    "total_downloads": 22799,
+    "total_downloads": 22823,
     "packages": [
       "mcp-3d-printer-server",
       "deepseek-mcp-server",
@@ -10,8 +10,8 @@
       "canvas-mcp-server",
       "scrypted-tempest",
       "@dmontgomery40/scrypted-telemetry",
-      "mcp-birdstats",
       "3d-printer-mcp-server",
+      "mcp-birdstats",
       "faxbot",
       "scrypted-rachio",
       "securitylens-mcp",
@@ -21,7 +21,7 @@
     "package_count": 14
   },
   "pypi": {
-    "total_downloads": 24012,
+    "total_downloads": 22800,
     "packages": [
       "agentspec",
       "agro",
@@ -42,9 +42,9 @@
     "package_count": 15
   },
   "github": {
-    "total_stars": 726,
+    "total_stars": 727,
     "total_forks": 147,
-    "total_watchers": 726,
+    "total_watchers": 727,
     "total_issues": 67,
     "repos": [
       "agentspec",
@@ -89,6 +89,7 @@
       "pentest-mcp",
       "pentest-py-mcp",
       "Portfolio",
+      "qeeg-analysis",
       "rackstack",
       "reaper",
       "scripts.scrypted.app",
@@ -105,9 +106,9 @@
       "vivi-site",
       "vivified"
     ],
-    "repo_count": 57,
+    "repo_count": 58,
     "languages": {
-      "Python": 14,
+      "Python": 15,
       "HTML": 3,
       "TypeScript": 12,
       "JavaScript": 10,
@@ -116,8 +117,8 @@
     "followers": 31
   },
   "totals": {
-    "downloads": 46811,
-    "packages": 86,
-    "engagement": 873
+    "downloads": 45623,
+    "packages": 87,
+    "engagement": 874
   }
 }
