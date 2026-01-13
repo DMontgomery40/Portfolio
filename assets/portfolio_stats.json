@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-01-12T02:47:06.734452",
+  "timestamp": "2026-01-13T02:40:49.716892",
   "npm": {
-    "total_downloads": 22851,
+    "total_downloads": 22866,
     "packages": [
       "mcp-3d-printer-server",
       "deepseek-mcp-server",
@@ -21,7 +21,7 @@
     "package_count": 14
   },
   "pypi": {
-    "total_downloads": 23352,
+    "total_downloads": 13548,
     "packages": [
       "agentspec",
       "agro",
@@ -42,9 +42,9 @@
     "package_count": 15
   },
   "github": {
-    "total_stars": 727,
+    "total_stars": 729,
     "total_forks": 148,
-    "total_watchers": 727,
+    "total_watchers": 729,
     "total_issues": 68,
     "repos": [
       "agentspec",
@@ -89,7 +89,7 @@
       "pentest-mcp",
       "pentest-py-mcp",
       "Portfolio",
-      "qeeg-analysis",
+      "qEEG-analysis",
       "rackstack",
       "reaper",
       "scripts.scrypted.app",
@@ -117,8 +117,8 @@
     "followers": 31
   },
   "totals": {
-    "downloads": 46203,
+    "downloads": 36414,
     "packages": 87,
-    "engagement": 875
+    "engagement": 877
   }
 }
