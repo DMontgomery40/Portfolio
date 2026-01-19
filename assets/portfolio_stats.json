@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-01-18T02:48:27.164710",
+  "timestamp": "2026-01-19T02:47:34.047094",
   "npm": {
-    "total_downloads": 22956,
+    "total_downloads": 22975,
     "packages": [
       "deepseek-mcp-server",
       "mcp-3d-printer-server",
@@ -21,7 +21,7 @@
     "package_count": 14
   },
   "pypi": {
-    "total_downloads": 29088,
+    "total_downloads": 28656,
     "packages": [
       "agentspec",
       "agro",
@@ -117,7 +117,7 @@
     "followers": 31
   },
   "totals": {
-    "downloads": 52044,
+    "downloads": 51631,
     "packages": 87,
     "engagement": 899
   }
