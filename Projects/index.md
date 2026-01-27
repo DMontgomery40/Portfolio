@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects Portfolio
-description: A collection of software development projects demonstrating expertise in backend systems, security tools, AI/ML infrastructure, and educational technology
+description: AI/ML Infrastructure, RAG Systems, and Production-Grade Tools
 ---
 
 <!-- Projects Filter Section -->
@@ -9,10 +9,10 @@ description: A collection of software development projects demonstrating experti
     <div class="container">
         <div class="filter-tabs">
             <button class="filter-tab active" data-filter="all">All Projects</button>
-            <button class="filter-tab" data-filter="security">Security</button>
+            <button class="filter-tab" data-filter="rag">RAG/Search</button>
             <button class="filter-tab" data-filter="ai-ml">AI/ML</button>
             <button class="filter-tab" data-filter="infrastructure">Infrastructure</button>
-            <button class="filter-tab" data-filter="tools">Tools</button>
+            <button class="filter-tab" data-filter="security">Security</button>
         </div>
         <div class="filter-search">
             <input type="text" id="projectSearch" placeholder="Search projects..." class="search-input">
@@ -25,172 +25,100 @@ description: A collection of software development projects demonstrating experti
 <section class="featured-projects-section">
     <div class="container">
         <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Enterprise-grade AI infrastructure and RAG systems</p>
         <div class="projects-grid grid-3">
-            
-            <!-- SecurityLens -->
-            <div class="project-card card" data-category="security" data-keywords="security vulnerability scanning analysis">
-                <div class="project-badge featured">Featured</div>
-                <div class="project-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3 class="project-title">SecurityLens</h3>
-                <p class="project-description">
-                    Open-source security analysis platform for vulnerability discovery and education. 
-                    Features web-based scanning interface with support for 32+ vulnerability types.
-                </p>
-                <div class="project-stats">
-                    <span class="stat"><i class="fas fa-star"></i> Production Ready</span>
-                    <span class="stat"><i class="fas fa-users"></i> Active Users</span>
-                </div>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Security</span>
-                    <span class="tag">Flask</span>
-                    <span class="tag">Vue.js</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://securitylens.io" class="btn btn-primary btn-sm" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> Live Demo
-                    </a>
-                    <a href="{{ site.baseurl }}/projects/securitylens/" class="btn btn-secondary btn-sm">
-                        <i class="fas fa-info-circle"></i> Details
-                    </a>
-                </div>
-            </div>
 
-            <!-- Pentest MCP -->
-            <div class="project-card card" data-category="security" data-keywords="pentesting security hacking mcp ai professional">
+            <!-- agro-rag-engine -->
+            <div class="project-card card" data-category="rag ai-ml" data-keywords="rag search vector embeddings reranker cross-encoder langgraph mcp fastapi qdrant">
                 <div class="project-badge featured">Featured</div>
-                <div class="project-icon">
-                    <i class="fas fa-bug"></i>
-                </div>
-                <h3 class="project-title">Pentest MCP</h3>
-                <p class="project-description">
-                    Professional penetration testing toolkit with STDIO/HTTP/SSE support. 
-                    Integrates Nmap, Gobuster, Nikto, John the Ripper, and Hashcat with GPU acceleration through natural language commands.
-                </p>
-                <div class="project-stats">
-                    <span class="stat"><i class="fas fa-layer-group"></i> Multi-Transport</span>
-                    <span class="stat"><i class="fas fa-microchip"></i> GPU Accelerated</span>
-                </div>
-                <div class="project-tags">
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Security</span>
-                    <span class="tag">Docker</span>
-                    <span class="tag">GPU</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/DMontgomery40/pentest-mcp" class="btn btn-primary btn-sm" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="{{ site.baseurl }}/projects/pentest-mcp/" class="btn btn-secondary btn-sm">
-                        <i class="fas fa-info-circle"></i> Details
-                    </a>
-                </div>
-            </div>
-
-            <!-- Faxbot -->
-            <div class="project-card card" data-category="tools infrastructure" data-keywords="fax communications hipaa api compliance mcp">
-                <div class="project-badge featured">Featured</div>
-                <div class="project-icon">
-                    <i class="fas fa-fax"></i>
-                </div>
-                <h3 class="project-title">Faxbot</h3>
-                <p class="project-description">
-                    The only known open‑source, self‑hosted fax server and API — and the only fax server (as far as known) that supports distinct inbound vs. outbound provider routing for cost, reliability, and compliance flexibility. HIPAA‑aligned design, Docker deploy, a clean REST surface, and MCP integration so AI assistants can send/receive faxes via auditable actions.
-                </p>
-                <div class="project-stats">
-                    <span class="stat"><i class="fas fa-shield-alt"></i> HIPAA Aligned</span>
-                    <span class="stat"><i class="fas fa-docker"></i> Docker Ready</span>
-                </div>
-                <div class="project-tags">
-                    <span class="tag">TypeScript</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">Docker</span>
-                    <span class="tag">REST</span>
-                    <span class="tag">MCP</span>
-                    <span class="tag">HIPAA</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://faxbot.net" class="btn btn-primary btn-sm" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> Live Site
-                    </a>
-                    <a href="https://github.com/DMontgomery40/Faxbot" class="btn btn-primary btn-sm" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="{{ site.baseurl }}/projects/faxbot/" class="btn btn-secondary btn-sm">
-                        <i class="fas fa-info-circle"></i> Details
-                    </a>
-                </div>
-            </div>
-
-            <!-- Deepseek MCP Server -->
-            <div class="project-card card" data-category="ai-ml" data-keywords="ai ml llm mcp server deepseek">
-                <div class="project-badge new">New</div>
                 <div class="project-icon">
                     <i class="fas fa-brain"></i>
                 </div>
-                <h3 class="project-title">Deepseek MCP Server</h3>
+                <h3 class="project-title">agro-rag-engine</h3>
                 <p class="project-description">
-                    Model Context Protocol server for running large language models locally. 
-                    Bypass rate limits while keeping your data private.
+                    Enterprise-grade RAG workspace for codebases — 240K+ LOC production platform with self-learning
+                    cross-encoder, hybrid search (BM25 + Qdrant), 28 API router modules, and MCP servers.
                 </p>
                 <div class="project-stats">
-                    <span class="stat"><i class="fab fa-github"></i> 50+ Stars</span>
-                    <span class="stat"><i class="fas fa-download"></i> 1K+ Downloads</span>
+                    <span class="stat"><i class="fas fa-code"></i> 240K+ LOC</span>
+                    <span class="stat"><i class="fas fa-graduation-cap"></i> Self-Learning</span>
                 </div>
                 <div class="project-tags">
                     <span class="tag">Python</span>
-                    <span class="tag">AI/ML</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">RAG</span>
+                    <span class="tag">ML Pipeline</span>
                     <span class="tag">FastAPI</span>
-                    <span class="tag">MCP</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/DMontgomery40/deepseek-mcp-server" class="btn btn-primary btn-sm" target="_blank">
+                    <a href="https://github.com/DMontgomery40/agro-rag-engine" class="btn btn-primary btn-sm" target="_blank">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="{{ site.baseurl }}/projects/deepseek-mcp-server/" class="btn btn-secondary btn-sm">
+                    <a href="{{ site.baseurl }}/projects/agro-rag-engine/" class="btn btn-secondary btn-sm">
                         <i class="fas fa-info-circle"></i> Details
                     </a>
                 </div>
             </div>
 
-            <!-- Faxbot -->
-            <div class="project-card card" data-category="tools" data-keywords="fax communications hipaa compliance mcp api">
-            <div class="project-card card" data-category="infrastructure tools" data-keywords="fax communications compliance hipaa api mcp">
-                <div class="project-badge featured">Featured</div>
+            <!-- SecondBrain + MemVid -->
+            <div class="project-card card" data-category="rag ai-ml" data-keywords="memvid ocr vision rag search secondbrain deepseek chromadb embeddings">
+                <div class="project-badge new">Cutting Edge</div>
                 <div class="project-icon">
-                    <i class="fas fa-fax"></i>
+                    <i class="fas fa-eye"></i>
                 </div>
-                <h3 class="project-title">Faxbot</h3>
+                <h3 class="project-title">SecondBrain + MemVid</h3>
                 <p class="project-description">
-                    The only known open‑source, self‑hosted fax server and API — and the only fax server (as far as known) that supports distinct inbound vs. outbound provider routing for cost, reliability, and compliance flexibility. HIPAA‑aligned design, Docker deploy, a clean REST surface, and MCP integration so AI assistants can send/receive faxes via auditable actions.
+                    Local-first visual memory system with RAG-enabled video search. Continuous screen capture →
+                    OCR → ChromaDB vectors → MemVid compression. DeepSeek-OCR for enhanced document extraction.
                 </p>
                 <div class="project-stats">
-                    <span class="stat"><i class="fas fa-shield-alt"></i> HIPAA-Aligned</span>
-                    <span class="stat"><i class="fas fa-server"></i> Self-Hosted</span>
-                    The only known open-source, self-hosted fax server and API — and the only fax server (as far as known) that supports distinct inbound vs. outbound provider routing for cost, reliability, and compliance flexibility. HIPAA-aligned design, Docker deploy, a clean REST surface, and MCP integration so AI assistants can send/receive faxes via auditable actions.
-                </p>
-                <div class="project-stats">
-                    <span class="stat"><i class="fas fa-server"></i> Self-Hosted</span>
-                    <span class="stat"><i class="fas fa-shield-alt"></i> HIPAA-Aligned</span>
+                    <span class="stat"><i class="fas fa-compress"></i> 99% Compression</span>
+                    <span class="stat"><i class="fas fa-search"></i> Hybrid Search</span>
                 </div>
                 <div class="project-tags">
-                    <span class="tag">TypeScript</span>
                     <span class="tag">Python</span>
-                    <span class="tag">Docker</span>
-                    <span class="tag">REST</span>
-                    <span class="tag">MCP</span>
-                    <span class="tag">HIPAA</span>
+                    <span class="tag">RAG</span>
+                    <span class="tag">MemVid</span>
+                    <span class="tag">Vision AI</span>
+                    <span class="tag">ChromaDB</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://faxbot.net" class="btn btn-primary btn-sm" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> Live Site
-                    </a>
-                    <a href="https://github.com/DMontgomery40/Faxbot" class="btn btn-primary btn-sm" target="_blank">
+                    <a href="https://github.com/DMontgomery40/secondbrain" class="btn btn-primary btn-sm" target="_blank">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="{{ site.baseurl }}/projects/faxbot/" class="btn btn-secondary btn-sm">
+                    <a href="{{ site.baseurl }}/projects/secondbrain-memvid/" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-info-circle"></i> Details
+                    </a>
+                </div>
+            </div>
+
+            <!-- qEEG Council -->
+            <div class="project-card card" data-category="ai-ml" data-keywords="llm orchestration multi-model consensus medical vision pdf analysis">
+                <div class="project-badge featured">Featured</div>
+                <div class="project-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="project-title">qEEG Council</h3>
+                <p class="project-description">
+                    6-stage multi-LLM deliberation workflow for medical report analysis. GPT-4o, Claude 3.5, and
+                    Gemini analyze in parallel, then build consensus through structured comparison.
+                </p>
+                <div class="project-stats">
+                    <span class="stat"><i class="fas fa-layer-group"></i> 6-Stage Pipeline</span>
+                    <span class="stat"><i class="fas fa-brain"></i> Multi-LLM</span>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Vision AI</span>
+                    <span class="tag">Medical</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/DMontgomery40/qEEG-analysis" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="{{ site.baseurl }}/projects/qeeg-council/" class="btn btn-secondary btn-sm">
                         <i class="fas fa-info-circle"></i> Details
                     </a>
                 </div>
@@ -204,130 +132,148 @@ description: A collection of software development projects demonstrating experti
     <div class="container">
         <h2 class="section-title">All Projects</h2>
         <div class="projects-grid grid-3" id="projectsContainer">
-            
-            <!-- vivified -->
-            <div class="project-card card" data-category="security" data-keywords="zero-trust security kernel policy isolation">
-            <div class="project-card card" data-category="security" data-keywords="zero-trust security kernel policy-as-code">
-            <div class="project-card card" data-category="security" data-keywords="zero-trust security policy kernel typescript python">
+
+            <!-- local-explainer-video -->
+            <div class="project-card card" data-category="ai-ml" data-keywords="video tts text-to-speech image generation multimodal document">
                 <div class="project-icon">
-                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-video"></i>
                 </div>
-                <h3 class="project-title">vivified</h3>
+                <h3 class="project-title">local-explainer-video</h3>
                 <p class="project-description">
-                    Zero-Trust Enterprise Application Kernel enforcing capability-gated interfaces, policy-as-code isolation, and least-privilege boundaries. Hardens multi-component architectures with auditable flows and minimized attack surface.
-                    Zero‑Trust Enterprise Application Kernel enforcing capability‑gated interfaces, policy‑as‑code isolation, and least‑privilege boundaries. Hardens multi‑component architectures with auditable flows and minimized attack surface.
+                    AI-powered document-to-video pipeline. LLM directs storyboarding, generates images,
+                    synthesizes speech, and assembles narrated MP4 explanations.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">TTS</span>
+                    <span class="tag">Image Gen</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/DMontgomery40/local-explainer-video" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="{{ site.baseurl }}/projects/local-explainer-video/" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-info-circle"></i> Details
+                    </a>
+                </div>
+            </div>
+
+            <!-- thrylen (VIVIFIED) -->
+            <div class="project-card card" data-category="security infrastructure" data-keywords="encryption security aes messaging privacy domestic violence safety">
+                <div class="project-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="project-title">thrylen (VIVIFIED)</h3>
+                <p class="project-description">
+                    Encrypted messaging system with e-commerce cover. AES-256-GCM encryption, zero-footprint
+                    design, multi-theme storefronts. Built for survivor safety.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Netlify</span>
+                    <span class="tag">AES-256</span>
+                    <span class="tag">Security</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/DMontgomery40/thrylen" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- DeepSeek MCP Server -->
+            <div class="project-card card" data-category="ai-ml infrastructure" data-keywords="mcp deepseek llm api server r1 reasoning">
+                <div class="project-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3 class="project-title">DeepSeek MCP Server</h3>
+                <p class="project-description">
+                    Model Context Protocol server for DeepSeek models including R1 reasoning.
+                    Multi-turn conversation support with automatic fallbacks.
                 </p>
                 <div class="project-tags">
                     <span class="tag">TypeScript</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">Zero-Trust</span>
-                    <span class="tag">Policy-as-Code</span>
-                    <span class="tag">Zero‑Trust</span>
-                    <span class="tag">Policy‑as‑Code</span>
+                    <span class="tag">MCP</span>
+                    <span class="tag">DeepSeek</span>
+                    <span class="tag">npm</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/DMontgomery40/vivified" class="btn btn-primary btn-sm" target="_blank">
+                    <a href="https://github.com/DMontgomery40/mcp_deepseek" class="btn btn-primary btn-sm" target="_blank">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="{{ site.baseurl }}/projects/vivified/" class="btn btn-secondary btn-sm">
+                    <a href="{{ site.baseurl }}/projects/deepseek-mcp-server/" class="btn btn-secondary btn-sm">
                         <i class="fas fa-info-circle"></i> Details
                     </a>
                 </div>
             </div>
 
-            <!-- agro-rag-engine -->
-            <div class="project-card card" data-category="ai-ml" data-keywords="rag retrieval vector ai ml agriculture">
-            
-            <!-- agro-rag-engine -->
-            <div class="project-card card" data-category="ai-ml" data-keywords="rag vector retrieval ai ml agriculture">
+            <!-- SecurityLens -->
+            <div class="project-card card" data-category="security" data-keywords="vulnerability scanning analysis pentesting web security">
                 <div class="project-icon">
-                    <i class="fas fa-seedling"></i>
+                    <i class="fas fa-search"></i>
                 </div>
-                <h3 class="project-title">agro-rag-engine</h3>
+                <h3 class="project-title">SecurityLens</h3>
                 <p class="project-description">
-                    Domain-focused RAG engine for agricultural content: ingestion → structured chunking & embedding → vector indexing → high-signal retrieval → prompt orchestration grounding outputs in authoritative sources. Includes a demo UI for rapid iteration.
-
-            <!-- agro-rag-engine -->
-            <div class="project-card card" data-category="ai-ml" data-keywords="rag retrieval vector ai ml python typescript agricultural">
-                <div class="project-icon">
-                    <i class="fas fa-seedling"></i>
-                </div>
-                <h3 class="project-title">agro‑rag‑engine</h3>
-                <p class="project-description">
-                    Domain‑focused RAG engine for agricultural content: ingestion → structured chunking &amp; embedding → vector indexing → high‑signal retrieval → prompt orchestration grounding outputs in authoritative sources. Includes a demo UI for rapid iteration.
+                    Open-source security analysis platform with 32+ vulnerability detection types.
+                    Web-based scanning interface for penetration testing.
                 </p>
                 <div class="project-tags">
                     <span class="tag">Python</span>
-                    <span class="tag">TypeScript</span>
-                    <span class="tag">RAG</span>
-                    <span class="tag">Vector</span>
-                    <span class="tag">AI/ML</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">Vue.js</span>
+                    <span class="tag">Security</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/DMontgomery40/agro-rag-engine" class="btn btn-primary btn-sm" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
+                    <a href="https://securitylens.io" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
                     </a>
-                    <a href="{{ site.baseurl }}/projects/agro-rag-engine/" class="btn btn-secondary btn-sm">
+                    <a href="{{ site.baseurl }}/projects/SecurityLens/" class="btn btn-secondary btn-sm">
                         <i class="fas fa-info-circle"></i> Details
                     </a>
                 </div>
             </div>
 
-            <!-- agentspec -->
-            <div class="project-card card" data-category="tools" data-keywords="python tooling ci spec ai documentation">
+            <!-- Pentest MCP -->
+            <div class="project-card card" data-category="security infrastructure" data-keywords="pentesting nmap hashcat gpu security mcp">
                 <div class="project-icon">
-                    <i class="fas fa-file-code"></i>
-            
-            <!-- agentspec -->
-            <div class="project-card card" data-category="tools" data-keywords="python tooling ci spec docstrings ai">
-                <div class="project-icon">
-                    <i class="fas fa-file-contract"></i>
+                    <i class="fas fa-bug"></i>
                 </div>
-                <h3 class="project-title">agentspec</h3>
+                <h3 class="project-title">Pentest MCP</h3>
                 <p class="project-description">
-                    Schema-enforced, machine-readable docstrings for Python codebases enabling reliable AI/LLM tooling and CI validation. Contracts become parseable and enforceable to reduce ambiguity for tooling and model integrations.
-
-            <!-- agentspec -->
-            <div class="project-card card" data-category="tools" data-keywords="python tooling ci spec schema docstrings ai llm">
-                <div class="project-icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3 class="project-title">agentspec</h3>
-                <p class="project-description">
-                    Schema‑enforced, machine‑readable docstrings for Python codebases enabling reliable AI/LLM tooling and CI validation. Contracts become parseable and enforceable to reduce ambiguity for tooling and model integrations.
+                    Professional penetration testing toolkit via MCP. Integrates Nmap, Gobuster,
+                    Nikto, Hashcat with GPU acceleration through natural language.
                 </p>
                 <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Tooling</span>
-                    <span class="tag">CI</span>
-                    <span class="tag">Spec</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">MCP</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">GPU</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/DMontgomery40/agentspec" class="btn btn-primary btn-sm" target="_blank">
+                    <a href="https://github.com/DMontgomery40/pentest-mcp" class="btn btn-primary btn-sm" target="_blank">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="{{ site.baseurl }}/projects/agentspec/" class="btn btn-secondary btn-sm">
+                    <a href="{{ site.baseurl }}/projects/pentest-mcp/" class="btn btn-secondary btn-sm">
                         <i class="fas fa-info-circle"></i> Details
                     </a>
                 </div>
             </div>
-            
 
             <!-- Intel NPU Monitor -->
-            <div class="project-card card" data-category="tools infrastructure" data-keywords="intel npu monitoring hardware">
+            <div class="project-card card" data-category="infrastructure" data-keywords="intel npu monitoring hardware ai accelerator">
                 <div class="project-icon">
                     <i class="fas fa-microchip"></i>
                 </div>
                 <h3 class="project-title">Intel NPU Monitor</h3>
                 <p class="project-description">
-                    Lightweight monitoring tool for Intel Neural Processing Units. 
-                    Just 52 lines of pure Python with zero dependencies.
+                    Lightweight monitoring tool for Intel Neural Processing Units.
+                    52 lines of pure Python with zero dependencies.
                 </p>
                 <div class="project-tags">
                     <span class="tag">Python</span>
                     <span class="tag">Hardware</span>
                     <span class="tag">NPU</span>
-                    <span class="tag">Monitoring</span>
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/DMontgomery40/intel-npu-top" class="btn btn-primary btn-sm" target="_blank">
@@ -338,170 +284,31 @@ description: A collection of software development projects demonstrating experti
                     </a>
                 </div>
             </div>
-            
+
             <!-- MCP 3D Printer Server -->
-            <div class="project-card card" data-category="tools infrastructure" data-keywords="3d printer mcp iot automation">
+            <div class="project-card card" data-category="infrastructure" data-keywords="3d printer mcp iot automation octoprint klipper">
                 <div class="project-icon">
                     <i class="fas fa-cube"></i>
                 </div>
                 <h3 class="project-title">MCP 3D Printer Server</h3>
                 <p class="project-description">
-                    AI-powered 3D printer control through Model Context Protocol. 
+                    AI-powered 3D printer control through Model Context Protocol.
                     Universal support for OctoPrint, Klipper, Duet, and more.
                 </p>
                 <div class="project-tags">
                     <span class="tag">Node.js</span>
-                    <span class="tag">IoT</span>
-                    <span class="tag">3D Printing</span>
                     <span class="tag">MCP</span>
+                    <span class="tag">IoT</span>
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/DMontgomery40/mcp-3D-printer-server" class="btn btn-primary btn-sm" target="_blank">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="{{ site.baseurl }}/projects/mcp-3d-printer-server/" class="btn btn-secondary btn-sm">
+                    <a href="{{ site.baseurl }}/projects/mcp-3D-printer-server/" class="btn btn-secondary btn-sm">
                         <i class="fas fa-info-circle"></i> Details
                     </a>
                 </div>
             </div>
-
-            <!-- BirdStats GPT -->
-            <div class="project-card card" data-category="ai-ml" data-keywords="birds ai gpt data analysis ornithology">
-                <div class="project-icon">
-                    <i class="fas fa-dove"></i>
-                </div>
-                <h3 class="project-title">BirdStats GPT</h3>
-                <p class="project-description">
-                    AI-powered bird observation analysis connecting BirdNET-Pi data with eBird. 
-                    Natural language interface for birding statistics.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">AI/ML</span>
-                    <span class="tag">Data Analysis</span>
-                    <span class="tag">APIs</span>
-                    <span class="tag">OpenAI</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://chat.openai.com/g/g-G8R6D6ufP-birdstats-gpt" class="btn btn-primary btn-sm" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> Try It
-                    </a>
-                    <a href="{{ site.baseurl }}/projects/birdstatsgpt/" class="btn btn-secondary btn-sm">
-                        <i class="fas fa-info-circle"></i> Details
-                    </a>
-                </div>
-            </div>
-
-            <!-- MCP Server BirdStats -->
-            <div class="project-card card" data-category="ai-ml tools" data-keywords="mcp birds api server data">
-                <div class="project-icon">
-                    <i class="fas fa-server"></i>
-                </div>
-                <h3 class="project-title">MCP Server BirdStats</h3>
-                <p class="project-description">
-                    Model Context Protocol server for bird observation data. 
-                    Cross-reference BirdNET-Pi with eBird observations.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">Node.js</span>
-                    <span class="tag">MCP</span>
-                    <span class="tag">APIs</span>
-                    <span class="tag">Data</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/DMontgomery40/mcp-server-birdstats" class="btn btn-primary btn-sm" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="{{ site.baseurl }}/projects/mcp-server-birdstats/" class="btn btn-secondary btn-sm">
-                        <i class="fas fa-info-circle"></i> Details
-                    </a>
-                </div>
-            </div>
-
-            <!-- MCP Canvas Server -->
-            <div class="project-card card" data-category="tools" data-keywords="canvas lms education mcp server">
-                <div class="project-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <h3 class="project-title">MCP Canvas Server</h3>
-                <p class="project-description">
-                    Canvas LMS integration via Model Context Protocol. 
-                    Automated course management and grade analysis.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Education</span>
-                    <span class="tag">LMS</span>
-                    <span class="tag">MCP</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/DMontgomery40/mcp-server-canvas" class="btn btn-primary btn-sm" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="{{ site.baseurl }}/projects/mcp-server-canvas/" class="btn btn-secondary btn-sm">
-                        <i class="fas fa-info-circle"></i> Details
-                    </a>
-                </div>
-            </div>
-
-            <!-- Attack Vector Analysis Tool -->
-            <div class="project-card card" data-category="security" data-keywords="attack vector analysis security vulnerability">
-                <div class="project-icon">
-                    <i class="fas fa-network-wired"></i>
-                </div>
-                <h3 class="project-title">Attack Vector Analysis</h3>
-                <p class="project-description">
-                    Interactive security vulnerability assessment interface. 
-                    Maps relationships between attack vectors and risk levels.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">React</span>
-                    <span class="tag">Security</span>
-                    <span class="tag">Visualization</span>
-                    <span class="tag">Education</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://claude.site/artifacts/abcf42a2-194c-4593-afbd-9ba562b56d79" class="btn btn-primary btn-sm" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> Demo
-                    </a>
-                    <a href="{{ site.baseurl }}/projects/attackvectoranalysistool/" class="btn btn-secondary btn-sm">
-                        <i class="fas fa-info-circle"></i> Details
-                    </a>
-                </div>
-            </div>
-
-            <!-- Secure Anonymous Messaging System -->
-            <div class="project-card card" data-category="security" data-keywords="steganography security privacy messaging encryption">
-            <div class="project-card card" data-category="security" data-keywords="security steganography encryption privacy zero-footprint">
-            <div class="project-card card" data-category="security tools" data-keywords="security steganography crypto privacy zero-footprint">
-                <div class="project-icon">
-                    <i class="fas fa-user-secret"></i>
-                </div>
-                <h3 class="project-title">Secure Anonymous Messaging System | Open Source Contribution</h3>
-                <p class="project-description">
-                    Steganographic communications disguised as an e-commerce returns workflow; time-limited per-message unlock (10s), encrypted storage with decoy text, zero-footprint UX. Deployed to prevent harm in a domestic violence case.
-                    Steganographic communications disguised as an e‑commerce returns workflow; time‑limited per‑message unlock (10s), encrypted storage with decoy text, zero‑footprint UX. Deployed to prevent harm in a domestic violence case.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">Security</span>
-                    <span class="tag">Steganography</span>
-                    <span class="tag">Crypto</span>
-                    <span class="tag">Privacy</span>
-                    <span class="tag">Zero-Footprint</span>
-                    <span class="tag">Zero‑Footprint</span>
-                </div>
-                <div class="project-links">
-                    <a href="{{ site.baseurl }}/projects/secure-anonymous-messaging/" class="btn btn-secondary btn-sm">
-                        <i class="fas fa-info-circle"></i> Details
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Load More Button -->
-        <div class="text-center" style="margin-top: 3rem;">
-            <button class="btn btn-secondary" id="loadMoreBtn" style="display: none;">
-                <i class="fas fa-plus"></i> Load More Projects
-            </button>
         </div>
     </div>
 </section>
@@ -515,25 +322,25 @@ description: A collection of software development projects demonstrating experti
                 <div class="stat-icon">
                     <i class="fas fa-code"></i>
                 </div>
-                <div class="stat-number">15</div>
-                <div class="stat-label">Total Projects</div>
-                <div class="stat-description">Across multiple domains</div>
+                <div class="stat-number">250K+</div>
+                <div class="stat-label">Lines of Code</div>
+                <div class="stat-description">agro-rag-engine alone is 240K+</div>
             </div>
             <div class="stat-card card">
                 <div class="stat-icon">
-                    <i class="fas fa-language"></i>
+                    <i class="fas fa-brain"></i>
                 </div>
-                <div class="stat-number">7</div>
-                <div class="stat-label">Languages Used</div>
-                <div class="stat-description">Python, Node.js, Go, and more</div>
+                <div class="stat-number">4</div>
+                <div class="stat-label">RAG Systems</div>
+                <div class="stat-description">Production-grade retrieval pipelines</div>
             </div>
             <div class="stat-card card">
                 <div class="stat-icon">
-                    <i class="fas fa-star"></i>
+                    <i class="fas fa-plug"></i>
                 </div>
-                <div class="stat-number">200+</div>
-                <div class="stat-label">GitHub Stars</div>
-                <div class="stat-description">Community appreciation</div>
+                <div class="stat-number">5</div>
+                <div class="stat-label">MCP Servers</div>
+                <div class="stat-description">Model Context Protocol integrations</div>
             </div>
             <div class="stat-card card">
                 <div class="stat-icon">
@@ -615,6 +422,13 @@ description: A collection of software development projects demonstrating experti
     color: var(--text-muted);
 }
 
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
 /* Project Cards */
 .featured-projects-section,
 .all-projects-section,
@@ -685,7 +499,7 @@ description: A collection of software development projects demonstrating experti
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.6;
-    min-height: 4rem; /* Ensure consistent card heights */
+    min-height: 4rem;
 }
 
 .project-stats {
@@ -783,7 +597,7 @@ description: A collection of software development projects demonstrating experti
 @media (max-width: 768px) {
     .projects-filter {
         padding: 1.5rem 0;
-        position: static; /* Remove sticky on mobile */
+        position: static;
     }
 
     .filter-tabs {
@@ -792,39 +606,23 @@ description: A collection of software development projects demonstrating experti
         gap: 0.75rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .filter-tab {
         width: 200px;
         text-align: center;
         padding: 0.75rem 1rem;
         font-size: 0.9rem;
     }
-    
+
     .filter-search {
         max-width: 100%;
         padding: 0 1rem;
     }
 
-    .search-input {
-        font-size: 1rem; /* Prevent zoom on iOS */
-        padding: 0.9rem 1rem 0.9rem 3rem;
-    }
-    
     .featured-projects-section,
     .all-projects-section,
     .project-stats-section {
         padding: 2.5rem 0;
-    }
-
-    .section-title {
-        font-size: 2.2rem;
-        margin-bottom: 0.8rem;
-    }
-
-    .section-subtitle {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-        padding: 0 1rem;
     }
 
     .project-card {
@@ -832,49 +630,8 @@ description: A collection of software development projects demonstrating experti
         margin-bottom: 1.5rem;
     }
 
-    .project-badge {
-        top: 0.8rem;
-        right: 0.8rem;
-        padding: 0.2rem 0.6rem;
-        font-size: 0.7rem;
-    }
-
-    .project-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 1.3rem;
-        margin-bottom: 1.2rem;
-    }
-
-    .project-title {
-        font-size: 1.3rem;
-        margin-bottom: 0.8rem;
-    }
-
     .project-description {
-        font-size: 0.95rem;
-        margin-bottom: 1.2rem;
         min-height: auto;
-    }
-
-    .project-stats {
-        justify-content: center;
-        margin-bottom: 1.2rem;
-        flex-wrap: wrap;
-    }
-
-    .stat {
-        font-size: 0.8rem;
-    }
-
-    .project-tags {
-        justify-content: center;
-        margin-bottom: 1.2rem;
-    }
-
-    .tag {
-        font-size: 0.75rem;
-        padding: 0.25rem 0.6rem;
     }
 
     .project-links {
@@ -885,107 +642,7 @@ description: A collection of software development projects demonstrating experti
     .project-links .btn {
         width: 100%;
         justify-content: center;
-        padding: 0.8rem 1rem;
     }
-
-    .project-stats-section .stat-card {
-        padding: 1.5rem 1rem;
-    }
-
-    .stat-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 1.3rem;
-    }
-
-    .stat-number {
-        font-size: 2rem;
-    }
-
-    .stat-label {
-        font-size: 0.9rem;
-    }
-
-    .stat-description {
-        font-size: 0.8rem;
-    }
-}
-
-/* Small mobile phones - Projects specific */
-@media (max-width: 480px) {
-    .projects-filter {
-        padding: 1rem 0;
-    }
-
-    .filter-tab {
-        width: 180px;
-        padding: 0.6rem 0.8rem;
-        font-size: 0.85rem;
-    }
-
-    .featured-projects-section,
-    .all-projects-section,
-    .project-stats-section {
-        padding: 2rem 0;
-    }
-
-    .section-title {
-        font-size: 1.8rem;
-    }
-
-    .section-subtitle {
-        font-size: 0.9rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .project-card {
-        padding: 1.2rem;
-    }
-
-    .project-icon {
-        width: 45px;
-        height: 45px;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-    }
-
-    .project-title {
-        font-size: 1.2rem;
-    }
-
-    .project-description {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-    }
-
-    .project-stats {
-        margin-bottom: 1rem;
-    }
-
-    .project-tags {
-        margin-bottom: 1rem;
-        gap: 0.4rem;
-    }
-
-    .tag {
-        font-size: 0.7rem;
-        padding: 0.2rem 0.5rem;
-    }
-}
-
-/* Animation for filtering */
-.project-card {
-    transition: all 0.5s ease;
-}
-
-.project-card.filtering-out {
-    opacity: 0;
-    transform: scale(0.8);
-}
-
-.project-card.filtering-in {
-    opacity: 1;
-    transform: scale(1);
 }
 </style>
 
@@ -995,19 +652,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectCards = document.querySelectorAll('.project-card');
     const searchInput = document.getElementById('projectSearch');
 
-    // Filter functionality
     filterTabs.forEach(tab => {
         tab.addEventListener('click', function() {
-            // Update active tab
             filterTabs.forEach(t => t.classList.remove('active'));
             this.classList.add('active');
-            
+
             const filter = this.getAttribute('data-filter');
             filterProjects(filter, searchInput.value);
         });
     });
 
-    // Search functionality
     searchInput.addEventListener('input', function() {
         const activeFilter = document.querySelector('.filter-tab.active').getAttribute('data-filter');
         filterProjects(activeFilter, this.value);
@@ -1019,31 +673,22 @@ document.addEventListener('DOMContentLoaded', function() {
             const cardKeywords = card.getAttribute('data-keywords') || '';
             const cardTitle = card.querySelector('.project-title').textContent.toLowerCase();
             const cardDescription = card.querySelector('.project-description').textContent.toLowerCase();
-            
+
             const matchesCategory = category === 'all' || cardCategory.includes(category);
-            const matchesSearch = searchTerm === '' || 
+            const matchesSearch = searchTerm === '' ||
                 cardTitle.includes(searchTerm.toLowerCase()) ||
                 cardDescription.includes(searchTerm.toLowerCase()) ||
                 cardKeywords.includes(searchTerm.toLowerCase());
-            
+
             if (matchesCategory && matchesSearch) {
                 card.classList.remove('hidden');
-                card.classList.add('filtering-in');
-                card.classList.remove('filtering-out');
             } else {
                 card.classList.add('hidden');
-                card.classList.add('filtering-out');
-                card.classList.remove('filtering-in');
             }
         });
     }
 
     // Intersection Observer for animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -1051,9 +696,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 entry.target.style.transform = 'translateY(0)';
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.1 });
 
-    // Observe project cards for animation
     projectCards.forEach((card, index) => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(50px)';

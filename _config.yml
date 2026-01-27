@@ -1,6 +1,6 @@
 # _config.yml - GitHub Pages Compatible
-title: David Montgomery - Full Stack Developer & Security Researcher
-description: Building the backend, securing the stack, and making AI accessible to everyone
+title: David Montgomery - AI/RAG Engineer
+description: Building production-grade RAG systems, ML pipelines, and AI infrastructure
 url: https://dmontgomery40.github.io
 baseurl: "/Portfolio"
 
