@@ -1,0 +1,127 @@
+// ============================================
+// Layout — Container, Grid, Page Structure
+// ============================================
+
+.container {
+  width: 100%;
+  max-width: $bp-xl;
+  margin: 0 auto;
+  padding: 0 $space-4;
+
+  @media (min-width: $bp-md) {
+    padding: 0 $space-8;
+  }
+}
+
+.page-content {
+  padding: $space-8 0;
+  min-height: calc(100vh - 200px);
+
+  @media (min-width: $bp-md) {
+    padding: $space-12 0;
+  }
+}
+
+// Project grid
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-8;
+
+  @media (min-width: $bp-sm) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $space-8;
+  }
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+// Two-column layout for project detail
+.project-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-8;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+// Hero section
+.hero {
+  padding: $space-16 0 $space-12;
+  text-align: left;
+
+  @media (min-width: $bp-md) {
+    padding: $space-24 0 $space-16;
+  }
+
+  &__title {
+    font-size: $text-4xl;
+    margin-bottom: $space-4;
+    animation: fade-up 0.6s ease-out both;
+
+    @media (min-width: $bp-md) {
+      font-size: $text-5xl;
+    }
+  }
+
+  &__subtitle {
+    font-size: $text-lg;
+    color: var(--muted-foreground);
+    margin-bottom: $space-2;
+    animation: fade-up 0.6s ease-out 0.1s both;
+
+    @media (min-width: $bp-md) {
+      font-size: $text-xl;
+    }
+  }
+
+  &__description {
+    font-size: $text-base;
+    color: var(--muted-foreground);
+    max-width: 640px;
+    line-height: 1.8;
+    animation: fade-up 0.6s ease-out 0.2s both;
+
+    @media (min-width: $bp-md) {
+      font-size: $text-lg;
+    }
+  }
+}
+
+// Section headings
+.section-heading {
+  font-size: $text-2xl;
+  margin-bottom: $space-8;
+  padding-bottom: $space-3;
+  border-bottom: 1px solid var(--border);
+
+  @media (min-width: $bp-md) {
+    font-size: $text-3xl;
+  }
+}
+
+// Back link
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  color: var(--muted-foreground);
+  font-size: $text-sm;
+  margin-bottom: $space-6;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}

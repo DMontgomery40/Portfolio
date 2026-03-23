@@ -1,26 +1,21 @@
 ---
-title: Latest Articles      
-parent: articles
 layout: default
-nav_order: 1
-has_children: true
-has_toc: true
+title: Articles
 ---
 
-# Latest Articles
+# Articles
 
-## MCP (Model Context Protocol)
+Published on [Medium](https://medium.com/@dmontg).
 
-### [DeepSeek MCP Server: Circumventing “Server Busy” Errors and Keeping Your Data Private](https://medium.com/@dmontg/deepseek-mcp-server-circumventing-server-busy-errors-and-keeping-your-data-private-c52dc7981ba2)
-
-### [How To Install Model Context Protocol (MCP) in 10 minutes or less](https://medium.com/@dmontg/how-to-install-model-context-protocol-mcp-in-10-minutes-or-less-9a8c0560a371)
-
-## AI / LLMs
-
-### [Running An LLM Locally and Connecting to MCP: Without touching the Command Terminal](https://medium.com/@dmontg/running-an-llm-locally-and-connecting-to-mcp-without-touching-the-command-terminal-f3e076a8a4fc)
-
-### [Decoding Quantization: Understanding all Those Qs and Ks, and the Art of Running LLMs Locally](https://medium.com/@dmontg/decoding-quantization-understanding-all-those-qs-and-ks-and-the-art-of-running-llms-locally-c8391f099ed7)
-
-## IaaS / MaaS
-
-### [AI Co-ops: A Radical Approach to Community-Owned AI](https://medium.com/@dmontg/ai-co-ops-a-radical-approach-to-community-owned-ai-b4a2b07d27b8)
+<!-- BLOG-POST-LIST:START -->
+- [Cross-Architecture Benchmarking in Sports Computer Vision: Comparing the Incomparable](https://medium.com/@dmontg/cross-architecture-benchmarking-in-sports-computer-vision-comparing-the-incomparable-01c4e8c5e1a8) -- March 2026
+- [A sincere message/suggestion to r/ChatGPTcomplaints: Your need to fine tune a community-owned model](https://medium.com/@dmontg/a-sincere-message-suggestion-to-r-chatgptcomplaints-your-need-to-fine-tune-a-community-owned-model-00c01cf0feeb) -- January 2026
+- [The Ultimate 5 minute Guide to Install the New gpt-oss Model on Your MacBook](https://medium.com/@dmontg/the-ultimate-5-minute-guide-to-install-the-new-gpt-oss-model-on-you-macbook-9c30b520d45c) -- August 2025
+- [The Broken Promises of WiFi Security](https://medium.com/@dmontg/the-broken-promises-of-wifi-security-ab691a2f298f) -- June 2025
+- [The Great AI Divide: How Pricing Tiers Are Creating a Cognitive Aristocracy](https://medium.com/@dmontg/the-great-ai-divide-how-pricing-tiers-are-creating-a-cognitive-aristocracy-8788294ca5cc) -- June 2025
+- [Unleashing LLM's 3D Printing Capabilities with MCP: A Comprehensive Guide](https://medium.com/@dmontg/unleashing-llms-3d-printing-capabilities-with-mcp-a-comprehensive-guide-e02dcaa14e2a) -- February 2025
+- [Wireless Network Security in 2025 and Beyond](https://medium.com/@dmontg/wireless-network-security-in-2025-and-beyond-71f7c13f9889) -- February 2025
+- [Deep Dive: Fundamentals, and the Future of, Hashing and Cryptography](https://medium.com/@dmontg/deep-dive-fundamentals-and-the-future-of-hashing-and-cryptography-94ad3e458a7e) -- February 2025
+- [WiFi Password Cracking: Techniques, Tools, and Advanced Attacks](https://medium.com/@dmontg/wifi-password-cracking-techniques-tools-and-advanced-attacks-6a4fb0a410f9) -- February 2025
+- [Quick Start Guide to WiFi Password Cracking: Techniques, Tools, and Advanced Attacks](https://medium.com/@dmontg/quick-start-guide-to-wifi-password-cracking-techniques-tools-and-advanced-attacks-9be021b55b46) -- February 2025
+<!-- BLOG-POST-LIST:END -->

@@ -1,16 +1,27 @@
 name: Sync Medium Articles
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs hourly
-  workflow_dispatch:  # Manual trigger option
+    - cron: '0 6 * * 1'  # Weekly on Mondays at 6am UTC
+  workflow_dispatch:  # Manual trigger
+
+permissions:
+  contents: write
+
 jobs:
   update-articles:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+
       - name: Fetch Medium articles
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://medium.com/feed/@dmontg"
-          max_post_count: "7"  # Adjust as needed
+          max_post_count: "20"
+          readme_path: "articles/index.md"
+          template: "- [$title]($url) -- $date"
+          date_format: "mmmm yyyy"
+          commit_message: "chore: sync Medium articles"
+          committer_username: "github-actions[bot]"
+          committer_email: "github-actions[bot]@users.noreply.github.com"

@@ -1,0 +1,178 @@
+// ============================================
+// Reset & Base Typography
+// ============================================
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: $text-base;
+  line-height: 1.7;
+  color: var(--foreground);
+  background-color: var(--background);
+  background-image:
+    radial-gradient(ellipse at 0% 0%, hsla(201, 86%, 35%, 0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 100% 100%, hsla(204, 30%, 89%, 0.06) 0%, transparent 60%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] body {
+  background-image:
+    radial-gradient(ellipse at 0% 0%, hsla(201, 72%, 58%, 0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 100% 100%, hsla(220, 18%, 19%, 0.08) 0%, transparent 60%);
+}
+
+// Headings — Newsreader display font
+h1, h2, h3, h4 {
+  font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--foreground);
+  margin-bottom: $space-4;
+}
+
+h1 { font-size: $text-4xl; }
+h2 { font-size: $text-3xl; }
+h3 { font-size: $text-2xl; }
+h4 { font-size: $text-xl; }
+
+@media (min-width: $bp-md) {
+  h1 { font-size: $text-5xl; }
+  h2 { font-size: $text-4xl; }
+  h3 { font-size: $text-3xl; }
+  h4 { font-size: $text-2xl; }
+}
+
+h5, h6 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: $space-3;
+}
+
+p {
+  margin-bottom: $space-4;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--ring);
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+ul, ol {
+  margin-bottom: $space-4;
+  padding-left: $space-6;
+}
+
+li {
+  margin-bottom: $space-2;
+}
+
+blockquote {
+  border-left: 3px solid var(--primary);
+  padding: $space-3 $space-6;
+  margin: $space-6 0;
+  color: var(--muted-foreground);
+  background: var(--card);
+  border-radius: var(--radius);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: $space-8 0;
+}
+
+// Uppercase tracking label utility
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+// Code blocks
+code {
+  font-family: 'IBM Plex Mono', 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.875em;
+  background: var(--secondary);
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius);
+  color: var(--secondary-foreground);
+}
+
+pre {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: $space-4;
+  overflow-x: auto;
+  margin-bottom: $space-6;
+
+  code {
+    background: none;
+    padding: 0;
+    font-size: $text-sm;
+  }
+}
+
+// Selection
+::selection {
+  background: hsla(201, 86%, 35%, 0.2);
+  color: var(--foreground);
+}
+
+// Animations
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.fade-up {
+  animation: fade-up 0.6s ease-out both;
+}
+
+.fade-in {
+  animation: fade-in 0.4s ease-out both;
+}

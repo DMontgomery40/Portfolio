@@ -1,0 +1,438 @@
+- name: "Ragweld"
+  slug: "ragweld"
+  description: "Open-source MLOps platform for API-first RAG and agent systems with versioned config, tri-hybrid retrieval, and MCP integration."
+  long_description: |
+    Ragweld is a full-stack MLOps platform for building and operating RAG (Retrieval-Augmented Generation) and agent systems. It runs three retrieval methods in parallel -- vector search via pgvector, sparse BM25 search via PostgreSQL FTS, and graph traversal via Neo4j -- then fuses their results with reciprocal rank fusion and optional reranking.
+
+    The platform is API-first with independent model/provider routing for API, chat, CLI, and MCP channels. It includes a Synthetic Data Lab, dual training studios (learning reranker + in-product agent model), an evaluation workbench with run diffs, and built-in tracing and observability with Grafana/Loki integration. All configuration is Pydantic-backed and versioned, with 500+ tunable parameters exposed via both UI and API.
+
+    Ragweld also ships an embedded MCP server on Streamable HTTP, a knowledge graph with automatic entity extraction and community detection, semantic cache with recall gates, and manifest-backed training artifact workflows with provenance tracking.
+  github_url: "https://github.com/DMontgomery40/ragweld"
+  live_url: "https://ragweld.com"
+  docs_url: "https://dmontgomery40.github.io/ragweld/latest/"
+  tech_stack:
+    - "Python"
+    - "FastAPI"
+    - "React"
+    - "TypeScript"
+    - "PostgreSQL"
+    - "pgvector"
+    - "Neo4j"
+    - "Pydantic"
+    - "Grafana"
+    - "Loki"
+    - "MCP"
+  features:
+    - "Tri-hybrid retrieval: vector + sparse + graph search with RRF fusion"
+    - "API-first with embedded MCP server for Claude Desktop/IDE integration"
+    - "Dual training studios with checkpoint promote/rollback and run telemetry"
+    - "Synthetic Data Lab for eval datasets, semantic cards, and autotune patches"
+    - "Knowledge graph with automatic entity extraction and community detection"
+  category: "AI/ML"
+  tags:
+    - "rag"
+    - "mlops"
+    - "mcp"
+    - "knowledge-graph"
+    - "neo4j"
+    - "pgvector"
+    - "developer-tools"
+    - "fastapi"
+  status: "active"
+  has_screenshots: true
+  screenshot_paths:
+    - "assets/routing-api-mcp.png"
+    - "assets/indexing-guardrails.png"
+    - "assets/learning-agent-run-hud.png"
+    - "assets/graph-explorer.png"
+    - "assets/recall-gating.png"
+    - "assets/infrastructure-services.png"
+    - "assets/dock-chooser.png"
+  notable: "Flagship project. 500+ config params. Full MLOps lifecycle from synthetic data to deployment."
+
+- name: "Cathode"
+  slug: "cathode"
+  description: "Local-first explainer video pipeline with React/FastAPI control room, MCP server, and Remotion-backed motion rendering."
+  long_description: |
+    Cathode is a local-first video generation pipeline that turns rough notes, source text, or a finished script into a rendered MP4 through four operator lanes: a React/FastAPI control room, a legacy Streamlit app, an MCP server for agent-driven runs, and a live product demo capture workflow.
+
+    The pipeline supports three composition modes -- classic (image + video with ffmpeg), hybrid (mixed media with Remotion), and motion-only (template-driven motion scenes). Narration audio drives all timing, keeping scenes synchronized across render backends. Cathode is env-driven with pluggable providers for storyboard generation, image creation, TTS, and video rendering, including local options like Kokoro TTS, Qwen image generation on MLX, and local video backends.
+
+    The live demo lane uses Playwright to capture real running applications, with a structured QC review loop where a sub-agent evaluates extracted frames before the final render. All project state, storyboards, and job logs persist locally under a plan.json source of truth.
+  github_url: "https://github.com/DMontgomery40/cathode"
+  live_url: ""
+  demo_url: "https://youtu.be/HHHbcHobg-A"
+  tech_stack:
+    - "Python"
+    - "FastAPI"
+    - "React"
+    - "TypeScript"
+    - "Streamlit"
+    - "Remotion"
+    - "ffmpeg"
+    - "MCP"
+    - "Playwright"
+    - "Kokoro TTS"
+  features:
+    - "Brief-driven storyboard generation with multiple composition modes"
+    - "React/FastAPI control room with background job pipeline"
+    - "MCP server for agent-driven video generation"
+    - "Live product demo capture with Playwright and structured QC review"
+    - "Local-first rendering with Remotion, ffmpeg, and hardware H.264 encoding"
+  category: "AI/ML"
+  tags:
+    - "video-generation"
+    - "mcp"
+    - "remotion"
+    - "explainer-video"
+    - "local-first"
+    - "fastapi"
+    - "react"
+  status: "active"
+  has_screenshots: true
+  screenshot_paths:
+    - "docs/assets/brief-studio-focus.png"
+    - "docs/assets/motion-scene-focus.png"
+    - "docs/assets/render-finished-focus.png"
+    - "docs/assets/cathode-logo.png"
+    - "docs/assets/scene-workspace-hero.png"
+  notable: "4 GitHub stars. YouTube demo available. Four distinct operator lanes."
+
+- name: "Ragweld Crucible"
+  slug: "ragweld-crucible"
+  description: "Operator range planner for estimating training cost, VRAM fit, and GPU availability across providers."
+  long_description: |
+    Crucible is the estimator workbench behind ragweld.com/crucible. It combines model metadata, hardware reference data, provider pricing, and planning heuristics so operators can compare likely training ranges before committing a run.
+
+    The front-end is a React + TypeScript + Vite application with estimator logic, normalization rules, and planner math in a dedicated engine module. It ships with reference datasets for model catalogs, GPU specs, and pricing fallback data, plus a math code workbench route for inspecting the implementation behind the planner.
+
+    This repository is a public mirror of the crucible subtree from the larger ragweld.com site repo, containing the full front-end app, estimator logic, data catalogs, and tests. The live production surface also depends on Netlify Functions from the parent repo.
+  github_url: "https://github.com/DMontgomery40/ragweld-crucible"
+  live_url: "https://ragweld.com/crucible/"
+  tech_stack:
+    - "TypeScript"
+    - "React"
+    - "Vite"
+    - "Tailwind CSS"
+    - "Netlify Functions"
+    - "Vitest"
+  features:
+    - "Training cost estimation across GPU providers and hardware configurations"
+    - "VRAM fit calculator with model metadata and hardware reference data"
+    - "Math code workbench for inspecting planner implementation"
+    - "Model catalog with automated refresh scripts"
+    - "Shareable planning sessions with URL-encoded state"
+  category: "Developer Tools"
+  tags:
+    - "mlops"
+    - "gpu"
+    - "training-cost"
+    - "vram"
+    - "developer-tools"
+    - "estimator"
+  status: "active"
+  has_screenshots: false
+  screenshot_paths: []
+  notable: "Live at ragweld.com/crucible. Companion tool to the ragweld platform."
+
+- name: "qEEG Council"
+  slug: "qeeg-analysis"
+  description: "6-stage LLM deliberation workflow for analyzing qEEG/ERP reports, with multi-model peer review and clinician portal publishing."
+  long_description: |
+    qEEG Council is a multi-model AI deliberation system for analyzing quantitative EEG and event-related potential reports. It orchestrates a 6-stage workflow -- initial analysis, anonymized peer review, revision, consolidation, final review vote, and publication-ready draft -- across multiple LLM providers (OpenAI, Anthropic, Google) via a CLIProxyAPI router.
+
+    The system features a React/Vite frontend and FastAPI backend with full patient management, PDF upload with OCR and page image extraction, SSE-streamed progress, and Markdown/PDF export. Vision-capable models receive PDF page images in Stage 1 for multimodal analysis. The consolidation stage synthesizes all model revisions into a unified report.
+
+    The platform also integrates with an explainer video pipeline for patient education, with QC verification against council artifacts and automatic publishing to a clinician portal sync folder.
+  github_url: "https://github.com/DMontgomery40/qEEG-analysis"
+  live_url: ""
+  tech_stack:
+    - "Python"
+    - "FastAPI"
+    - "React"
+    - "Vite"
+    - "SQLite"
+    - "Tesseract OCR"
+    - "OpenAI API"
+    - "Anthropic API"
+    - "Google AI API"
+  features:
+    - "6-stage multi-model deliberation with peer review and revision cycles"
+    - "Multimodal analysis with PDF page images for vision-capable models"
+    - "Patient management with report upload, OCR, and page extraction"
+    - "SSE-streamed real-time progress during analysis runs"
+    - "Explainer video pipeline integration with clinician portal publishing"
+  category: "Neuroscience"
+  tags:
+    - "neuroscience"
+    - "qeeg"
+    - "llm"
+    - "multi-model"
+    - "healthcare"
+    - "data-analysis"
+    - "fastapi"
+    - "react"
+  status: "active"
+  has_screenshots: true
+  screenshot_paths:
+    - ".playwright-mcp/vibrant-ui-stages.png"
+    - ".playwright-mcp/vibrant-ui-sidebar.png"
+    - ".playwright-mcp/patient-page-resizable.png"
+    - ".playwright-mcp/source-data-pages.png"
+  notable: "Noncommercial license. Multi-model AI deliberation pattern. Integrates with explainer video pipeline."
+
+- name: "GaitSignal"
+  slug: "gaitsignal"
+  description: "Live football pricing-edge concept demo using player-specific movement surprise and venue-grade tracking for in-play market information."
+  long_description: |
+    GaitSignal is a synthetic React prototype demonstrating how contracted in-stadium player tracking combined with player-specific movement models could surface in-play pricing edges before standard market digestion. The core thesis is that per-player temporal models with prediction-surprise scoring, gated by football context (possession, ball access, pitch zone, role demand), reveal commercially relevant signals that universal thresholds miss.
+
+    The demo generates synthetic 20-feature biomechanical vectors, player-specific movement-surprise proxies, and venue-style football context streams. The UI is organized like a live trading desk with panels for match state, player motion lens, pricing workflow timeline, and in-play pricing edge states. Three scenarios -- Saka recovery-run reprice, Pedri press-decay edge, and Musiala contact reset -- demonstrate different signal patterns.
+
+    This is the companion concept to Acoustic Momentum: one modality from the player, one from the crowd. Both explore in-play information that the market may not yet fully price.
+  github_url: "https://github.com/DMontgomery40/GaitSignal"
+  live_url: ""
+  tech_stack:
+    - "TypeScript"
+    - "React"
+    - "Vite"
+    - "D3.js"
+    - "Recharts"
+    - "MediaPipe"
+  features:
+    - "Player-specific movement surprise scoring with context gating"
+    - "Synthetic biomechanical vector generation for three match scenarios"
+    - "Trading desk UI with match state, motion lens, and pricing workflow panels"
+    - "Football-native workflow: venue-grade data assumption, not reskinned basketball"
+    - "Companion concept to Acoustic Momentum for multi-modal pricing edge"
+  category: "Sports Analytics"
+  tags:
+    - "sports-analytics"
+    - "football"
+    - "biomechanics"
+    - "pricing"
+    - "in-play"
+    - "react"
+    - "concept-demo"
+  status: "concept"
+  has_screenshots: true
+  screenshot_paths:
+    - "screenshots/saka-actionable.png"
+    - "screenshots/saka-baseline.png"
+    - "screenshots/musiala-reset.png"
+  notable: "Concept demo. Companion to Acoustic Momentum. Football-native pricing edge thesis."
+
+- name: "Acoustic Momentum"
+  slug: "acoustic-momentum"
+  description: "Weakly-supervised real-time crowd audio classifier for in-play sports pricing, achieving 12ms inference on Apple Silicon."
+  long_description: |
+    Acoustic Momentum turns raw stadium crowd audio into an Attack Pressure Index -- a continuous [0,1] signal that fires during dangerous attacks, near-misses, and high-entropy game moments. The model is trained entirely from match audio plus goal timestamps via weak supervision, requiring no manual frame-by-frame annotation. This approach scales to thousands of hours of archive footage automatically using StatsBomb open data.
+
+    The architecture is a mel spectrogram pipeline feeding an ANE-optimized depthwise-separable CNN encoder into a BiLSTM temporal head, achieving 12ms end-to-end inference on Apple Silicon. The system uses a sliding window of 15 spectrograms (38 seconds of audio history) with strict causal time alignment -- predictions are timestamped at the end of the last processed window, never using future audio.
+
+    The project includes a Streamlit dashboard with ingest, training, and live monitoring tabs. The live mode accepts microphone input for real-time at-venue detection. The project honestly analyzes which market tiers (lower leagues over Premier League) and which strategies (fade over front-run, citing +4.1% per match from academic research) are realistically exploitable.
+  github_url: "https://github.com/DMontgomery40/acoustic-momentum"
+  live_url: ""
+  tech_stack:
+    - "Python"
+    - "PyTorch"
+    - "Streamlit"
+    - "librosa"
+    - "StatsBomb API"
+    - "Apple Neural Engine"
+    - "scikit-learn"
+  features:
+    - "Weakly-supervised training from goal timestamps, no manual annotation"
+    - "12ms end-to-end inference with ANE-optimized CNN + BiLSTM architecture"
+    - "Real-time live microphone monitoring via Streamlit dashboard"
+    - "StatsBomb open data integration for automatic label generation"
+    - "Honest edge analysis distinguishing exploitable from non-exploitable market tiers"
+  category: "AI/ML"
+  tags:
+    - "sports-analytics"
+    - "audio-ml"
+    - "weak-supervision"
+    - "real-time"
+    - "apple-silicon"
+    - "pytorch"
+    - "crowd-audio"
+  status: "concept"
+  has_screenshots: false
+  screenshot_paths: []
+  notable: "12ms inference on Apple Silicon. Companion to GaitSignal. Novel signal: crowd audio as pricing complement."
+
+- name: "Football Tactical Workbench"
+  slug: "football-tactical-workbench"
+  description: "Browser-first football analysis workbench with YOLO detection, tracking, automatic pitch calibration, and detector fine-tuning studio."
+  long_description: |
+    Football Tactical Workbench is a browser-first analysis and detector fine-tuning platform built with React and FastAPI. It has three top-level surfaces: an Analysis Workspace for loading clips, streaming live preview, and reviewing overlay/diagnostics; a Training Studio for scanning YOLO datasets, fine-tuning from the football-pretrained soccana detector, and managing checkpoints; and a Benchmark Lab for running suite-by-recipe benchmark matrices across detectors and pipelines.
+
+    The active analysis pipeline uses soccana for player/referee/ball detection, hybrid appearance-aware tracking with tracklet stitching, jersey-colour home/away separation, soccana_keypoint field registration with automatic pitch calibration refresh every 10 frames, and live browser preview. Training runs in isolated Python subprocesses with full config, logs, and artifact persistence.
+
+    The Benchmark Lab supports first-class recipes including detector:soccana, pipeline:soccermaster, and pipeline:tracklab-sn-gamestate, with matrix-synced charts and explicit handling of blocked or unsupported suite cells. On Apple Silicon, detector inference uses MPS while field calibration falls back to CPU.
+  github_url: "https://github.com/DMontgomery40/football-tactical-workbench"
+  live_url: ""
+  tech_stack:
+    - "Python"
+    - "FastAPI"
+    - "React"
+    - "TypeScript"
+    - "YOLO"
+    - "PyTorch"
+    - "Ultralytics"
+    - "Apple Silicon MPS"
+  features:
+    - "Browser-first analysis workspace with live video preview and overlay export"
+    - "Training Studio for YOLO detector fine-tuning with checkpoint management"
+    - "Benchmark Lab with suite-by-recipe matrices and multi-metric comparison"
+    - "Automatic pitch calibration using soccana_keypoint field registration"
+    - "Hybrid appearance-aware player tracking with jersey-colour team separation"
+  category: "Sports Analytics"
+  tags:
+    - "sports-analytics"
+    - "football"
+    - "computer-vision"
+    - "yolo"
+    - "object-detection"
+    - "tracking"
+    - "react"
+    - "fastapi"
+  status: "active"
+  has_screenshots: true
+  screenshot_paths:
+    - "docs/screenshots/workbench-dashboard.png"
+    - "docs/screenshots/workbench-fullpage.png"
+    - "docs/screenshots/workbench-run-review.png"
+  notable: "Integrates SoccerNet ecosystem. Three product surfaces: analysis, training, benchmarking."
+
+- name: "TTT SSM Eval"
+  slug: "ttt-ssm-eval"
+  description: "Safety research infrastructure for Test-Time Training with external safety gates, canary rollback, and wake/sleep consolidation."
+  long_description: |
+    ttt_ssm_eval is research infrastructure for studying how to make Test-Time Training safe. In standard transformers, garbage in means garbage out; in TTT, garbage in means garbage learned. The repo implements safety checks deliberately outside the computation graph -- gradients cannot flow through regex gates, making them immune to gradient-based bypass attacks.
+
+    The architecture stacks four defense layers with different failure modes: a fast static gate for known attack patterns and entropy anomalies, dynamic canary probes for catastrophic corruption, a slow auditor for cross-session pattern detection, and human review. The system implements complementary learning inspired by biological memory: fast context weights update per-session (hippocampus), core model weights are frozen during inference (neocortex), and offline sleep consolidation replays filtered chat traces into the core model.
+
+    The repo includes three domains: a Nano SSM with branchable plastic matrices and system identification benchmarks, a TTT Sentry monitor with instrumented safety loops, and a TinyLM chat system with per-session fast weights trained via Muon optimizer. A React dashboard provides real-time observation of all safety mechanisms across domains.
+  github_url: "https://github.com/DMontgomery40/ttt_ssm_eval"
+  live_url: ""
+  tech_stack:
+    - "Python"
+    - "PyTorch"
+    - "TypeScript"
+    - "React"
+    - "FastAPI"
+    - "State Space Models"
+    - "BPE Tokenization"
+    - "Muon Optimizer"
+  features:
+    - "External safety gates immune to gradient-based bypass attacks"
+    - "Canary rollback with pre/post update probing and threshold breach detection"
+    - "Wake/sleep consolidation: fast per-session weights + offline core model updates"
+    - "Branchable artifact store ('git for plastic weights') with session forking"
+    - "React dashboard for real-time safety mechanism observation across three domains"
+  category: "AI/ML Research"
+  tags:
+    - "test-time-training"
+    - "safety"
+    - "state-space-models"
+    - "pytorch"
+    - "ml-research"
+    - "adversarial-robustness"
+  status: "active"
+  has_screenshots: true
+  screenshot_paths:
+    - "assets/ui_architecture.png"
+    - "assets/ui_sessions.png"
+    - "assets/ui_physics.png"
+    - "assets/ui_train.png"
+    - "assets/ui_chat.png"
+  notable: "2 GitHub stars. Implements arXiv 2407.04620. Novel external safety architecture for TTT."
+
+- name: "Faxbot"
+  slug: "faxbot"
+  description: "Open-source, self-hostable fax platform with GUI-first Admin Console, multi-backend adapters, MCP integration, and iOS companion app."
+  long_description: |
+    Faxbot is the first and only open-source, self-hostable fax platform with a GUI-first Admin Console. It supports over 20 provider backends -- cloud services like Phaxio, Documo, Sinch, and SignalWire, plus self-hosted options like FreeSWITCH and SIP/Asterisk -- with full freedom to mix and match outbound and inbound providers.
+
+    The platform includes HIPAA-aligned controls with HMAC webhook verification, short-TTL tokens, and compliant logging with no PHI in logs. It ships official MCP servers in both Node and Python for stdio/HTTP/SSE transport, enabling AI assistant integration. Identical SDKs are published for both Node.js (npm install faxbot) and Python (pip install faxbot).
+
+    Faxbot also has an iOS companion app for sending faxes and checking status from mobile, with the traits-first UI architecture ensuring screens render only what the active provider supports. The Admin Console provides one-stop configuration for backends, keys, inbound settings, storage, and diagnostics.
+  github_url: "https://github.com/DMontgomery40/Faxbot"
+  live_url: "https://faxbot.net"
+  docs_url: "https://dmontgomery40.github.io/Faxbot/"
+  demo_url: "https://faxbot.net/admin-demo"
+  tech_stack:
+    - "TypeScript"
+    - "Node.js"
+    - "Python"
+    - "Docker"
+    - "MCP"
+    - "MQTT"
+    - "SIP/Asterisk"
+    - "FreeSWITCH"
+    - "Swift/iOS"
+  features:
+    - "20+ provider backends with mix-and-match outbound/inbound support"
+    - "GUI-first Admin Console with traits-based feature gating"
+    - "HIPAA-aligned security with HMAC verification and compliant logging"
+    - "Official MCP servers (Node + Python) for AI assistant integration"
+    - "iOS companion app and identical Node.js/Python SDKs"
+  category: "Healthcare"
+  tags:
+    - "fax"
+    - "hipaa"
+    - "mcp"
+    - "self-hosted"
+    - "healthcare"
+    - "api"
+    - "ios"
+    - "docker"
+  status: "active"
+  has_screenshots: true
+  screenshot_paths:
+    - "assets/faxbot_full_logo.png"
+    - "assets/ios_send_screenshot.png"
+    - "assets/social-preview.png"
+    - "assets/faxbot_ios_connect-to-server.png"
+    - "assets/faxbot_ios_txt-to-fax.png"
+  notable: "5 GitHub stars. Published npm + PyPI SDKs. iOS app on TestFlight. Live admin demo at faxbot.net/admin-demo."
+
+- name: "Bambu Printer MCP"
+  slug: "bambu-printer-mcp"
+  description: "MCP server for controlling Bambu Lab 3D printers -- STL manipulation, auto-slicing, FTPS upload, and MQTT print control from Claude."
+  long_description: |
+    bambu-printer-mcp is a Model Context Protocol server that gives Claude Desktop, Claude Code, or any MCP client direct control over Bambu Lab 3D printers. It handles the full print workflow: manipulate an STL (scale, rotate, merge, flatten), auto-slice with BambuStudio CLI, upload the resulting 3MF over FTPS, and start the print via MQTT -- all without leaving a conversation.
+
+    The server provides detailed printer status (temperatures, progress, layers, AMS slot data), file management via FTPS, and print job control. It correctly parses AMS mapping from 3MF slicer config and sends it per the OpenBambuAPI spec. Multiple slicer backends are supported: BambuStudio, OrcaSlicer, PrusaSlicer, Cura, and Slic3r. An optional Blender MCP bridge enables advanced mesh operations.
+
+    This is a focused Bambu-only fork of the broader mcp-3D-printer-server project, stripped to its Bambu core for a smaller, faster install. It supports dual transport (stdio for Claude Desktop/Code, Streamable HTTP for other clients) and is published on npm for instant use via npx.
+  github_url: "https://github.com/DMontgomery40/bambu-printer-mcp"
+  live_url: ""
+  tech_stack:
+    - "TypeScript"
+    - "Node.js"
+    - "MCP SDK"
+    - "MQTT"
+    - "FTPS"
+    - "Three.js"
+    - "BambuStudio CLI"
+  features:
+    - "Full print workflow: STL manipulation, auto-slice, FTPS upload, MQTT print start"
+    - "Detailed printer status with temperatures, progress, AMS slot data"
+    - "Multi-slicer support: BambuStudio, OrcaSlicer, PrusaSlicer, Cura, Slic3r"
+    - "Correct AMS mapping parsing per OpenBambuAPI spec"
+    - "Published on npm with instant npx usage, dual stdio/HTTP transport"
+  category: "Hardware"
+  tags:
+    - "3d-printing"
+    - "mcp"
+    - "bambu-lab"
+    - "mqtt"
+    - "stl"
+    - "hardware"
+    - "npm"
+  status: "active"
+  has_screenshots: false
+  screenshot_paths: []
+  notable: "8 GitHub stars (most starred own repo). Published on npm. Featured in MCP ecosystem discussions."

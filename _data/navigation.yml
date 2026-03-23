@@ -1,14 +1,10 @@
-- name: Home
-  link: /
 - name: Projects
-  link: /Projects/
+  link: /#projects
 - name: Articles
-  link: /Articles/
-- name: Homelab
-  link: /Homelab/
-- name: Storytime
-  link: /Storytime/
+  link: /articles/
+- name: Gists
+  link: /Gists/
+- name: MCP
+  link: /Homelab/mcp-ecosystem.html
 - name: Resume
   link: /Resume/
-- name: Other
-  link: /Other/

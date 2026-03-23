@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <p class="label hero__subtitle">{{ site.description }}</p>
+  <h1 class="hero__title">{{ site.title }}</h1>
+  <p class="hero__description">{{ page.intro | default: "Software engineer building tools for security, AI infrastructure, and developer experience." }}</p>
+</section>
+
+{{ content }}
+
+{% assign projects = site.projects | where_exp: "p", "p.featured" | sort: "order" %}
+{% if projects.size > 0 %}
+<section class="fade-up">
+  <h2 class="section-heading">Featured Projects</h2>
+  <div class="project-grid">
+    {% for project in projects %}
+      {% include project-card.html
+        title=project.title
+        description=project.description
+        image=project.image
+        url=project.url
+        tags=project.tags
+      %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

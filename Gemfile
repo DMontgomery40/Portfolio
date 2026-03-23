@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.6.10'
-
-gem 'jekyll'
-gem 'just-the-docs'
+gem 'jekyll', '~> 4.3'
 gem 'webrick'
+gem 'jekyll-seo-tag'

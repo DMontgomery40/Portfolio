@@ -1,117 +1,53 @@
 title: David Montgomery
-remote_theme: just-the-docs/just-the-docs
-description: A collection of various development projects and tools
-url: https://dmontgomery40.github.io/Portfolio/
+description: AI Innovation & Systems Engineer — RAG Platforms, Computer Vision, MCP Integrations
+url: https://dmontgomery40.github.io
 baseurl: "/Portfolio"
 favicon: "/Portfolio/assets/favicon.ico"
-
-aux_links:
-  "View on GitHub":
-    - "https://github.com/DMontgomery40/Portfolio"
-
-color_scheme: dark
-
-# Enable search
-search_enabled: true
-search:
-  heading_level: 2
-  previews: 3
-  preview_words_before: 5
-  preview_words_after: 10
-  tokenizer_separator: /[\s/]+/
-  rel_url: true
-  button: false
-
-plugins:
-  - jekyll-remote-include
-
-# Enable copy button on code blocks
-enable_copy_code_button: true
-
-# Enable anchors on headings
-heading_anchors: true
-
-# Footer content
-footer_content: "Copyright &copy; 2025 David Montgomery."
 
 # Collections
 collections:
   projects:
     output: true
     permalink: /projects/:path/
-  articles:
-    output: true
-    permalink: /articles/:title/
-  homelab:
-    output: true
-    permalink: /homelab/:title/
-  storytime:
-    output: true
-    permalink: /storytime/:title/
-  resume:
-    output: true
-    permalink: /resume/:title/
-  other:
-    output: true
-    permalink: /other/:title/
-  # Add other collections if needed
 
-
-# Default values
+# Default front matter
 defaults:
-  -
-    scope:
-      path: "/Portfolio"
+  - scope:
+      path: ""
       type: "projects"
     values:
       layout: "project"
-  -
-    scope:
-      path: "/Portfolio"
-      type: "articles"
+  - scope:
+      path: "Homelab"
     values:
       layout: "default"
-  -
-    scope:
-      path: "/Portfolio"
-      type: "homelab"
+  - scope:
+      path: "Gists"
     values:
       layout: "default"
-  -
-    scope:
-      path: "/Portfolio"
-      type: "storytime"
-    values:
-      layout: "default"
-  -
-    scope:
-      path: "/Portfolio"
-      type: "resume"
-    values:
-      layout: "default"
-  -
-    scope:
-      path: "/Portfolio"
-      type: "other"
+  - scope:
+      path: "Resume"
     values:
       layout: "default"
 
-callouts:
-  note:
-    title: Note
-    color: white
-  tip:
-    title: Tip
-    color: white
-  warning:
-    title: Warning
-    color: white
-
-gh_edit_link: false
-
-search_enabled: true
-
+# Build
+markdown: kramdown
 kramdown:
   parse_block_html: true
 
-heading_anchors: true
+plugins:
+  - jekyll-seo-tag
+
+footer_links:
+  github: https://github.com/DMontgomery40
+  linkedin: https://www.linkedin.com/in/david-montgomery-5a07656b/
+  medium: https://medium.com/@dmontg
+  npm: https://www.npmjs.com/~dmontgomery40
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .DS_Store
+  - Projects/html_backup

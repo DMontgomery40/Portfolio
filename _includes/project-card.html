@@ -1,0 +1,23 @@
+{% comment %}
+  Include parameters: title, description, image, url, tags
+{% endcomment %}
+<a href="{{ site.baseurl }}{{ include.url }}" class="project-card">
+  {% if include.image %}
+    <img src="{{ site.baseurl }}{{ include.image }}" alt="{{ include.title }}" class="project-card__image" loading="lazy">
+  {% else %}
+    <div class="project-card__image" style="background: var(--secondary); display: flex; align-items: center; justify-content: center; color: var(--muted-foreground); font-size: 2rem; font-family: 'Newsreader', serif;">
+      {{ include.title | slice: 0 }}
+    </div>
+  {% endif %}
+  <div class="project-card__body">
+    <h3 class="project-card__title">{{ include.title }}</h3>
+    <p class="project-card__description">{{ include.description }}</p>
+    {% if include.tags %}
+      <div class="project-card__tags">
+        {% for tag in include.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</a>
