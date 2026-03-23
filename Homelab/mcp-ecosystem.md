@@ -31,28 +31,50 @@ Recent workflows increasingly move complex orchestration out of chat context and
 
 This space changes fast. Parts of this guidance may already be stale.
 
-## My MCP Projects
+---
 
-I've built and maintain MCP servers spanning different domains. All original work, no forks.
+## My MCP Projects (22 total)
 
-### Standalone MCP Servers
+All original work, no forks.
 
-- **[DeepSeek MCP Server](https://github.com/DMontgomery40/deepseek-mcp-server)** -- The official DeepSeek MCP server, listed on DeepSeek's GitHub and in the Anthropic MCP registry. Full Model Context Protocol server for DeepSeek's language models.
-- **[MCP 3D Printer Server](https://github.com/DMontgomery40/mcp-3D-printer-server)** -- Multi-platform 3D printer control via MCP. Connects to Orca, Bambu, OctoPrint, Klipper, Duet, Repetier, Prusa, and Creality. STL manipulation, slicing, and visualization.
-- **[Pentest MCP](https://github.com/DMontgomery40/pentest-mcp)** -- MCP server for professional penetration testers. STDIO/HTTP/SSE support, nmap, dirbuster, nikto, JtR, hashcat, wordlist building, and more.
-- **[Canvas LMS MCP](https://github.com/DMontgomery40/mcp-canvas-lms)** -- 54 tools for interacting with the Canvas LMS API. Course management, assignments, enrollments, and grades.
-- **[Meta MCP Server](https://github.com/DMontgomery40/meta-mcp-server)** -- MCP server orchestration layer.
-- **[MCP Security Scanner](https://github.com/DMontgomery40/mcp-security-scanner)** -- Security vulnerability scanner built with MCP plugins.
-- **[MCP Memory Graph](https://github.com/DMontgomery40/mcp-memory-graph)** -- Memory graph implementation for MCP in both Python and TypeScript.
-- **[MCP Local Server](https://github.com/DMontgomery40/mcp-local-server)** -- Local MCP server with BirdNet-Pi integration.
-- **[MCP Server BirdStats](https://github.com/DMontgomery40/mcp-server-birdstats)** -- Bird detection statistics and eBird/BirdWeather data via MCP.
-- **[Denver Golf MCP](https://github.com/DMontgomery40/denver-golf-mcp)** -- Tee time booking for Denver city golf courses.
+### Flagship -- High Adoption
 
-### Featured Projects with Embedded MCP Support
+- **[DeepSeek MCP Server](https://github.com/DMontgomery40/deepseek-mcp-server)** -- The official DeepSeek MCP server, listed on DeepSeek's GitHub and in the Anthropic MCP registry. Chat, completions, models, balance, vision, image-gen. TypeScript, stdio + streamable-http.
+- **[MCP 3D Printer Server](https://github.com/DMontgomery40/mcp-3D-printer-server)** -- Multi-platform 3D printer control. Connects to Orca, Bambu, OctoPrint, Klipper, Duet, Repetier, Prusa, and Creality. 20 tools for STL manipulation, slicing, and print management. TypeScript, stdio + streamable-http + SSE.
+- **[Pentest MCP](https://github.com/DMontgomery40/pentest-mcp)** -- MCP server for professional penetration testers. nmap, dirbuster, nikto, JtR, hashcat, wordlists, SoW-aware reporting. TypeScript, stdio + streamable-http + SSE.
+- **[Canvas LMS MCP](https://github.com/DMontgomery40/mcp-canvas-lms)** -- 30+ tools for Canvas LMS. Courses, assignments, grades, enrollments, files, quizzes. TypeScript, stdio + streamable-http.
 
-- [**Ragweld**]({{ site.baseurl }}/projects/ragweld/) -- Embedded MCP server on Streamable HTTP for RAG queries
-- [**Cathode**]({{ site.baseurl }}/projects/cathode/) -- MCP server for agent-driven video generation
-- [**Faxbot**]({{ site.baseurl }}/projects/faxbot/) -- Official MCP servers in Node + Python for HIPAA-compliant fax operations
+### Security
+
+- **[Pentest Py MCP](https://github.com/DMontgomery40/pentest-py-mcp)** -- Python port of pentest-mcp. nmap, JtR, gobuster, nikto, wordlist generation. Python, stdio.
+- **[MCP Security Scanner](https://github.com/DMontgomery40/mcp-security-scanner)** -- Scans projects for security vulnerabilities. Injection, XSS, hardcoded secrets, insecure protocols, risky packages. TypeScript, stdio + streamable-http.
+
+### AI / ML
+
+- **[Meta MCP Server](https://github.com/DMontgomery40/meta-mcp-server)** -- An MCP server that creates other MCP servers. The original meta-MCP concept, predating Anthropic's mcp-builder. Write, list, validate, and get templates. TypeScript, stdio + streamable-http.
+- **[MCP Memory Graph](https://github.com/DMontgomery40/mcp-memory-graph)** -- Pattern-matching document type inference. Dual implementation: Python + TypeScript. stdio.
+
+### Embedded MCP (inside larger projects)
+
+- [**Ragweld**]({{ site.baseurl }}/projects/ragweld/) -- Embedded MCP on Streamable HTTP for RAG queries, eval, and training ops
+- [**Cathode**]({{ site.baseurl }}/projects/cathode/) -- MCP server for agent-driven video generation and scene control
+- [**Faxbot**]({{ site.baseurl }}/projects/faxbot/) -- 12-tool MCP server in Node + Python for HIPAA-compliant fax operations
 - [**Bambu Printer MCP**]({{ site.baseurl }}/projects/bambu-printer-mcp/) -- Focused Bambu-only fork of the full 3D printer server
-- [**Analog Research**]({{ site.baseurl }}/projects/analog-research/) -- MCP integration for agentic research bounties
-- **[AnalogLabor](https://github.com/DMontgomery40/analoglabor)** -- Opt-in human workers for AI agents with MCP + REST interface
+- **[Agro RAG Engine](https://github.com/DMontgomery40/agro-rag-engine)** -- Local-first RAG workspace with MCP orchestration layer
+- **[AnalogLabor](https://github.com/DMontgomery40/analoglabor)** -- Opt-in human workers for AI agents, MCP + REST
+- [**Analog Research**]({{ site.baseurl }}/projects/analog-research/) -- Agentic research bounty platform with MCP integration
+
+### Wildlife & Nature
+
+- **[MCP Server BirdStats](https://github.com/DMontgomery40/mcp-server-birdstats)** -- eBird + BirdWeather detection analytics. TypeScript, stdio + streamable-http.
+- **[MCP BirdNET-Pi Server](https://github.com/DMontgomery40/mcp-local-server)** -- Local BirdNET-Pi species detection data. Python FastMCP, stdio + streamable-http.
+
+### Education
+
+- **[Canvas MCP (Python)](https://github.com/DMontgomery40/canvas-mcp)** -- Lightweight Python Canvas LMS client. Quiz, grades, assignments. stdio.
+
+### Hardware & Utility
+
+- **[JetKVM MCP Server](https://github.com/DMontgomery40/jet-kvm-mcp-server)** -- Control JetKVM hardware KVM devices. Connect, screenshot, send keys, mouse actions. TypeScript, stdio.
+- **[Open Fax by Claude](https://github.com/DMontgomery40/open-fax-by-claude)** -- Open-source T.38 fax-sending API with MCP. TypeScript, stdio.
+- **[Denver Golf MCP](https://github.com/DMontgomery40/denver-golf-mcp)** -- Tee time booking for Denver city golf courses. TypeScript, stdio + streamable-http.
